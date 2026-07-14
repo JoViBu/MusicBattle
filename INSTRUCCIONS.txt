@@ -1,0 +1,14 @@
+COPIA AQUESTS 3 FITXERS A:
+C:\MusicBattle\MusicBattle_RENDER
+
+- server.js
+- package.json
+- render.yaml
+
+Despres obre CMD i executa:
+cd /d C:\MusicBattle\MusicBattle_RENDER
+git add server.js package.json render.yaml
+git commit -m "Correccio servidor web Render"
+git push
+
+A Render, el Start Command ha de ser: npm start

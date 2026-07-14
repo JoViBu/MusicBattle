@@ -1,0 +1,14 @@
+{
+  "name": "musicbattle-server",
+  "version": "1.0.0",
+  "description": "Servidor de Music Battle",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "music-metadata": "^11.8.3",
+    "ws": "^8.18.3"
+  }
+}

@@ -1,0 +1,5435 @@
+{
+  "version": "v4-14s-start20-96k-stereo",
+  "tracks": {
+    "(03) Enrique Iglesias - La Chica De Ayer.mp3": {
+      "source": "(03) Enrique Iglesias - La Chica De Ayer.mp3",
+      "size": 5731872,
+      "mtimeMs": 1407260966357.4219,
+      "targetSize": 169357
+    },
+    "(Daft Punk) Get Lucky (Radio Edit).mp3": {
+      "source": "(Daft Punk) Get Lucky (Radio Edit).mp3",
+      "size": 7938397,
+      "mtimeMs": 1380033255209.961,
+      "targetSize": 169421
+    },
+    "- 02 - Zucchero Sugar Fornaciari - Baila Morena(1).mp3": {
+      "source": "- 02 - Zucchero Sugar Fornaciari - Baila Morena(1).mp3",
+      "size": 5977993,
+      "mtimeMs": 1360517918000,
+      "targetSize": 169026
+    },
+    "001 - Céline Dion - My Heart Will Go On (Love Theme from _Titanic_).mp3": {
+      "source": "001 - Céline Dion - My Heart Will Go On (Love Theme from _Titanic_).mp3",
+      "size": 11319503,
+      "mtimeMs": 1783780577928.8936,
+      "targetSize": 168959
+    },
+    "001 - Ed Sheeran - American Town.mp3": {
+      "source": "001 - Ed Sheeran - American Town.mp3",
+      "size": 8204715,
+      "mtimeMs": 1783780433567.3125,
+      "targetSize": 168962
+    },
+    "002 - Bryan Adams - Heaven.mp3": {
+      "source": "002 - Bryan Adams - Heaven.mp3",
+      "size": 9958254,
+      "mtimeMs": 1783699680196.9712,
+      "targetSize": 168927
+    },
+    "002.Jimi Hendrix-1984-Kiss The Sky-07-Purple Haze.mp3": {
+      "source": "002.Jimi Hendrix-1984-Kiss The Sky-07-Purple Haze.mp3",
+      "size": 3800450,
+      "mtimeMs": 1301476116000,
+      "targetSize": 168857
+    },
+    "003 - Guns N' Roses - Sweet Child O' Mine.mp3": {
+      "source": "003 - Guns N' Roses - Sweet Child O' Mine.mp3",
+      "size": 14344021,
+      "mtimeMs": 1783701938973.8423,
+      "targetSize": 168928
+    },
+    "004 - Queen - Bohemian Rhapsody (Remastered 2011).mp3": {
+      "source": "004 - Queen - Bohemian Rhapsody (Remastered 2011).mp3",
+      "size": 14315158,
+      "mtimeMs": 1783701939093.8423,
+      "targetSize": 168989
+    },
+    "006 - Dua Lipa - Dance The Night (From Barbie The Album).mp3": {
+      "source": "006 - Dua Lipa - Dance The Night (From Barbie The Album).mp3",
+      "size": 7128219,
+      "mtimeMs": 1783780433923.4998,
+      "targetSize": 168998
+    },
+    "006 - John Lennon - Woman (Remastered 2010).mp3": {
+      "source": "006 - John Lennon - Woman (Remastered 2010).mp3",
+      "size": 8772144,
+      "mtimeMs": 1783699680599.729,
+      "targetSize": 168980
+    },
+    "006 - Whitney Houston - I Have Nothing.mp3": {
+      "source": "006 - Whitney Houston - I Have Nothing.mp3",
+      "size": 11745870,
+      "mtimeMs": 1783780578500.827,
+      "targetSize": 169002
+    },
+    "007 - David Guetta - I'm Good (Blue).mp3": {
+      "source": "007 - David Guetta - I'm Good (Blue).mp3",
+      "size": 7179172,
+      "mtimeMs": 1783780433992.6086,
+      "targetSize": 168958
+    },
+    "008 - Adele - Someone Like You.mp3": {
+      "source": "008 - Adele - Someone Like You.mp3",
+      "size": 11525138,
+      "mtimeMs": 1783780578718.108,
+      "targetSize": 168930
+    },
+    "008 - Bon Jovi - It's My Life.mp3": {
+      "source": "008 - Bon Jovi - It's My Life.mp3",
+      "size": 9101768,
+      "mtimeMs": 1783701939501.1316,
+      "targetSize": 168997
+    },
+    "008 - Juanes - La camisa negra.mp3": {
+      "source": "008 - Juanes - La camisa negra.mp3",
+      "size": 5176929,
+      "mtimeMs": 1116061888000,
+      "targetSize": 168819
+    },
+    "008 - The Offspring - The Kids Aren't Alright.mp3": {
+      "source": "008 - The Offspring - The Kids Aren't Alright.mp3",
+      "size": 7470657,
+      "mtimeMs": 1783701280268.8538,
+      "targetSize": 168989
+    },
+    "009 - 4 Non Blondes - What's Up_.mp3": {
+      "source": "009 - 4 Non Blondes - What's Up_.mp3",
+      "size": 12029755,
+      "mtimeMs": 1783701939614.8828,
+      "targetSize": 168979
+    },
+    "01 - Al amanecer.mp3": {
+      "source": "01 - Al amanecer.mp3",
+      "size": 3839720,
+      "mtimeMs": 1042727556000,
+      "targetSize": 168847
+    },
+    "01 - Big Machine.mp3": {
+      "source": "01 - Big Machine.mp3",
+      "size": 6287200,
+      "mtimeMs": 1107006794000,
+      "targetSize": 168796
+    },
+    "01 - Dover - The Flame - EMG - www.elitemusic.org.mp3": {
+      "source": "01 - Dover - The Flame - EMG - www.elitemusic.org.mp3",
+      "size": 3396173,
+      "mtimeMs": 1067147278000,
+      "targetSize": 168884
+    },
+    "01 - Grita.mp3": {
+      "source": "01 - Grita.mp3",
+      "size": 3572425,
+      "mtimeMs": 1080924868000,
+      "targetSize": 168808
+    },
+    "01 - STARSAILOR - Four To The Flour (Thin White Duke Remix).mp3": {
+      "source": "01 - STARSAILOR - Four To The Flour (Thin White Duke Remix).mp3",
+      "size": 11790336,
+      "mtimeMs": 1118398116000,
+      "targetSize": 168847
+    },
+    "01 - Would You Be Happier.mp3": {
+      "source": "01 - Would You Be Happier.mp3",
+      "size": 7387778,
+      "mtimeMs": 1407260024594.7266,
+      "targetSize": 168903
+    },
+    "01 Enrique Iglesias - Rhythm Divine.mp3": {
+      "source": "01 Enrique Iglesias - Rhythm Divine.mp3",
+      "size": 8577502,
+      "mtimeMs": 1750056231764.4236,
+      "targetSize": 170694
+    },
+    "01 Happy Being Miserable.mp3": {
+      "source": "01 Happy Being Miserable.mp3",
+      "size": 8931590,
+      "mtimeMs": 1783701209089.7534,
+      "targetSize": 168797
+    },
+    "01 Meghan Trainor - All About That Bass.mp3": {
+      "source": "01 Meghan Trainor - All About That Bass.mp3",
+      "size": 7691338,
+      "mtimeMs": 1414660232978.5156,
+      "targetSize": 169040
+    },
+    "01 Motion Sickness.mp3": {
+      "source": "01 Motion Sickness.mp3",
+      "size": 8911734,
+      "mtimeMs": 1783701209336.1794,
+      "targetSize": 168787
+    },
+    "01 Smells Like Teen Spirit.mp3": {
+      "source": "01 Smells Like Teen Spirit.mp3",
+      "size": 4850042,
+      "mtimeMs": 1389328775163.5059,
+      "targetSize": 169448
+    },
+    "01- Revientate - Technotronic.mp3": {
+      "source": "01- Revientate - Technotronic.mp3",
+      "size": 7525506,
+      "mtimeMs": 1783861762054.842,
+      "targetSize": 169692
+    },
+    "01-Bad Reputation.mp3": {
+      "source": "01-Bad Reputation.mp3",
+      "size": 3956736,
+      "mtimeMs": 1083935436000,
+      "targetSize": 168829
+    },
+    "01-camera_obscura-french_navy.mp3": {
+      "source": "01-camera_obscura-french_navy.mp3",
+      "size": 6030715,
+      "mtimeMs": 1360516762000,
+      "targetSize": 169445
+    },
+    "01-Els senyors de les pedres.mp3": {
+      "source": "01-Els senyors de les pedres.mp3",
+      "size": 10717184,
+      "mtimeMs": 1074172474000,
+      "targetSize": 168881
+    },
+    "01-GUANO APES-Open your eyes.mp3": {
+      "source": "01-GUANO APES-Open your eyes.mp3",
+      "size": 3061073,
+      "mtimeMs": 1167917806000,
+      "targetSize": 168826
+    },
+    "01-melendi-caminando_por_la_vida.mp3": {
+      "source": "01-melendi-caminando_por_la_vida.mp3",
+      "size": 4474026,
+      "mtimeMs": 1114424468000,
+      "targetSize": 168912
+    },
+    "01-Sang En El Fang.mp3": {
+      "source": "01-Sang En El Fang.mp3",
+      "size": 9785344,
+      "mtimeMs": 1074173120000,
+      "targetSize": 168859
+    },
+    "01. Figa Flawas - a la freSka.mp3": {
+      "source": "01. Figa Flawas - a la freSka.mp3",
+      "size": 7663505,
+      "mtimeMs": 1783939672053.6843,
+      "targetSize": 169049
+    },
+    "01.Dj.mp3": {
+      "source": "01.Dj.mp3",
+      "size": 3122417,
+      "mtimeMs": 1783962094587.787,
+      "targetSize": 169677
+    },
+    "010 - aespa - Better Things.mp3": {
+      "source": "010 - aespa - Better Things.mp3",
+      "size": 8290216,
+      "mtimeMs": 1783780434220.0205,
+      "targetSize": 168946
+    },
+    "010 - New Kids On The Block - I'll Be Loving You (Forever).mp3": {
+      "source": "010 - New Kids On The Block - I'll Be Loving You (Forever).mp3",
+      "size": 10690271,
+      "mtimeMs": 1783699680995.74,
+      "targetSize": 168994
+    },
+    "011 - Harry Styles - As It Was.mp3": {
+      "source": "011 - Harry Styles - As It Was.mp3",
+      "size": 6791429,
+      "mtimeMs": 1783780434280.9285,
+      "targetSize": 168942
+    },
+    "012 - Europe - The Final Countdown.mp3": {
+      "source": "012 - Europe - The Final Countdown.mp3",
+      "size": 12464911,
+      "mtimeMs": 1783701939963.0156,
+      "targetSize": 168979
+    },
+    "012 - Metallica - Enter Sandman.mp3": {
+      "source": "012 - Metallica - Enter Sandman.mp3",
+      "size": 13281355,
+      "mtimeMs": 1783701280598.8506,
+      "targetSize": 168950
+    },
+    "013 - Lionel Richie - Endless Love.mp3": {
+      "source": "013 - Lionel Richie - Endless Love.mp3",
+      "size": 10872871,
+      "mtimeMs": 1783699681335.6128,
+      "targetSize": 168959
+    },
+    "014 - Elvis Presley - Can't Help Falling in Love with You.mp3": {
+      "source": "014 - Elvis Presley - Can't Help Falling in Love with You.mp3",
+      "size": 7538019,
+      "mtimeMs": 1783699681419.9353,
+      "targetSize": 168980
+    },
+    "014 - John Lennon - Imagine (Remastered 2010).mp3": {
+      "source": "014 - John Lennon - Imagine (Remastered 2010).mp3",
+      "size": 7752640,
+      "mtimeMs": 1783780579338.874,
+      "targetSize": 168972
+    },
+    "014 - Metallica - Nothing Else Matters.mp3": {
+      "source": "014 - Metallica - Nothing Else Matters.mp3",
+      "size": 15561224,
+      "mtimeMs": 1783701940243.8699,
+      "targetSize": 168988
+    },
+    "014.ACDC-1979-Highway To Hell-01-Highway To Hell.mp3": {
+      "source": "014.ACDC-1979-Highway To Hell-01-Highway To Hell.mp3",
+      "size": 4713950,
+      "mtimeMs": 1602570678529.3198,
+      "targetSize": 168847
+    },
+    "015 - John Legend - All of Me.mp3": {
+      "source": "015 - John Legend - All of Me.mp3",
+      "size": 10857471,
+      "mtimeMs": 1783780579444.3933,
+      "targetSize": 168994
+    },
+    "016 - Ellie Goulding - Love Me Like You Do (From _Fifty Shades Of Grey_).mp3": {
+      "source": "016 - Ellie Goulding - Love Me Like You Do (From _Fifty Shades Of Grey_).mp3",
+      "size": 10128267,
+      "mtimeMs": 1783780579548.482,
+      "targetSize": 169065
+    },
+    "016 - Metallica - Whiskey In The Jar.mp3": {
+      "source": "016 - Metallica - Whiskey In The Jar.mp3",
+      "size": 12342540,
+      "mtimeMs": 1783701280974.1138,
+      "targetSize": 168957
+    },
+    "016 - Red Hot Chili Peppers - Californication.mp3": {
+      "source": "016 - Red Hot Chili Peppers - Californication.mp3",
+      "size": 13396898,
+      "mtimeMs": 1783701940524.4104,
+      "targetSize": 169013
+    },
+    "017 - Evanescence - My Immortal.mp3": {
+      "source": "017 - Evanescence - My Immortal.mp3",
+      "size": 10665503,
+      "mtimeMs": 1783701940640.3755,
+      "targetSize": 168968
+    },
+    "02  Cosas Del Amor.mp3": {
+      "source": "02  Cosas Del Amor.mp3",
+      "size": 6533686,
+      "mtimeMs": 1408102782000,
+      "targetSize": 171348
+    },
+    "02 - AXWELL - Feel The Vibe.mp3": {
+      "source": "02 - AXWELL - Feel The Vibe.mp3",
+      "size": 5326848,
+      "mtimeMs": 1118398168000,
+      "targetSize": 168815
+    },
+    "02 - Bola de cristal.mp3": {
+      "source": "02 - Bola de cristal.mp3",
+      "size": 3474219,
+      "mtimeMs": 1042727754000,
+      "targetSize": 168852
+    },
+    "02 - El Sueño De Morfeo - Ojos de cielo - [www.spawarez.tk].mp3": {
+      "source": "02 - El Sueño De Morfeo - Ojos de cielo - [www.spawarez.tk].mp3",
+      "size": 4077696,
+      "mtimeMs": 1113639236000,
+      "targetSize": 168919
+    },
+    "02 - Mana - Rayando El Sol - EMG - www.elitemusic.org.mp3": {
+      "source": "02 - Mana - Rayando El Sol - EMG - www.elitemusic.org.mp3",
+      "size": 6016460,
+      "mtimeMs": 1070358745000,
+      "targetSize": 168869
+    },
+    "02 - Taxi - Perdido En La Calle.mp3": {
+      "source": "02 - Taxi - Perdido En La Calle.mp3",
+      "size": 6587293,
+      "mtimeMs": 1274187339000,
+      "targetSize": 168891
+    },
+    "02 Come As You Are.mp3": {
+      "source": "02 Come As You Are.mp3",
+      "size": 3545592,
+      "mtimeMs": 1389328891798.177,
+      "targetSize": 169447
+    },
+    "02 Dead!.mp3": {
+      "source": "02 Dead!.mp3",
+      "size": 7831747,
+      "mtimeMs": 1783701210163.737,
+      "targetSize": 168832
+    },
+    "02 Happy Judgement Day.mp3": {
+      "source": "02 Happy Judgement Day.mp3",
+      "size": 8624391,
+      "mtimeMs": 1783701210317.1428,
+      "targetSize": 168791
+    },
+    "02 Last Resort.mp3": {
+      "source": "02 Last Resort.mp3",
+      "size": 3209037,
+      "mtimeMs": 1380976021345.7031,
+      "targetSize": 169180
+    },
+    "02 Lights And Sounds.mp3": {
+      "source": "02 Lights And Sounds.mp3",
+      "size": 8659171,
+      "mtimeMs": 1783701210663.922,
+      "targetSize": 168883
+    },
+    "02 My Friends Over You.mp3": {
+      "source": "02 My Friends Over You.mp3",
+      "size": 8910820,
+      "mtimeMs": 1783701210749.399,
+      "targetSize": 168791
+    },
+    "02 Yeah!.mp3": {
+      "source": "02 Yeah!.mp3",
+      "size": 3990616,
+      "mtimeMs": 1380976855787.1094,
+      "targetSize": 169242
+    },
+    "02-GUANO APES-No speech.mp3": {
+      "source": "02-GUANO APES-No speech.mp3",
+      "size": 3399200,
+      "mtimeMs": 1167917173000,
+      "targetSize": 168824
+    },
+    "02-Pensa-t Ho Bé.mp3": {
+      "source": "02-Pensa-t Ho Bé.mp3",
+      "size": 7550976,
+      "mtimeMs": 1074173124000,
+      "targetSize": 168858
+    },
+    "02-rob_thomas-lonely_no_more.mp3": {
+      "source": "02-rob_thomas-lonely_no_more.mp3",
+      "size": 6594145,
+      "mtimeMs": 1113736826000,
+      "targetSize": 169025
+    },
+    "02-soraya-llevame_-_www.torrentazos.com.mp3": {
+      "source": "02-soraya-llevame_-_www.torrentazos.com.mp3",
+      "size": 5259264,
+      "mtimeMs": 1114455144000,
+      "targetSize": 168860
+    },
+    "02-That Thing You Do! - (Performed By The Wonders).mp3": {
+      "source": "02-That Thing You Do! - (Performed By The Wonders).MP3",
+      "size": 3966399,
+      "mtimeMs": 1051793566000,
+      "targetSize": 168866
+    },
+    "02. Jamás me fui.mp3": {
+      "source": "02. Jamás me fui.mp3",
+      "size": 2892115,
+      "mtimeMs": 1783962094491.1296,
+      "targetSize": 169645
+    },
+    "02.- Amaral - dias de verano - [EMG].mp3": {
+      "source": "02.- Amaral - dias de verano - [EMG].mp3",
+      "size": 6003619,
+      "mtimeMs": 1110820936000,
+      "targetSize": 168859
+    },
+    "02.- The Corrs - Angel - [EMG].mp3": {
+      "source": "02.- The Corrs - Angel - [EMG].mp3",
+      "size": 4945920,
+      "mtimeMs": 1085706246000,
+      "targetSize": 168862
+    },
+    "02.Four graves.mp3": {
+      "source": "02.Four graves.mp3",
+      "size": 3527416,
+      "mtimeMs": 1783962094517.1992,
+      "targetSize": 169686
+    },
+    "02.Stamber.mp3": {
+      "source": "02.Stamber.mp3",
+      "size": 2975878,
+      "mtimeMs": 1783962094673.0967,
+      "targetSize": 169706
+    },
+    "020.Pearl Jam-1991-Ten-03-Alive.mp3": {
+      "source": "020.Pearl Jam-1991-Ten-03-Alive.mp3",
+      "size": 8853857,
+      "mtimeMs": 1301478380000,
+      "targetSize": 168845
+    },
+    "022 - Ozzy Osbourne - Crazy Train.mp3": {
+      "source": "022 - Ozzy Osbourne - Crazy Train.mp3",
+      "size": 11777576,
+      "mtimeMs": 1783701281564.0305,
+      "targetSize": 168940
+    },
+    "023 - Taylor Swift - Cruel Summer.mp3": {
+      "source": "023 - Taylor Swift - Cruel Summer.mp3",
+      "size": 7259020,
+      "mtimeMs": 1783780435237.4268,
+      "targetSize": 168956
+    },
+    "023.Alice In Chains-1990-Facelift-02-Man In The Box.mp3": {
+      "source": "023.Alice In Chains-1990-Facelift-02-Man In The Box.mp3",
+      "size": 6864114,
+      "mtimeMs": 1441924851098.459,
+      "targetSize": 169181
+    },
+    "024 - Demi Lovato - Skyscraper.mp3": {
+      "source": "024 - Demi Lovato - Skyscraper.mp3",
+      "size": 9004573,
+      "mtimeMs": 1783780580339.443,
+      "targetSize": 168961
+    },
+    "024 - Ed Sheeran - Magical.mp3": {
+      "source": "024 - Ed Sheeran - Magical.mp3",
+      "size": 8057427,
+      "mtimeMs": 1783780435304.7178,
+      "targetSize": 168983
+    },
+    "025 - Aerosmith - Dream On.mp3": {
+      "source": "025 - Aerosmith - Dream On.mp3",
+      "size": 10839537,
+      "mtimeMs": 1783701281803.9045,
+      "targetSize": 168905
+    },
+    "025 - Survivor - Eye of the Tiger.mp3": {
+      "source": "025 - Survivor - Eye of the Tiger.mp3",
+      "size": 9988182,
+      "mtimeMs": 1783701941717.4453,
+      "targetSize": 168991
+    },
+    "026 - AC_DC - Back In Black.mp3": {
+      "source": "026 - AC_DC - Back In Black.mp3",
+      "size": 10251289,
+      "mtimeMs": 1783701941850.2449,
+      "targetSize": 168948
+    },
+    "026 - Guns N' Roses - November Rain (Album Version).mp3": {
+      "source": "026 - Guns N' Roses - November Rain (Album Version).mp3",
+      "size": 21641426,
+      "mtimeMs": 1783780580647.688,
+      "targetSize": 168978
+    },
+    "026 - Miley Cyrus - Flowers.mp3": {
+      "source": "026 - Miley Cyrus - Flowers.mp3",
+      "size": 8084004,
+      "mtimeMs": 1783780435464.4626,
+      "targetSize": 168948
+    },
+    "026.The Doors-1971-The Best Of The Doors-01-Break On Through.mp3": {
+      "source": "026.The Doors-1971-The Best Of The Doors-01-Break On Through.mp3",
+      "size": 3728667,
+      "mtimeMs": 1301478601000,
+      "targetSize": 168876
+    },
+    "027 - Guns N' Roses - Paradise City.mp3": {
+      "source": "027 - Guns N' Roses - Paradise City.mp3",
+      "size": 16325135,
+      "mtimeMs": 1783701942045.0374,
+      "targetSize": 168922
+    },
+    "027 - Jennifer Rush - The Power of Love (Radio Edit).mp3": {
+      "source": "027 - Jennifer Rush - The Power of Love (Radio Edit).mp3",
+      "size": 11886973,
+      "mtimeMs": 1783780580753.6108,
+      "targetSize": 169011
+    },
+    "027 - Roxette - It Must Have Been Love (From the Film _Pretty Woman_).mp3": {
+      "source": "027 - Roxette - It Must Have Been Love (From the Film _Pretty Woman_).mp3",
+      "size": 10483860,
+      "mtimeMs": 1783699682711.8108,
+      "targetSize": 169001
+    },
+    "028 - John Lennon - Stand By Me (Remastered 2010).mp3": {
+      "source": "028 - John Lennon - Stand By Me (Remastered 2010).mp3",
+      "size": 8755363,
+      "mtimeMs": 1783701282023.7996,
+      "targetSize": 168982
+    },
+    "029 - Kelly Clarkson - Because of You.mp3": {
+      "source": "029 - Kelly Clarkson - Because of You.mp3",
+      "size": 8905689,
+      "mtimeMs": 1783780580930.3618,
+      "targetSize": 168971
+    },
+    "03  Lluvia Cae.mp3": {
+      "source": "03  Lluvia Cae.mp3",
+      "size": 6647315,
+      "mtimeMs": 1408102788000,
+      "targetSize": 169741
+    },
+    "03  Por Amarte.mp3": {
+      "source": "03  Por Amarte.mp3",
+      "size": 6769938,
+      "mtimeMs": 1408102792000,
+      "targetSize": 169109
+    },
+    "03 - DAVID GETTA - The World Is Mine.mp3": {
+      "source": "03 - DAVID GETTA - The World Is Mine.mp3",
+      "size": 5238784,
+      "mtimeMs": 1118398216000,
+      "targetSize": 168824
+    },
+    "03 - Enrique Iglesias - Bailando.mp3": {
+      "source": "03 - Enrique Iglesias - Bailando.mp3",
+      "size": 9791909,
+      "mtimeMs": 1401805070000,
+      "targetSize": 168908
+    },
+    "03 - Wicked Game.mp3": {
+      "source": "03 - Wicked Game.mp3",
+      "size": 6868864,
+      "mtimeMs": 1146857233000,
+      "targetSize": 168855
+    },
+    "03 Chasing Cars.mp3": {
+      "source": "03 Chasing Cars.mp3",
+      "size": 5366107,
+      "mtimeMs": 1380977895646.4844,
+      "targetSize": 169551
+    },
+    "03 David Guetta ft. Sam Martin - Dangerous.mp3": {
+      "source": "03 David Guetta ft. Sam Martin - Dangerous.mp3",
+      "size": 8343865,
+      "mtimeMs": 1418921258989.2578,
+      "targetSize": 169026
+    },
+    "03 Dover - Serenade.mp3": {
+      "source": "03 Dover - Serenade.mp3",
+      "size": 9528994,
+      "mtimeMs": 1783929511860.662,
+      "targetSize": 169471
+    },
+    "03 She's Kerosene.mp3": {
+      "source": "03 She's Kerosene.mp3",
+      "size": 7305441,
+      "mtimeMs": 1783701211218.1384,
+      "targetSize": 168790
+    },
+    "03 Taylor Swift - Shake It Off.mp3": {
+      "source": "03 Taylor Swift - Shake It Off.mp3",
+      "size": 8900067,
+      "mtimeMs": 1414660450970.7031,
+      "targetSize": 169031
+    },
+    "03 When Your Heart Stops Beating.mp3": {
+      "source": "03 When Your Heart Stops Beating.mp3",
+      "size": 7614596,
+      "mtimeMs": 1783701211354.0398,
+      "targetSize": 168801
+    },
+    "03-GUANO APES-Big in japan.mp3": {
+      "source": "03-GUANO APES-Big in japan.mp3",
+      "size": 2729632,
+      "mtimeMs": 1167917186000,
+      "targetSize": 168827
+    },
+    "03-Little Wild One - (Performed By The Wonders).mp3": {
+      "source": "03-Little Wild One - (Performed By The Wonders).MP3",
+      "size": 3568920,
+      "mtimeMs": 1051793380000,
+      "targetSize": 168863
+    },
+    "03-Nimforàdio.mp3": {
+      "source": "03-Nimforàdio.mp3",
+      "size": 8413184,
+      "mtimeMs": 1074173130000,
+      "targetSize": 168855
+    },
+    "03. Elena feat. Glance - Mamma Mia (He's Italiano).mp3": {
+      "source": "03. Elena feat. Glance - Mamma Mia (He's Italiano).mp3",
+      "size": 8783206,
+      "mtimeMs": 1414675748493.164,
+      "targetSize": 168943
+    },
+    "03. En el andén.mp3": {
+      "source": "03. En el andén.mp3",
+      "size": 3965265,
+      "mtimeMs": 1043857898000,
+      "targetSize": 169039
+    },
+    "03.- Shakira - la tortura (Feat. Alejandro Sanz) - Elitemusic.org.mp3": {
+      "source": "03.- Shakira - la tortura (Feat. Alejandro Sanz) - Elitemusic.org.mp3",
+      "size": 5169219,
+      "mtimeMs": 1117198056000,
+      "targetSize": 168906
+    },
+    "03.El perro loco.mp3": {
+      "source": "03.El perro loco.mp3",
+      "size": 2400093,
+      "mtimeMs": 1783962094548.7312,
+      "targetSize": 169712
+    },
+    "03.Nena Daconte-Marta.mp3": {
+      "source": "03.Nena Daconte-Marta.mp3",
+      "size": 6248448,
+      "mtimeMs": 1158524628000,
+      "targetSize": 168830
+    },
+    "030 - Laura Pausini - La soledad (Versión 2001).mp3": {
+      "source": "030 - Laura Pausini - La soledad (Versión 2001).mp3",
+      "size": 10631179,
+      "mtimeMs": 1783780581036.4114,
+      "targetSize": 169020
+    },
+    "030.Rolling Stones-2002-Forty Licks-03-(I Can't Get No) Sati.mp3": {
+      "source": "030.Rolling Stones-2002-Forty Licks-03-(I Can't Get No) Sati.mp3",
+      "size": 3569749,
+      "mtimeMs": 1301478646000,
+      "targetSize": 168879
+    },
+    "031 - AC_DC - Big Gun.mp3": {
+      "source": "031 - AC_DC - Big Gun.mp3",
+      "size": 10637305,
+      "mtimeMs": 1783701282259.6543,
+      "targetSize": 168947
+    },
+    "031 - Bee Gees - How Deep Is Your Love.mp3": {
+      "source": "031 - Bee Gees - How Deep Is Your Love.mp3",
+      "size": 10019578,
+      "mtimeMs": 1783699683107.0056,
+      "targetSize": 168964
+    },
+    "031 - The Cranberries - Zombie.mp3": {
+      "source": "031 - The Cranberries - Zombie.mp3",
+      "size": 12489488,
+      "mtimeMs": 1783701942630.3213,
+      "targetSize": 168922
+    },
+    "032 - Elvis Presley - Always On My Mind.mp3": {
+      "source": "032 - Elvis Presley - Always On My Mind.mp3",
+      "size": 8879888,
+      "mtimeMs": 1783699683199.6882,
+      "targetSize": 168954
+    },
+    "032 - Nicki Minaj - Barbie World (with Aqua) [From Barbie The Album].mp3": {
+      "source": "032 - Nicki Minaj - Barbie World (with Aqua) [From Barbie The Album].mp3",
+      "size": 4571798,
+      "mtimeMs": 1783780435836.4514,
+      "targetSize": 169030
+    },
+    "033 - Guns N' Roses - Nightrain.mp3": {
+      "source": "033 - Guns N' Roses - Nightrain.mp3",
+      "size": 10830009,
+      "mtimeMs": 1783701282403.964,
+      "targetSize": 168918
+    },
+    "035 - AC_DC - Highway to Hell.mp3": {
+      "source": "035 - AC_DC - Highway to Hell.mp3",
+      "size": 8508711,
+      "mtimeMs": 1783701943094.499,
+      "targetSize": 168937
+    },
+    "035 - Iron Maiden - The Trooper (1998 Remaster).mp3": {
+      "source": "035 - Iron Maiden - The Trooper (1998 Remaster).mp3",
+      "size": 10204228,
+      "mtimeMs": 1783701282561.277,
+      "targetSize": 168975
+    },
+    "036 - Guns N' Roses - Patience (Album Version).mp3": {
+      "source": "036 - Guns N' Roses - Patience (Album Version).mp3",
+      "size": 14375910,
+      "mtimeMs": 1783701943279.8176,
+      "targetSize": 168956
+    },
+    "036 - Katy Perry - Unconditionally.mp3": {
+      "source": "036 - Katy Perry - Unconditionally.mp3",
+      "size": 9264000,
+      "mtimeMs": 1783780581601.1687,
+      "targetSize": 168965
+    },
+    "037 - Dua Lipa - Don't Start Now.mp3": {
+      "source": "037 - Dua Lipa - Don't Start Now.mp3",
+      "size": 7461090,
+      "mtimeMs": 1783780436179.3306,
+      "targetSize": 168964
+    },
+    "037 - Justin Bieber - Love Yourself.mp3": {
+      "source": "037 - Justin Bieber - Love Yourself.mp3",
+      "size": 9523592,
+      "mtimeMs": 1783780581682.7417,
+      "targetSize": 168969
+    },
+    "037 - Metallica - The Unforgiven.mp3": {
+      "source": "037 - Metallica - The Unforgiven.mp3",
+      "size": 15490159,
+      "mtimeMs": 1783701282745.3943,
+      "targetSize": 168982
+    },
+    "037 - The Killers - Mr. Brightside.mp3": {
+      "source": "037 - The Killers - Mr. Brightside.mp3",
+      "size": 9070641,
+      "mtimeMs": 1783701943408.953,
+      "targetSize": 168918
+    },
+    "037.The Who-1971-Who's Next-01-Baba O'Riley.mp3": {
+      "source": "037.The Who-1971-Who's Next-01-Baba O'Riley.mp3",
+      "size": 6988251,
+      "mtimeMs": 1301478900000,
+      "targetSize": 168848
+    },
+    "038 - David Guetta - Baby Don't Hurt Me.mp3": {
+      "source": "038 - David Guetta - Baby Don't Hurt Me.mp3",
+      "size": 5778638,
+      "mtimeMs": 1783780436237.1208,
+      "targetSize": 168964
+    },
+    "038 - The Calling - Wherever You Will Go.mp3": {
+      "source": "038 - The Calling - Wherever You Will Go.mp3",
+      "size": 8459483,
+      "mtimeMs": 1783701943534.0134,
+      "targetSize": 168976
+    },
+    "039 - Ed Sheeran - Photograph.mp3": {
+      "source": "039 - Ed Sheeran - Photograph.mp3",
+      "size": 10495472,
+      "mtimeMs": 1783780581871.7563,
+      "targetSize": 168970
+    },
+    "04 - INFERNAL - From Paris To Berlin.mp3": {
+      "source": "04 - INFERNAL - From Paris To Berlin.mp3",
+      "size": 5042176,
+      "mtimeMs": 1118398266000,
+      "targetSize": 168824
+    },
+    "04 - Limon y sal.mp3": {
+      "source": "04 - Limon y sal.mp3",
+      "size": 4936016,
+      "mtimeMs": 1148994046000,
+      "targetSize": 168856
+    },
+    "04 - Suave.mp3": {
+      "source": "04 - Suave.mp3",
+      "size": 4038453,
+      "mtimeMs": 1042727610000,
+      "targetSize": 168841
+    },
+    "04 Country Grammar (Hot...).mp3": {
+      "source": "04 Country Grammar (Hot...).mp3",
+      "size": 4151727,
+      "mtimeMs": 1380979484166.0156,
+      "targetSize": 169269
+    },
+    "04 Sigma Feat Paloma Faith - Changing.mp3": {
+      "source": "04 Sigma Feat Paloma Faith - Changing.mp3",
+      "size": 7822726,
+      "mtimeMs": 1414660450971.6797,
+      "targetSize": 169038
+    },
+    "04 Still Waiting.mp3": {
+      "source": "04 Still Waiting.mp3",
+      "size": 9072238,
+      "mtimeMs": 1783701211685.6736,
+      "targetSize": 168783
+    },
+    "04 _sterlin _suicide club.mp3": {
+      "source": "04 _sterlin _suicide club.mp3",
+      "size": 3245957,
+      "mtimeMs": 1114700662000,
+      "targetSize": 168808
+    },
+    "04-caesars - jerk it out cdm - jerk it out.mp3": {
+      "source": "04-caesars - jerk it out cdm - jerk it out.mp3",
+      "size": 4761576,
+      "mtimeMs": 1115844120000,
+      "targetSize": 168884
+    },
+    "04-Dance With Me Tonight - (Performed By The Wonders).mp3": {
+      "source": "04-Dance With Me Tonight - (Performed By The Wonders).MP3",
+      "size": 2963924,
+      "mtimeMs": 1051794164000,
+      "targetSize": 168869
+    },
+    "04-El vol de l'home ocell.mp3": {
+      "source": "04-El vol de l'home ocell.mp3",
+      "size": 10514432,
+      "mtimeMs": 1074172494000,
+      "targetSize": 168878
+    },
+    "04-GUANO APES-Lords of the boards.mp3": {
+      "source": "04-GUANO APES-Lords of the boards.mp3",
+      "size": 3617799,
+      "mtimeMs": 1167917861000,
+      "targetSize": 168831
+    },
+    "04-Time Bomb-Rancid-...And Out Come The Wolves.mp3": {
+      "source": "04-Time Bomb-Rancid-...And Out Come The Wolves.mp3",
+      "size": 4600682,
+      "mtimeMs": 1048330130000,
+      "targetSize": 169268
+    },
+    "04.Rock & Roll.mp3": {
+      "source": "04.Rock & Roll.mp3",
+      "size": 6675622,
+      "mtimeMs": 1363615146000,
+      "targetSize": 168957
+    },
+    "040 - Rihanna - Diamonds.mp3": {
+      "source": "040 - Rihanna - Diamonds.mp3",
+      "size": 9105542,
+      "mtimeMs": 1783780581948.3345,
+      "targetSize": 168947
+    },
+    "041 - Bruno Mars - Just the Way You Are.mp3": {
+      "source": "041 - Bruno Mars - Just the Way You Are.mp3",
+      "size": 8925091,
+      "mtimeMs": 1783780582022.8352,
+      "targetSize": 168964
+    },
+    "041 - Linkin Park - In the End.mp3": {
+      "source": "041 - Linkin Park - In the End.mp3",
+      "size": 8867176,
+      "mtimeMs": 1783701283083.8835,
+      "targetSize": 168986
+    },
+    "042.The Doors-1967-The Doors-06-Light My Fire.mp3": {
+      "source": "042.The Doors-1967-The Doors-06-Light My Fire.mp3",
+      "size": 11027565,
+      "mtimeMs": 1301478975000,
+      "targetSize": 168853
+    },
+    "043 - Katy Perry - Firework.mp3": {
+      "source": "043 - Katy Perry - Firework.mp3",
+      "size": 9264963,
+      "mtimeMs": 1783780582190.0916,
+      "targetSize": 168985
+    },
+    "043 - Michael Jackson - You Are Not Alone.mp3": {
+      "source": "043 - Michael Jackson - You Are Not Alone.mp3",
+      "size": 13943739,
+      "mtimeMs": 1783699684154.1057,
+      "targetSize": 168997
+    },
+    "044 - Bizarrap - Shakira_ Bzrp Music Sessions, Vol. 53.mp3": {
+      "source": "044 - Bizarrap - Shakira_ Bzrp Music Sessions, Vol. 53.mp3",
+      "size": 8952282,
+      "mtimeMs": 1783780436710.6958,
+      "targetSize": 169003
+    },
+    "046 - The Police - Every Breath You Take (Remastered 2003).mp3": {
+      "source": "046 - The Police - Every Breath You Take (Remastered 2003).mp3",
+      "size": 10292353,
+      "mtimeMs": 1783701283551.386,
+      "targetSize": 168997
+    },
+    "047 - Linkin Park - Numb.mp3": {
+      "source": "047 - Linkin Park - Numb.mp3",
+      "size": 7502991,
+      "mtimeMs": 1783780582499.1272,
+      "targetSize": 168959
+    },
+    "049 - a-ha - Take on Me.mp3": {
+      "source": "049 - a-ha - Take on Me.mp3",
+      "size": 9236039,
+      "mtimeMs": 1783701945209.2603,
+      "targetSize": 168946
+    },
+    "049 - Eric Clapton - Cocaine.mp3": {
+      "source": "049 - Eric Clapton - Cocaine.mp3",
+      "size": 8821896,
+      "mtimeMs": 1783701283734.1199,
+      "targetSize": 168942
+    },
+    "049 - One Direction - Perfect.mp3": {
+      "source": "049 - One Direction - Perfect.mp3",
+      "size": 9392907,
+      "mtimeMs": 1783780582679.7434,
+      "targetSize": 168907
+    },
+    "049 - Sia - Gimme Love.mp3": {
+      "source": "049 - Sia - Gimme Love.mp3",
+      "size": 7371768,
+      "mtimeMs": 1783780437041.6538,
+      "targetSize": 168930
+    },
+    "049.Soundgarden-1991-Badmotorfinger-02-Outshined.mp3": {
+      "source": "049.Soundgarden-1991-Badmotorfinger-02-Outshined.mp3",
+      "size": 6915302,
+      "mtimeMs": 1301478980000,
+      "targetSize": 168853
+    },
+    "04–After One - Real Sadness II.mp3": {
+      "source": "04–After One - Real Sadness II.mp3",
+      "size": 8400980,
+      "mtimeMs": 1615424761630,
+      "targetSize": 168891
+    },
+    "05 - FREELOADERS feat. THE REAL THING - So Much Love To Give.mp3": {
+      "source": "05 - FREELOADERS feat. THE REAL THING - So Much Love To Give.mp3",
+      "size": 4757504,
+      "mtimeMs": 1118398306000,
+      "targetSize": 168848
+    },
+    "05 - What A Scene.mp3": {
+      "source": "05 - What A Scene.mp3",
+      "size": 9106838,
+      "mtimeMs": 1107006780000,
+      "targetSize": 168797
+    },
+    "05 I'm Not Okay (I Promise).mp3": {
+      "source": "05 I'm Not Okay (I Promise).mp3",
+      "size": 8221815,
+      "mtimeMs": 1783701212177.6123,
+      "targetSize": 168813
+    },
+    "05 La playa.mp3": {
+      "source": "05 La playa.mp3",
+      "size": 5996900,
+      "mtimeMs": 1783962094617.8396,
+      "targetSize": 169921
+    },
+    "05. Mundo irreal.mp3": {
+      "source": "05. Mundo irreal.mp3",
+      "size": 3654721,
+      "mtimeMs": 1043850716000,
+      "targetSize": 169032
+    },
+    "050.Jimi Hendrix-2002-Blue Wild Angel-04-All Along The Watch.mp3": {
+      "source": "050.Jimi Hendrix-2002-Blue Wild Angel-04-All Along The Watch.mp3",
+      "size": 7369000,
+      "mtimeMs": 1301478994000,
+      "targetSize": 168870
+    },
+    "053 - Guns N' Roses - Civil War.mp3": {
+      "source": "053 - Guns N' Roses - Civil War.mp3",
+      "size": 18616460,
+      "mtimeMs": 1783701284053.9321,
+      "targetSize": 168941
+    },
+    "053 - Joe Cocker - Up Where We Belong (From _An Officer And A Gentleman_).mp3": {
+      "source": "053 - Joe Cocker - Up Where We Belong (From _An Officer And A Gentleman_).mp3",
+      "size": 9449949,
+      "mtimeMs": 1783699684948.2517,
+      "targetSize": 169030
+    },
+    "053 - No Doubt - Don't Speak.mp3": {
+      "source": "053 - No Doubt - Don't Speak.mp3",
+      "size": 10785665,
+      "mtimeMs": 1783701945862.9792,
+      "targetSize": 168911
+    },
+    "054 - Agrupacion LatinHits - Youre Still The One (Tribute to Shania Twain).mp3": {
+      "source": "054 - Agrupacion LatinHits - Youre Still The One (Tribute to Shania Twain).mp3",
+      "size": 1231074,
+      "mtimeMs": 1783780583024.5027,
+      "targetSize": 98790
+    },
+    "054 - Ed Sheeran - Shivers.mp3": {
+      "source": "054 - Ed Sheeran - Shivers.mp3",
+      "size": 8657685,
+      "mtimeMs": 1783780437412.3838,
+      "targetSize": 168941
+    },
+    "055 - Coldplay - Viva La Vida.mp3": {
+      "source": "055 - Coldplay - Viva La Vida.mp3",
+      "size": 9915021,
+      "mtimeMs": 1783701946222.5752,
+      "targetSize": 168987
+    },
+    "055 - Maroon 5 - She Will Be Loved.mp3": {
+      "source": "055 - Maroon 5 - She Will Be Loved.mp3",
+      "size": 10456716,
+      "mtimeMs": 1783780583112.0857,
+      "targetSize": 168973
+    },
+    "056 - Bruno Mars - Leave The Door Open.mp3": {
+      "source": "056 - Bruno Mars - Leave The Door Open.mp3",
+      "size": 9916060,
+      "mtimeMs": 1783780437554.8396,
+      "targetSize": 168985
+    },
+    "058 - Charlie Puth - Left and Right (Feat. Jung Kook of BTS).mp3": {
+      "source": "058 - Charlie Puth - Left and Right (Feat. Jung Kook of BTS).mp3",
+      "size": 6292697,
+      "mtimeMs": 1783780437677.9827,
+      "targetSize": 169006
+    },
+    "058 - System of A Down - Toxicity.mp3": {
+      "source": "058 - System of A Down - Toxicity.mp3",
+      "size": 8991673,
+      "mtimeMs": 1783701284444.0288,
+      "targetSize": 168970
+    },
+    "058.Ultimate Seventies - 1978 - 08 - Joe Walsh - Life's Been.mp3": {
+      "source": "058.Ultimate Seventies - 1978 - 08 - Joe Walsh - Life's Been.mp3",
+      "size": 6588479,
+      "mtimeMs": 1301478755000,
+      "targetSize": 168862
+    },
+    "05_-_Despistaos_-_Estoy_Aqui_-_EMG_-_www.Elitemusic.org.mp3": {
+      "source": "05_-_Despistaos_-_Estoy_Aqui_-_EMG_-_www.Elitemusic.org.mp3",
+      "size": 5329627,
+      "mtimeMs": 1088620098000,
+      "targetSize": 168900
+    },
+    "06 - Dover - After Hours - EMG - www.elitemusic.org.mp3": {
+      "source": "06 - Dover - After Hours - EMG - www.elitemusic.org.mp3",
+      "size": 2388684,
+      "mtimeMs": 1067147278000,
+      "targetSize": 168886
+    },
+    "06 - GIGI D'AGOSTINO - Wellfare.mp3": {
+      "source": "06 - GIGI D'AGOSTINO - Wellfare.mp3",
+      "size": 3561472,
+      "mtimeMs": 1118398336000,
+      "targetSize": 168819
+    },
+    "06 - Mana - Oye Mi Amor - EMG - www.elitemusic.org.mp3": {
+      "source": "06 - Mana - Oye Mi Amor - EMG - www.elitemusic.org.mp3",
+      "size": 6543082,
+      "mtimeMs": 1070358686000,
+      "targetSize": 168862
+    },
+    "06 - Ritmo de la Noche.mp3": {
+      "source": "06 - Ritmo de la Noche.mp3",
+      "size": 9838437,
+      "mtimeMs": 1615427889360,
+      "targetSize": 169122
+    },
+    "06 Motivation.mp3": {
+      "source": "06 Motivation.mp3",
+      "size": 6885048,
+      "mtimeMs": 1783701212734.1846,
+      "targetSize": 168777
+    },
+    "06 Self Defeated.mp3": {
+      "source": "06 Self Defeated.mp3",
+      "size": 7395059,
+      "mtimeMs": 1783701212903.8157,
+      "targetSize": 168779
+    },
+    "06 Si et quedes amb mi.mp3": {
+      "source": "06 Si et quedes amb mi.mp3",
+      "size": 2947575,
+      "mtimeMs": 1404675315004.057,
+      "targetSize": 169193
+    },
+    "06-GUANO APES-Dödel up.mp3": {
+      "source": "06-GUANO APES-Dödel up.mp3",
+      "size": 3520825,
+      "mtimeMs": 1167917296000,
+      "targetSize": 168824
+    },
+    "06-No Recordo.mp3": {
+      "source": "06-No Recordo.mp3",
+      "size": 9082880,
+      "mtimeMs": 1074173142000,
+      "targetSize": 168854
+    },
+    "060 - The Chainsmokers - Roses (feat. ROZES).mp3": {
+      "source": "060 - The Chainsmokers - Roses (feat. ROZES).mp3",
+      "size": 9156283,
+      "mtimeMs": 1783780583569.2397,
+      "targetSize": 169002
+    },
+    "060 - The Offspring - Pretty Fly (For A White Guy).mp3": {
+      "source": "060 - The Offspring - Pretty Fly (For A White Guy).mp3",
+      "size": 7811304,
+      "mtimeMs": 1783701284584.148,
+      "targetSize": 168995
+    },
+    "061 - Lana Del Rey - Say Yes To Heaven.mp3": {
+      "source": "061 - Lana Del Rey - Say Yes To Heaven.mp3",
+      "size": 8492017,
+      "mtimeMs": 1783780437896.9148,
+      "targetSize": 168969
+    },
+    "061.Pink Floyd-1994-The Wall-19-Comfortably numb.mp3": {
+      "source": "061.Pink Floyd-1994-The Wall-19-Comfortably numb.mp3",
+      "size": 5873438,
+      "mtimeMs": 1301478986000,
+      "targetSize": 168858
+    },
+    "062 - Alexandra Burke - The Silence.mp3": {
+      "source": "062 - Alexandra Burke - The Silence.mp3",
+      "size": 9858489,
+      "mtimeMs": 1783780583720.7637,
+      "targetSize": 168969
+    },
+    "062 - Quiet Riot - Cum on Feel the Noize.mp3": {
+      "source": "062 - Quiet Riot - Cum on Feel the Noize.mp3",
+      "size": 11674719,
+      "mtimeMs": 1783701284743.7605,
+      "targetSize": 168966
+    },
+    "062.ACDC-1976-Dirty Deeds Done Dirt Cheap-01-Dirty Deeds Don.mp3": {
+      "source": "062.ACDC-1976-Dirty Deeds Done Dirt Cheap-01-Dirty Deeds Don.mp3",
+      "size": 5364760,
+      "mtimeMs": 1301478912000,
+      "targetSize": 168859
+    },
+    "063 - Charlie Puth - One Call Away.mp3": {
+      "source": "063 - Charlie Puth - One Call Away.mp3",
+      "size": 7784586,
+      "mtimeMs": 1783780583791.285,
+      "targetSize": 168966
+    },
+    "063 - Matchbox Twenty - Push.mp3": {
+      "source": "063 - Matchbox Twenty - Push.mp3",
+      "size": 9668997,
+      "mtimeMs": 1783701284813.9365,
+      "targetSize": 168978
+    },
+    "065 - Adele - Rolling in the Deep.mp3": {
+      "source": "065 - Adele - Rolling in the Deep.mp3",
+      "size": 9206136,
+      "mtimeMs": 1783780583974.2136,
+      "targetSize": 168949
+    },
+    "065 - Oasis - Don't Look Back in Anger (Remastered).mp3": {
+      "source": "065 - Oasis - Don't Look Back in Anger (Remastered).mp3",
+      "size": 11782028,
+      "mtimeMs": 1783701284988.32,
+      "targetSize": 169015
+    },
+    "065 - Panic! At The Disco - I Write Sins Not Tragedies.mp3": {
+      "source": "065 - Panic! At The Disco - I Write Sins Not Tragedies.mp3",
+      "size": 7680378,
+      "mtimeMs": 1783701947989.9065,
+      "targetSize": 169015
+    },
+    "065 - Shania Twain - You're Still The One.mp3": {
+      "source": "065 - Shania Twain - You're Still The One.mp3",
+      "size": 8799877,
+      "mtimeMs": 1783699685793.6711,
+      "targetSize": 168981
+    },
+    "066 - Céline Dion - Because You Loved Me (Theme from _Up Close and Personal_).mp3": {
+      "source": "066 - Céline Dion - Because You Loved Me (Theme from _Up Close and Personal_).mp3",
+      "size": 11116739,
+      "mtimeMs": 1783699685874.1396,
+      "targetSize": 169020
+    },
+    "067 - Miley Cyrus - Used To Be Young.mp3": {
+      "source": "067 - Miley Cyrus - Used To Be Young.mp3",
+      "size": 7706814,
+      "mtimeMs": 1783780438396.7937,
+      "targetSize": 168957
+    },
+    "067 - Oasis - Wonderwall.mp3": {
+      "source": "067 - Oasis - Wonderwall.mp3",
+      "size": 10617206,
+      "mtimeMs": 1783701948295.6372,
+      "targetSize": 168930
+    },
+    "068 - Depeche Mode - Enjoy the Silence.mp3": {
+      "source": "068 - Depeche Mode - Enjoy the Silence.mp3",
+      "size": 10292875,
+      "mtimeMs": 1783701285254.172,
+      "targetSize": 168976
+    },
+    "068 - Ellie Goulding - Army Mike Mago Remix.mp3": {
+      "source": "068 - Ellie Goulding - Army Mike Mago Remix.mp3",
+      "size": 7968220,
+      "mtimeMs": 1783780584216.2588,
+      "targetSize": 168981
+    },
+    "069 - Counting Crows - Mr. Jones.mp3": {
+      "source": "069 - Counting Crows - Mr. Jones.mp3",
+      "size": 11164179,
+      "mtimeMs": 1783701285334.155,
+      "targetSize": 168994
+    },
+    "069 - Mariah Carey - My All.mp3": {
+      "source": "069 - Mariah Carey - My All.mp3",
+      "size": 9347989,
+      "mtimeMs": 1783780584297.9988,
+      "targetSize": 168955
+    },
+    "07 - El Sueño De Morfeo - Nunca volverá - [www.spawarez.tk].mp3": {
+      "source": "07 - El Sueño De Morfeo - Nunca volverá - [www.spawarez.tk].mp3",
+      "size": 3080320,
+      "mtimeMs": 1113639322000,
+      "targetSize": 168920
+    },
+    "07 - GLOBAL DEEJAYS - The Sound Of San Francisco.mp3": {
+      "source": "07 - GLOBAL DEEJAYS - The Sound Of San Francisco.mp3",
+      "size": 5091328,
+      "mtimeMs": 1118398380000,
+      "targetSize": 168836
+    },
+    "07 - La inocente.mp3": {
+      "source": "07 - La inocente.mp3",
+      "size": 4076076,
+      "mtimeMs": 1042727694000,
+      "targetSize": 168847
+    },
+    "07 Steadily.mp3": {
+      "source": "07 Steadily.mp3",
+      "size": 7870482,
+      "mtimeMs": 1783701213034.0815,
+      "targetSize": 168774
+    },
+    "07.Nena Daconte-En Que Estrella Estar.mp3": {
+      "source": "07.Nena Daconte-En Que Estrella Estar.mp3",
+      "size": 3700736,
+      "mtimeMs": 1158524725000,
+      "targetSize": 168846
+    },
+    "070 - Britney Spears - Sometimes.mp3": {
+      "source": "070 - Britney Spears - Sometimes.mp3",
+      "size": 9985039,
+      "mtimeMs": 1783699686145.795,
+      "targetSize": 168989
+    },
+    "070 - Christina Aguilera - Hurt.mp3": {
+      "source": "070 - Christina Aguilera - Hurt.mp3",
+      "size": 9877281,
+      "mtimeMs": 1783780584399.5146,
+      "targetSize": 168949
+    },
+    "070 - Ed Sheeran - Bad Habits.mp3": {
+      "source": "070 - Ed Sheeran - Bad Habits.mp3",
+      "size": 9471644,
+      "mtimeMs": 1783780438640.7478,
+      "targetSize": 168938
+    },
+    "071 - Fall Out Boy - Centuries.mp3": {
+      "source": "071 - Fall Out Boy - Centuries.mp3",
+      "size": 9275788,
+      "mtimeMs": 1783701948890.255,
+      "targetSize": 168988
+    },
+    "073 - Aerosmith - Jaded.mp3": {
+      "source": "073 - Aerosmith - Jaded.mp3",
+      "size": 8778799,
+      "mtimeMs": 1783701285594.0503,
+      "targetSize": 168907
+    },
+    "073 - Savage Garden - Truly Madly Deeply.mp3": {
+      "source": "073 - Savage Garden - Truly Madly Deeply.mp3",
+      "size": 11169272,
+      "mtimeMs": 1783699686392.667,
+      "targetSize": 168984
+    },
+    "074 - David Guetta - Without You (feat. Usher).mp3": {
+      "source": "074 - David Guetta - Without You (feat. Usher).mp3",
+      "size": 8403405,
+      "mtimeMs": 1783780584873.2268,
+      "targetSize": 169013
+    },
+    "074 - Whitney Houston - I Will Always Love You.mp3": {
+      "source": "074 - Whitney Houston - I Will Always Love You.mp3",
+      "size": 11022817,
+      "mtimeMs": 1783699686466.5293,
+      "targetSize": 169010
+    },
+    "075 - Coldplay - Fix You.mp3": {
+      "source": "075 - Coldplay - Fix You.mp3",
+      "size": 11859399,
+      "mtimeMs": 1783780584980.316,
+      "targetSize": 168956
+    },
+    "075 - Fall Out Boy - Immortals.mp3": {
+      "source": "075 - Fall Out Boy - Immortals.mp3",
+      "size": 7716790,
+      "mtimeMs": 1783701949406.8887,
+      "targetSize": 168975
+    },
+    "078 - Extreme - More Than Words.mp3": {
+      "source": "078 - Extreme - More Than Words.mp3",
+      "size": 13549883,
+      "mtimeMs": 1783699686926.2466,
+      "targetSize": 168922
+    },
+    "079 - Eagles - Hotel California (2013 Remaster).mp3": {
+      "source": "079 - Eagles - Hotel California (2013 Remaster).mp3",
+      "size": 15801353,
+      "mtimeMs": 1783701286044.1555,
+      "targetSize": 169013
+    },
+    "079 - Smash Mouth - All Star.mp3": {
+      "source": "079 - Smash Mouth - All Star.mp3",
+      "size": 8306530,
+      "mtimeMs": 1783701949967.0454,
+      "targetSize": 168963
+    },
+    "07___DON_T_LET_ME_DOWN.mp3": {
+      "source": "07___DON_T_LET_ME_DOWN.MP3",
+      "size": 5971968,
+      "mtimeMs": 1064660998000,
+      "targetSize": 168790
+    },
+    "08 - Calvin Harris - I Need Your Love (feat. Ellie Goulding).mp3": {
+      "source": "08 - Calvin Harris - I Need Your Love (feat. Ellie Goulding).mp3",
+      "size": 9520526,
+      "mtimeMs": 1380033571240.2344,
+      "targetSize": 168923
+    },
+    "08 - SYNDICATE OF L.A.W. - Accelerator.mp3": {
+      "source": "08 - SYNDICATE OF L.A.W. - Accelerator.mp3",
+      "size": 5595136,
+      "mtimeMs": 1118398430000,
+      "targetSize": 168826
+    },
+    "08 Aronchupa - Im an albatraoz.mp3": {
+      "source": "08 Aronchupa - Im an albatraoz.mp3",
+      "size": 6843604,
+      "mtimeMs": 1418921170161.1328,
+      "targetSize": 169014
+    },
+    "08 In Bloom.mp3": {
+      "source": "08 In Bloom.mp3",
+      "size": 4096044,
+      "mtimeMs": 1389476985725.2422,
+      "targetSize": 169379
+    },
+    "08 Robin Schulz & LILLYWOOD - Prayer In C.mp3": {
+      "source": "08 Robin Schulz & LILLYWOOD - Prayer In C.mp3",
+      "size": 7816310,
+      "mtimeMs": 1414660450971.6797,
+      "targetSize": 169042
+    },
+    "08-Paranys De La Mort.mp3": {
+      "source": "08-Paranys De La Mort.mp3",
+      "size": 9598976,
+      "mtimeMs": 1074188570000,
+      "targetSize": 168870
+    },
+    "080 - Lifehouse - You And Me.mp3": {
+      "source": "080 - Lifehouse - You And Me.mp3",
+      "size": 7998489,
+      "mtimeMs": 1783780585364.0122,
+      "targetSize": 168909
+    },
+    "080 - Roxette - Spending My Time.mp3": {
+      "source": "080 - Roxette - Spending My Time.mp3",
+      "size": 11175738,
+      "mtimeMs": 1783699687073.884,
+      "targetSize": 168964
+    },
+    "080 - Tiësto - 10_35.mp3": {
+      "source": "080 - Tiësto - 10_35.mp3",
+      "size": 7114974,
+      "mtimeMs": 1783780439326.83,
+      "targetSize": 168930
+    },
+    "081 - AC_DC - T.N.T.mp3": {
+      "source": "081 - AC_DC - T.N.T.mp3",
+      "size": 8684435,
+      "mtimeMs": 1783701286165.694,
+      "targetSize": 168940
+    },
+    "081 - Eiffel 65 - Blue (Da Ba Dee) (Video Edit).mp3": {
+      "source": "081 - Eiffel 65 - Blue (Da Ba Dee) (Video Edit).mp3",
+      "size": 8927389,
+      "mtimeMs": 1783701950365.9055,
+      "targetSize": 168978
+    },
+    "081 - Katy Perry - The One That Got Away (Acoustic).mp3": {
+      "source": "081 - Katy Perry - The One That Got Away (Acoustic).mp3",
+      "size": 10511577,
+      "mtimeMs": 1783780585455.0122,
+      "targetSize": 169010
+    },
+    "085 - Elton John - Can You Feel The Love Tonight (End Title _ From _The Lion King_).mp3": {
+      "source": "085 - Elton John - Can You Feel The Love Tonight (End Title _ From _The Lion King_).mp3",
+      "size": 9897169,
+      "mtimeMs": 1783780585840.8833,
+      "targetSize": 169025
+    },
+    "086 - Adele - Hello.mp3": {
+      "source": "086 - Adele - Hello.mp3",
+      "size": 11956454,
+      "mtimeMs": 1783780585961.4084,
+      "targetSize": 168905
+    },
+    "086 - Natalie Imbruglia - Torn.mp3": {
+      "source": "086 - Natalie Imbruglia - Torn.mp3",
+      "size": 9882735,
+      "mtimeMs": 1783699687528.2185,
+      "targetSize": 168989
+    },
+    "087 - Beyoncé - Halo.mp3": {
+      "source": "087 - Beyoncé - Halo.mp3",
+      "size": 10557750,
+      "mtimeMs": 1783780586070.0164,
+      "targetSize": 168976
+    },
+    "087 - Dua Lipa - Levitating (feat. DaBaby).mp3": {
+      "source": "087 - Dua Lipa - Levitating (feat. DaBaby).mp3",
+      "size": 8252100,
+      "mtimeMs": 1783780439862.098,
+      "targetSize": 168960
+    },
+    "088 - Britney Spears - I'm Not a Girl, Not Yet a Woman.mp3": {
+      "source": "088 - Britney Spears - I'm Not a Girl, Not Yet a Woman.mp3",
+      "size": 9391408,
+      "mtimeMs": 1783780586165.5486,
+      "targetSize": 168998
+    },
+    "088 - Robbie Williams - Angels.mp3": {
+      "source": "088 - Robbie Williams - Angels.mp3",
+      "size": 10712555,
+      "mtimeMs": 1783699687700.276,
+      "targetSize": 168958
+    },
+    "089 - Pretenders - I'll Stand by You.mp3": {
+      "source": "089 - Pretenders - I'll Stand by You.mp3",
+      "size": 9635265,
+      "mtimeMs": 1783699687766.7068,
+      "targetSize": 168984
+    },
+    "089 - Queen - Don't Stop Me Now (Remastered 2011).mp3": {
+      "source": "089 - Queen - Don't Stop Me Now (Remastered 2011).mp3",
+      "size": 8604030,
+      "mtimeMs": 1783701286794.0403,
+      "targetSize": 168973
+    },
+    "09 - 100% feat. JENNIFER JOHN - Just Cant Wait (Saturday).mp3": {
+      "source": "09 - 100% feat. JENNIFER JOHN - Just Cant Wait (Saturday).mp3",
+      "size": 4554752,
+      "mtimeMs": 1118398474000,
+      "targetSize": 168845
+    },
+    "09 Sliver.mp3": {
+      "source": "09 Sliver.mp3",
+      "size": 2136651,
+      "mtimeMs": 1389477158924.1487,
+      "targetSize": 169405
+    },
+    "09-laura_pausini-y_mi_banda_toca_el_rock.mp3": {
+      "source": "09-laura_pausini-y_mi_banda_toca_el_rock.mp3",
+      "size": 6531843,
+      "mtimeMs": 1407258383201.1719,
+      "targetSize": 169032
+    },
+    "09-Ruby Soho-Rancid-...And Out Come The Wolves.mp3": {
+      "source": "09-Ruby Soho-Rancid-...And Out Come The Wolves.mp3",
+      "size": 5102747,
+      "mtimeMs": 1048337354000,
+      "targetSize": 169268
+    },
+    "09. Echosmith - Cool Kids.mp3": {
+      "source": "09. Echosmith - Cool Kids.mp3",
+      "size": 9651305,
+      "mtimeMs": 1414680232046.875,
+      "targetSize": 168806
+    },
+    "090 - George Ezra - Budapest.mp3": {
+      "source": "090 - George Ezra - Budapest.mp3",
+      "size": 8211484,
+      "mtimeMs": 1783701952620.1245,
+      "targetSize": 168963
+    },
+    "091 - Corona - The Rhythm of the Night.mp3": {
+      "source": "091 - Corona - The Rhythm of the Night.mp3",
+      "size": 10734481,
+      "mtimeMs": 1783701952845.5776,
+      "targetSize": 168977
+    },
+    "091 - Justin Bieber - I'll Show You.mp3": {
+      "source": "091 - Justin Bieber - I'll Show You.mp3",
+      "size": 8167372,
+      "mtimeMs": 1783780586472.6155,
+      "targetSize": 168969
+    },
+    "092 - Simply Red - For Your Babies.mp3": {
+      "source": "092 - Simply Red - For Your Babies.mp3",
+      "size": 10403052,
+      "mtimeMs": 1783699688033.8362,
+      "targetSize": 168969
+    },
+    "093 - Alicia Keys - Girl on Fire.mp3": {
+      "source": "093 - Alicia Keys - Girl on Fire.mp3",
+      "size": 9119124,
+      "mtimeMs": 1783780586674.7107,
+      "targetSize": 168980
+    },
+    "093 - Ed Sheeran - Blue.mp3": {
+      "source": "093 - Ed Sheeran - Blue.mp3",
+      "size": 6441954,
+      "mtimeMs": 1783780440321.3347,
+      "targetSize": 168953
+    },
+    "093 - Simply Red - Holding Back the Years (2008 Remaster).mp3": {
+      "source": "093 - Simply Red - Holding Back the Years (2008 Remaster).mp3",
+      "size": 10972744,
+      "mtimeMs": 1783699688113.7803,
+      "targetSize": 169004
+    },
+    "094 - One Direction - You & I.mp3": {
+      "source": "094 - One Direction - You & I.mp3",
+      "size": 9730853,
+      "mtimeMs": 1783780586751.7139,
+      "targetSize": 168972
+    },
+    "095 - Céline Dion - I Love You.mp3": {
+      "source": "095 - Céline Dion - I Love You.mp3",
+      "size": 13270228,
+      "mtimeMs": 1783780586918.746,
+      "targetSize": 168961
+    },
+    "098 - Jim Diamond - I Should Have Known Better.mp3": {
+      "source": "098 - Jim Diamond - I Should Have Known Better.mp3",
+      "size": 9854973,
+      "mtimeMs": 1783699688607.4253,
+      "targetSize": 168979
+    },
+    "10 - A'STUDIO feat. POLINA - Sos (Skylark Remix).mp3": {
+      "source": "10 - A'STUDIO feat. POLINA - Sos (Skylark Remix).mp3",
+      "size": 8630272,
+      "mtimeMs": 1118398554000,
+      "targetSize": 168836
+    },
+    "10 - Acoustic #3.mp3": {
+      "source": "10 - Acoustic #3.mp3",
+      "size": 2874139,
+      "mtimeMs": 1407316315104.4922,
+      "targetSize": 169280
+    },
+    "10 Tequila - Dime Que Me Quieres.mp3": {
+      "source": "10 Tequila - Dime Que Me Quieres.mp3",
+      "size": 7339015,
+      "mtimeMs": 1738154229904.9585,
+      "targetSize": 168892
+    },
+    "10.Far.mp3": {
+      "source": "10.Far.mp3",
+      "size": 3112796,
+      "mtimeMs": 1783962094660.58,
+      "targetSize": 169679
+    },
+    "101 - Patrick Swayze - She's Like the Wind.mp3": {
+      "source": "101 - Patrick Swayze - She's Like the Wind.mp3",
+      "size": 9425185,
+      "mtimeMs": 1783699688822.9895,
+      "targetSize": 168934
+    },
+    "102 - The Bangles - Eternal Flame.mp3": {
+      "source": "102 - The Bangles - Eternal Flame.mp3",
+      "size": 9552221,
+      "mtimeMs": 1783699688894.0664,
+      "targetSize": 168977
+    },
+    "103 - Nazareth - Love Hurts.mp3": {
+      "source": "103 - Nazareth - Love Hurts.mp3",
+      "size": 9599071,
+      "mtimeMs": 1783699688973.646,
+      "targetSize": 168969
+    },
+    "107 - Scorpions - Still Loving You.mp3": {
+      "source": "107 - Scorpions - Still Loving You.mp3",
+      "size": 16269993,
+      "mtimeMs": 1783699689360.962,
+      "targetSize": 168964
+    },
+    "11 - Korn - Falling Away From Me - EMG - www.elitemusic.net.mp3": {
+      "source": "11 - Korn - Falling Away From Me - EMG - www.elitemusic.net.mp3",
+      "size": 8239814,
+      "mtimeMs": 1096280310000,
+      "targetSize": 168910
+    },
+    "11 - SCOOTER - Shake That.mp3": {
+      "source": "11 - SCOOTER - Shake That.mp3",
+      "size": 4800512,
+      "mtimeMs": 1118398602000,
+      "targetSize": 168813
+    },
+    "11 Drain You.mp3": {
+      "source": "11 Drain You.mp3",
+      "size": 3622078,
+      "mtimeMs": 1389477664968.0925,
+      "targetSize": 169384
+    },
+    "11-Llença't.mp3": {
+      "source": "11-Llença't.mp3",
+      "size": 5724097,
+      "mtimeMs": 1133735600000,
+      "targetSize": 168813
+    },
+    "11.The real me.mp3": {
+      "source": "11.The real me.mp3",
+      "size": 2954657,
+      "mtimeMs": 1783962094648.063,
+      "targetSize": 169687
+    },
+    "116 - Bruce Springsteen - Streets of Philadelphia (Single Edit).mp3": {
+      "source": "116 - Bruce Springsteen - Streets of Philadelphia (Single Edit).mp3",
+      "size": 7925805,
+      "mtimeMs": 1783701956584.7246,
+      "targetSize": 169003
+    },
+    "116 - Papa Roach - Last Resort.mp3": {
+      "source": "116 - Papa Roach - Last Resort.mp3",
+      "size": 8184372,
+      "mtimeMs": 1783701288993.9675,
+      "targetSize": 168907
+    },
+    "116.Pearl Jam-1991-Ten-06-Jeremy.mp3": {
+      "source": "116.Pearl Jam-1991-Ten-06-Jeremy.mp3",
+      "size": 8019664,
+      "mtimeMs": 1301478646000,
+      "targetSize": 168846
+    },
+    "11–After One - Tom's Diner Rap.mp3": {
+      "source": "11–After One - Tom's Diner Rap.mp3",
+      "size": 8483528,
+      "mtimeMs": 1615424763340,
+      "targetSize": 168892
+    },
+    "12 - BOOM BOX feat. LINDA O - Balla Da Li.mp3": {
+      "source": "12 - BOOM BOX feat. LINDA O - Balla Da Li.mp3",
+      "size": 5244928,
+      "mtimeMs": 1118398652000,
+      "targetSize": 168829
+    },
+    "12 - Mana - En El Muelle De San Blas - EMG - www.elitemusic.org.mp3": {
+      "source": "12 - Mana - En El Muelle De San Blas - EMG - www.elitemusic.org.mp3",
+      "size": 8489745,
+      "mtimeMs": 1070358754000,
+      "targetSize": 168880
+    },
+    "12 - That's What Girls Do.mp3": {
+      "source": "12 - That's What Girls Do.mp3",
+      "size": 3032686,
+      "mtimeMs": 1081747196000,
+      "targetSize": 168881
+    },
+    "12 How You Remind Me of Someday.mp3": {
+      "source": "12 How You Remind Me of Someday.mp3",
+      "size": 3794069,
+      "mtimeMs": 1380979461712.8906,
+      "targetSize": 169051
+    },
+    "12 Lithium.mp3": {
+      "source": "12 Lithium.mp3",
+      "size": 4144992,
+      "mtimeMs": 1684912954784.196,
+      "targetSize": 169379
+    },
+    "12 Shorai Shorai.mp3": {
+      "source": "12 Shorai Shorai.mp3",
+      "size": 6120076,
+      "mtimeMs": 1783701800784.1892,
+      "targetSize": 168834
+    },
+    "12-the_offspring-when_youre_in_prison-pms.mp3": {
+      "source": "12-the_offspring-when_youre_in_prison-pms.mp3",
+      "size": 3674667,
+      "mtimeMs": 1783930731318.5908,
+      "targetSize": 168833
+    },
+    "12. Becky G - Shower.mp3": {
+      "source": "12. Becky G - Shower.mp3",
+      "size": 8613387,
+      "mtimeMs": 1414680232046.875,
+      "targetSize": 168802
+    },
+    "120 - Elton John - Skyline Pigeon (Piano Version _ Remastered).mp3": {
+      "source": "120 - Elton John - Skyline Pigeon (Piano Version _ Remastered).mp3",
+      "size": 9537097,
+      "mtimeMs": 1783699690390.6106,
+      "targetSize": 168972
+    },
+    "120 - Gorillaz - Feel Good Inc.mp3": {
+      "source": "120 - Gorillaz - Feel Good Inc.mp3",
+      "size": 9002271,
+      "mtimeMs": 1783701289323.9194,
+      "targetSize": 168964
+    },
+    "121 - Panic! At The Disco - I Write Sins Not Tragedies.mp3": {
+      "source": "121 - Panic! At The Disco - I Write Sins Not Tragedies.mp3",
+      "size": 7680378,
+      "mtimeMs": 1783701289383.8477,
+      "targetSize": 169015
+    },
+    "122 - Elton John - Nikita (Remastered).mp3": {
+      "source": "122 - Elton John - Nikita (Remastered).mp3",
+      "size": 13966371,
+      "mtimeMs": 1783699690581.2754,
+      "targetSize": 168948
+    },
+    "123 - blink-182 - I Miss You.mp3": {
+      "source": "123 - blink-182 - I Miss You.mp3",
+      "size": 9291619,
+      "mtimeMs": 1783701289524.6602,
+      "targetSize": 169039
+    },
+    "123 - Elton John - I Guess That's Why They Call It The Blues (Remastered).mp3": {
+      "source": "123 - Elton John - I Guess That's Why They Call It The Blues (Remastered).mp3",
+      "size": 11494213,
+      "mtimeMs": 1783699690665.9185,
+      "targetSize": 168983
+    },
+    "123 - Rag'n'Bone Man - Skin.mp3": {
+      "source": "123 - Rag'n'Bone Man - Skin.mp3",
+      "size": 9764897,
+      "mtimeMs": 1783701957142.6953,
+      "targetSize": 168948
+    },
+    "124 - Bryan Adams - All For Love (From _The Three Musketeers_ Soundtrack).mp3": {
+      "source": "124 - Bryan Adams - All For Love (From _The Three Musketeers_ Soundtrack).mp3",
+      "size": 11405469,
+      "mtimeMs": 1783701957228.874,
+      "targetSize": 168984
+    },
+    "126.Jimi Hendrix-1967-Jimi at the Beeb-07-Fire.mp3": {
+      "source": "126.Jimi Hendrix-1967-Jimi at the Beeb-07-Fire.mp3",
+      "size": 2723378,
+      "mtimeMs": 1301478157000,
+      "targetSize": 168850
+    },
+    "127 - 3 Doors Down - Kryptonite.mp3": {
+      "source": "127 - 3 Doors Down - Kryptonite.mp3",
+      "size": 9557803,
+      "mtimeMs": 1783701289793.941,
+      "targetSize": 168968
+    },
+    "127 - Sinéad O'Connor - Nothing Compares 2 U.mp3": {
+      "source": "127 - Sinéad O'Connor - Nothing Compares 2 U.mp3",
+      "size": 11289223,
+      "mtimeMs": 1783699691014.0364,
+      "targetSize": 168960
+    },
+    "128.Judas Priest-Love Bites.mp3": {
+      "source": "128.Judas Priest-Love Bites.mp3",
+      "size": 6606203,
+      "mtimeMs": 1301478990000,
+      "targetSize": 168856
+    },
+    "129 - George Benson - Nothing's Gonna Change My Love for You.mp3": {
+      "source": "129 - George Benson - Nothing's Gonna Change My Love for You.mp3",
+      "size": 9795327,
+      "mtimeMs": 1783699691173.9128,
+      "targetSize": 168980
+    },
+    "13 - El talgo del amor.mp3": {
+      "source": "13 - El talgo del amor.mp3",
+      "size": 5554404,
+      "mtimeMs": 1042720622000,
+      "targetSize": 168854
+    },
+    "13 - Millencolin - Home from home.mp3": {
+      "source": "13 - Millencolin - Home from home.mp3",
+      "size": 3194880,
+      "mtimeMs": 1012169306000,
+      "targetSize": 168855
+    },
+    "13 - TESS - The Second You Sleep.mp3": {
+      "source": "13 - TESS - The Second You Sleep.mp3",
+      "size": 5070848,
+      "mtimeMs": 1118398704000,
+      "targetSize": 168820
+    },
+    "13 Alesso ft. Tove Lo - Heroes (we could be).mp3": {
+      "source": "13 Alesso ft. Tove Lo - Heroes (we could be).mp3",
+      "size": 8621656,
+      "mtimeMs": 1418921258989.2578,
+      "targetSize": 169029
+    },
+    "13 Boomerang Baby.mp3": {
+      "source": "13 Boomerang Baby.mp3",
+      "size": 6095965,
+      "mtimeMs": 1783701801346.0466,
+      "targetSize": 168785
+    },
+    "13-Old Friend-Rancid-...And Out Come The Wolves.mp3": {
+      "source": "13-Old Friend-Rancid-...And Out Come The Wolves.mp3",
+      "size": 5519731,
+      "mtimeMs": 1048337372000,
+      "targetSize": 169270
+    },
+    "13.Come with me.mp3": {
+      "source": "13.Come with me.mp3",
+      "size": 3350332,
+      "mtimeMs": 1783962094505.1624,
+      "targetSize": 169712
+    },
+    "130 - Jet - Are You Gonna Be My Girl.mp3": {
+      "source": "130 - Jet - Are You Gonna Be My Girl.mp3",
+      "size": 8746505,
+      "mtimeMs": 1783701290004.0288,
+      "targetSize": 168949
+    },
+    "132 - U2 - Vertigo.mp3": {
+      "source": "132 - U2 - Vertigo.mp3",
+      "size": 7848553,
+      "mtimeMs": 1783701290164.0469,
+      "targetSize": 168975
+    },
+    "133 - Linkin Park - Crawling.mp3": {
+      "source": "133 - Linkin Park - Crawling.mp3",
+      "size": 8550568,
+      "mtimeMs": 1783701290223.8186,
+      "targetSize": 168984
+    },
+    "133 - Madonna - Take a Bow.mp3": {
+      "source": "133 - Madonna - Take a Bow.mp3",
+      "size": 12980886,
+      "mtimeMs": 1783699691513.8542,
+      "targetSize": 168961
+    },
+    "133.ACDC-1975-High Voltage-05-T.N.T..mp3": {
+      "source": "133.ACDC-1975-High Voltage-05-T.N.T..mp3",
+      "size": 4744268,
+      "mtimeMs": 1301478551000,
+      "targetSize": 168838
+    },
+    "134 - Madonna - Live to Tell.mp3": {
+      "source": "134 - Madonna - Live to Tell.mp3",
+      "size": 14394494,
+      "mtimeMs": 1783699691625.0984,
+      "targetSize": 168977
+    },
+    "134.David Bowie-1972-Ziggy Stardust-10-Suffragette City.mp3": {
+      "source": "134.David Bowie-1972-Ziggy Stardust-10-Suffragette City.mp3",
+      "size": 4778321,
+      "mtimeMs": 1301478540000,
+      "targetSize": 168860
+    },
+    "136 - Green Day - American Idiot.mp3": {
+      "source": "136 - Green Day - American Idiot.mp3",
+      "size": 7058513,
+      "mtimeMs": 1783701290396.5293,
+      "targetSize": 168973
+    },
+    "136 - Phil Collins - One More Night (Live from the Serious Tour 1990) (Remastered).mp3": {
+      "source": "136 - Phil Collins - One More Night (Live from the Serious Tour 1990) (Remastered).mp3",
+      "size": 14209849,
+      "mtimeMs": 1783699691797.426,
+      "targetSize": 169029
+    },
+    "136.Soundgarden-1994-Superunknown-08-Spoonman.mp3": {
+      "source": "136.Soundgarden-1994-Superunknown-08-Spoonman.mp3",
+      "size": 5603060,
+      "mtimeMs": 1301478612000,
+      "targetSize": 168852
+    },
+    "137 - The Offspring - Self Esteem.mp3": {
+      "source": "137 - The Offspring - Self Esteem.mp3",
+      "size": 10382526,
+      "mtimeMs": 1783701290473.844,
+      "targetSize": 168967
+    },
+    "139 - Panic! At The Disco - Victorious.mp3": {
+      "source": "139 - Panic! At The Disco - Victorious.mp3",
+      "size": 7352060,
+      "mtimeMs": 1783701958325.2837,
+      "targetSize": 169004
+    },
+    "139.Alice_Cooper-No_More_Mr._Nice_Guy.mp3": {
+      "source": "139.Alice_Cooper-No_More_Mr._Nice_Guy.mp3",
+      "size": 4203935,
+      "mtimeMs": 1301478264000,
+      "targetSize": 168866
+    },
+    "14 - ANNEKE VAN HOOFF - Lie To Me.mp3": {
+      "source": "14 - ANNEKE VAN HOOFF - Lie To Me.mp3",
+      "size": 4605952,
+      "mtimeMs": 1118398748000,
+      "targetSize": 168821
+    },
+    "14 Break The Rules.mp3": {
+      "source": "14 Break The Rules.mp3",
+      "size": 8282147,
+      "mtimeMs": 1418924155051.7578,
+      "targetSize": 168833
+    },
+    "14.Silver ray.mp3": {
+      "source": "14.Silver ray.mp3",
+      "size": 2997332,
+      "mtimeMs": 1783962094634.0403,
+      "targetSize": 169687
+    },
+    "140 - Eurythmics - Miracle of Love.mp3": {
+      "source": "140 - Eurythmics - Miracle of Love.mp3",
+      "size": 11159185,
+      "mtimeMs": 1783699692175.4307,
+      "targetSize": 168969
+    },
+    "140 - Rage Against the Machine - Killing In The Name.mp3": {
+      "source": "140 - Rage Against the Machine - Killing In The Name.mp3",
+      "size": 12678783,
+      "mtimeMs": 1783701290713.9956,
+      "targetSize": 169046
+    },
+    "142 - Guns N' Roses - Welcome To The Jungle.mp3": {
+      "source": "142 - Guns N' Roses - Welcome To The Jungle.mp3",
+      "size": 11159246,
+      "mtimeMs": 1783701290858.7424,
+      "targetSize": 169014
+    },
+    "143 - Kenny G - Songbird.mp3": {
+      "source": "143 - Kenny G - Songbird.mp3",
+      "size": 9710523,
+      "mtimeMs": 1783699692419.6619,
+      "targetSize": 168945
+    },
+    "144 - The Offspring - Why Don't You Get A Job.mp3": {
+      "source": "144 - The Offspring - Why Don't You Get A Job.mp3",
+      "size": 7163460,
+      "mtimeMs": 1783701290983.7126,
+      "targetSize": 168991
+    },
+    "145 - New Edition - Is This the End.mp3": {
+      "source": "145 - New Edition - Is This the End.mp3",
+      "size": 10202277,
+      "mtimeMs": 1783699692587.2073,
+      "targetSize": 168978
+    },
+    "146 - Green Day - Basket Case.mp3": {
+      "source": "146 - Green Day - Basket Case.mp3",
+      "size": 7548925,
+      "mtimeMs": 1783701291124.0913,
+      "targetSize": 168953
+    },
+    "147 - Nirvana - Heart-Shaped Box.mp3": {
+      "source": "147 - Nirvana - Heart-Shaped Box.mp3",
+      "size": 11393064,
+      "mtimeMs": 1783701291215.7163,
+      "targetSize": 168954
+    },
+    "147 - Radiohead - Daydreaming.mp3": {
+      "source": "147 - Radiohead - Daydreaming.mp3",
+      "size": 15609371,
+      "mtimeMs": 1783701958994.6118,
+      "targetSize": 168922
+    },
+    "148 - George Michael - Careless Whisper.mp3": {
+      "source": "148 - George Michael - Careless Whisper.mp3",
+      "size": 12146609,
+      "mtimeMs": 1783699692832.9197,
+      "targetSize": 168960
+    },
+    "149 - Limp Bizkit - My Way.mp3": {
+      "source": "149 - Limp Bizkit - My Way.mp3",
+      "size": 11084308,
+      "mtimeMs": 1783701291369.03,
+      "targetSize": 168990
+    },
+    "15 - Blue Hotel.mp3": {
+      "source": "15 - Blue Hotel.mp3",
+      "size": 4601728,
+      "mtimeMs": 1146857233000,
+      "targetSize": 168855
+    },
+    "15 - Can't Remember To Forget You (feat. Rihanna).mp3": {
+      "source": "15 - Can't Remember To Forget You (feat. Rihanna).mp3",
+      "size": 6989389,
+      "mtimeMs": 1392727922000,
+      "targetSize": 168946
+    },
+    "15 - Korn - A.D.I.D.A.S. - EMG - www.elitemusic.net.mp3": {
+      "source": "15 - Korn - A.D.I.D.A.S. - EMG - www.elitemusic.net.mp3",
+      "size": 4515263,
+      "mtimeMs": 1096280310000,
+      "targetSize": 168902
+    },
+    "15 - RICHARD GREY Prest. GATE 54 - What A Feeling (Make It Happen Mix).mp3": {
+      "source": "15 - RICHARD GREY Prest. GATE 54 - What A Feeling (Make It Happen Mix).mp3",
+      "size": 4048896,
+      "mtimeMs": 1118398782000,
+      "targetSize": 168858
+    },
+    "15-The Wars End-Rancid-...And Out Come The Wolves.mp3": {
+      "source": "15-The Wars End-Rancid-...And Out Come The Wolves.mp3",
+      "size": 3583300,
+      "mtimeMs": 1048337380000,
+      "targetSize": 169272
+    },
+    "153 - George Ezra - Paradise.mp3": {
+      "source": "153 - George Ezra - Paradise.mp3",
+      "size": 9063222,
+      "mtimeMs": 1783701959565.2175,
+      "targetSize": 168976
+    },
+    "155 - Fall Out Boy - Irresistible.mp3": {
+      "source": "155 - Fall Out Boy - Irresistible.mp3",
+      "size": 8402247,
+      "mtimeMs": 1783701959691.854,
+      "targetSize": 168977
+    },
+    "155.Grateful Dead-1974-Best of Skeletons From the Closet Gre.mp3": {
+      "source": "155.Grateful Dead-1974-Best of Skeletons From the Closet Gre.mp3",
+      "size": 6520581,
+      "mtimeMs": 1301478804000,
+      "targetSize": 168859
+    },
+    "156 - Bon Jovi - Always.mp3": {
+      "source": "156 - Bon Jovi - Always.mp3",
+      "size": 14239521,
+      "mtimeMs": 1783699693535.042,
+      "targetSize": 168992
+    },
+    "157 - Alannah Myles - Black Velvet.mp3": {
+      "source": "157 - Alannah Myles - Black Velvet.mp3",
+      "size": 11608056,
+      "mtimeMs": 1783701959853.073,
+      "targetSize": 168970
+    },
+    "159.Grand Funk Railroad-1973-We're An American Band-01-We're.mp3": {
+      "source": "159.Grand Funk Railroad-1973-We're An American Band-01-We're.mp3",
+      "size": 4936725,
+      "mtimeMs": 1301478661000,
+      "targetSize": 168882
+    },
+    "16 - REFLEKT feat. DELLINE BASS - Need To Feel.mp3": {
+      "source": "16 - REFLEKT feat. DELLINE BASS - Need To Feel.mp3",
+      "size": 4685824,
+      "mtimeMs": 1118398830000,
+      "targetSize": 168834
+    },
+    "16 Ella Henderson - Yours.mp3": {
+      "source": "16 Ella Henderson - Yours.mp3",
+      "size": 7481341,
+      "mtimeMs": 1418922779129.8828,
+      "targetSize": 168903
+    },
+    "16 Rough Cut.mp3": {
+      "source": "16 Rough Cut.mp3",
+      "size": 9219047,
+      "mtimeMs": 1783701805400.5078,
+      "targetSize": 168805
+    },
+    "161 - Foo Fighters - The Sky Is A Neighborhood.mp3": {
+      "source": "161 - Foo Fighters - The Sky Is A Neighborhood.mp3",
+      "size": 9963287,
+      "mtimeMs": 1783701960139.4197,
+      "targetSize": 168987
+    },
+    "165 - Duran Duran - A Matter of Feeling (2010 Remaster).mp3": {
+      "source": "165 - Duran Duran - A Matter of Feeling (2010 Remaster).mp3",
+      "size": 14450958,
+      "mtimeMs": 1783699694263.754,
+      "targetSize": 169001
+    },
+    "17 - SHAPESHIFTERS - Back To Basics.mp3": {
+      "source": "17 - SHAPESHIFTERS - Back To Basics.mp3",
+      "size": 4843520,
+      "mtimeMs": 1118398878000,
+      "targetSize": 168823
+    },
+    "17 Rape Me.mp3": {
+      "source": "17 Rape Me.mp3",
+      "size": 2741020,
+      "mtimeMs": 1389480050992.8352,
+      "targetSize": 169066
+    },
+    "17. Old Before I Die.mp3": {
+      "source": "17. Old Before I Die.mp3",
+      "size": 9540175,
+      "mtimeMs": 1761821008722.6406,
+      "targetSize": 168816
+    },
+    "170 - ABBA - Dancing Queen.mp3": {
+      "source": "170 - ABBA - Dancing Queen.mp3",
+      "size": 9292996,
+      "mtimeMs": 1783699694576.5566,
+      "targetSize": 168961
+    },
+    "170 - Aerosmith - Dude (Looks Like A Lady).mp3": {
+      "source": "170 - Aerosmith - Dude (Looks Like A Lady).mp3",
+      "size": 10816742,
+      "mtimeMs": 1783701292864.0605,
+      "targetSize": 168975
+    },
+    "173 - AC_DC - You Shook Me All Night Long.mp3": {
+      "source": "173 - AC_DC - You Shook Me All Night Long.mp3",
+      "size": 8438419,
+      "mtimeMs": 1783701293079.0703,
+      "targetSize": 168962
+    },
+    "173 - Thirty Seconds To Mars - Walk On Water.mp3": {
+      "source": "173 - Thirty Seconds To Mars - Walk On Water.mp3",
+      "size": 7499710,
+      "mtimeMs": 1783701960997.4307,
+      "targetSize": 168997
+    },
+    "174 - Harry Styles - Kiwi.mp3": {
+      "source": "174 - Harry Styles - Kiwi.mp3",
+      "size": 7183685,
+      "mtimeMs": 1783701961060.2173,
+      "targetSize": 168951
+    },
+    "175 - The Killers - The Man.mp3": {
+      "source": "175 - The Killers - The Man.mp3",
+      "size": 10162568,
+      "mtimeMs": 1783701961140.0332,
+      "targetSize": 168972
+    },
+    "176 - 5 Seconds of Summer - Want You Back.mp3": {
+      "source": "176 - 5 Seconds of Summer - Want You Back.mp3",
+      "size": 7373774,
+      "mtimeMs": 1783701961195.4563,
+      "targetSize": 168973
+    },
+    "179 - blink-182 - All The Small Things.mp3": {
+      "source": "179 - blink-182 - All The Small Things.mp3",
+      "size": 6926755,
+      "mtimeMs": 1783701293558.9978,
+      "targetSize": 168961
+    },
+    "18 - CABIN CREW - Star To Fall.mp3": {
+      "source": "18 - CABIN CREW - Star To Fall.mp3",
+      "size": 5263360,
+      "mtimeMs": 1118398930000,
+      "targetSize": 168818
+    },
+    "18-Avenues & Alleyways-Rancid-...And Out Come The Wolves.mp3": {
+      "source": "18-Avenues & Alleyways-Rancid-...And Out Come The Wolves.mp3",
+      "size": 6119721,
+      "mtimeMs": 1048337392000,
+      "targetSize": 169279
+    },
+    "180 - Queen - Radio Ga Ga (Remastered 2011).mp3": {
+      "source": "180 - Queen - Radio Ga Ga (Remastered 2011).mp3",
+      "size": 13917705,
+      "mtimeMs": 1783699695409.95,
+      "targetSize": 168976
+    },
+    "180 - The Verve - Bitter Sweet Symphony.mp3": {
+      "source": "180 - The Verve - Bitter Sweet Symphony.mp3",
+      "size": 14526465,
+      "mtimeMs": 1783701293669.148,
+      "targetSize": 168992
+    },
+    "181 - The Smashing Pumpkins - 1979.mp3": {
+      "source": "181 - The Smashing Pumpkins - 1979.mp3",
+      "size": 10781852,
+      "mtimeMs": 1783701293753.8076,
+      "targetSize": 169029
+    },
+    "181.Bob Dylan-1966-Blonde on Blonde-01-Rainy Day Women #12 &.mp3": {
+      "source": "181.Bob Dylan-1966-Blonde on Blonde-01-Rainy Day Women #12 &.mp3",
+      "size": 5980501,
+      "mtimeMs": 1301478822000,
+      "targetSize": 168864
+    },
+    "183 - Whitesnake - Is This Love (2017 Remaster).mp3": {
+      "source": "183 - Whitesnake - Is This Love (2017 Remaster).mp3",
+      "size": 11634586,
+      "mtimeMs": 1783699695720.6208,
+      "targetSize": 169001
+    },
+    "184.Joe_Walsh_-_Rocky_Mountain_Way.mp3": {
+      "source": "184.Joe_Walsh_-_Rocky_Mountain_Way.mp3",
+      "size": 8184936,
+      "mtimeMs": 1496671110545.6064,
+      "targetSize": 169389
+    },
+    "185 - The Smashing Pumpkins - Bullet With Butterfly Wings.mp3": {
+      "source": "185 - The Smashing Pumpkins - Bullet With Butterfly Wings.mp3",
+      "size": 10501737,
+      "mtimeMs": 1783701294055.6313,
+      "targetSize": 168979
+    },
+    "186 - Supergrass - Alright.mp3": {
+      "source": "186 - Supergrass - Alright.mp3",
+      "size": 7451547,
+      "mtimeMs": 1783701294113.7173,
+      "targetSize": 168948
+    },
+    "19 - ALTER EGO - Rocker (Eric Prydz Mix).mp3": {
+      "source": "19 - ALTER EGO - Rocker (Eric Prydz Mix).mp3",
+      "size": 8814592,
+      "mtimeMs": 1118399006000,
+      "targetSize": 168828
+    },
+    "190 - System of A Down - Chop Suey!.mp3": {
+      "source": "190 - System of A Down - Chop Suey!.mp3",
+      "size": 8499598,
+      "mtimeMs": 1783701294388.3606,
+      "targetSize": 168964
+    },
+    "192 - Spandau Ballet - True (Single Edit).mp3": {
+      "source": "192 - Spandau Ballet - True (Single Edit).mp3",
+      "size": 13301635,
+      "mtimeMs": 1783699696529.4211,
+      "targetSize": 168971
+    },
+    "192.ZZ Top-1987-El Loco-01-Tube Snake Boogie.mp3": {
+      "source": "192.ZZ Top-1987-El Loco-01-Tube Snake Boogie.mp3",
+      "size": 3101587,
+      "mtimeMs": 1301478047000,
+      "targetSize": 168851
+    },
+    "194 - Bee Gees - How Deep Is Your Love.mp3": {
+      "source": "194 - Bee Gees - How Deep Is Your Love.mp3",
+      "size": 10092054,
+      "mtimeMs": 1783699696687.2212,
+      "targetSize": 168994
+    },
+    "195 - Red Hot Chili Peppers - Go Robot.mp3": {
+      "source": "195 - Red Hot Chili Peppers - Go Robot.mp3",
+      "size": 10794485,
+      "mtimeMs": 1783701962658.859,
+      "targetSize": 168986
+    },
+    "196 - The Lumineers - Nobody Knows.mp3": {
+      "source": "196 - The Lumineers - Nobody Knows.mp3",
+      "size": 7835664,
+      "mtimeMs": 1783701962718.1416,
+      "targetSize": 169020
+    },
+    "196.Alice In Chains - Would.mp3": {
+      "source": "196.Alice In Chains - Would.mp3",
+      "size": 4726731,
+      "mtimeMs": 1301478718000,
+      "targetSize": 168858
+    },
+    "197 - Green Day - Bang Bang.mp3": {
+      "source": "197 - Green Day - Bang Bang.mp3",
+      "size": 8343361,
+      "mtimeMs": 1783701962780.1863,
+      "targetSize": 168954
+    },
+    "198 - Guns N' Roses - Paradise City.mp3": {
+      "source": "198 - Guns N' Roses - Paradise City.mp3",
+      "size": 16356354,
+      "mtimeMs": 1783701295084.8713,
+      "targetSize": 168945
+    },
+    "20 - ERIC PRYDZ - Call On Me.mp3": {
+      "source": "20 - ERIC PRYDZ - Call On Me.mp3",
+      "size": 4030464,
+      "mtimeMs": 1118399046000,
+      "targetSize": 168816
+    },
+    "20 Nico & Vinz - Am I Wrong.mp3": {
+      "source": "20 Nico & Vinz - Am I Wrong.mp3",
+      "size": 9960053,
+      "mtimeMs": 1414660450968.75,
+      "targetSize": 169028
+    },
+    "201 - Pink Floyd - Another Brick in the Wall, Pt. 2.mp3": {
+      "source": "201 - Pink Floyd - Another Brick in the Wall, Pt. 2.mp3",
+      "size": 9646449,
+      "mtimeMs": 1783701295403.8347,
+      "targetSize": 168982
+    },
+    "202 - Michael Jackson - Beat It.mp3": {
+      "source": "202 - Michael Jackson - Beat It.mp3",
+      "size": 10412834,
+      "mtimeMs": 1783699697283.8796,
+      "targetSize": 168973
+    },
+    "203 - Blur - Song 2 (2012 Remaster).mp3": {
+      "source": "203 - Blur - Song 2 (2012 Remaster).mp3",
+      "size": 4974227,
+      "mtimeMs": 1783701295543.7068,
+      "targetSize": 168952
+    },
+    "203 - Michael Jackson - Thriller.mp3": {
+      "source": "203 - Michael Jackson - Thriller.mp3",
+      "size": 14464672,
+      "mtimeMs": 1783699697394.8103,
+      "targetSize": 168984
+    },
+    "204 - Michael Jackson - Don't Stop 'Til You Get Enough.mp3": {
+      "source": "204 - Michael Jackson - Don't Stop 'Til You Get Enough.mp3",
+      "size": 14766736,
+      "mtimeMs": 1783699697507.1257,
+      "targetSize": 168979
+    },
+    "205 - Michael Jackson - Black or White (Single Version).mp3": {
+      "source": "205 - Michael Jackson - Black or White (Single Version).mp3",
+      "size": 7988619,
+      "mtimeMs": 1783699697567.6965,
+      "targetSize": 168980
+    },
+    "206 - Michael Jackson - Bad (2012 Remaster).mp3": {
+      "source": "206 - Michael Jackson - Bad (2012 Remaster).mp3",
+      "size": 9993756,
+      "mtimeMs": 1783699697642.3496,
+      "targetSize": 168983
+    },
+    "210 - John Travolta - You're The One That I Want (From “Grease”).mp3": {
+      "source": "210 - John Travolta - You're The One That I Want (From “Grease”).mp3",
+      "size": 7008047,
+      "mtimeMs": 1783699697915.3496,
+      "targetSize": 169063
+    },
+    "210.Black Sabbath-The Wizard.mp3": {
+      "source": "210.Black Sabbath-The Wizard.mp3",
+      "size": 5879368,
+      "mtimeMs": 1301478302000,
+      "targetSize": 168858
+    },
+    "211 - The Pointer Sisters - I'm So Excited.mp3": {
+      "source": "211 - The Pointer Sisters - I'm So Excited.mp3",
+      "size": 9501535,
+      "mtimeMs": 1783699697995.436,
+      "targetSize": 168995
+    },
+    "212 - Bullet For My Valentine - Don't Need You (Edit).mp3": {
+      "source": "212 - Bullet For My Valentine - Don't Need You (Edit).mp3",
+      "size": 10900977,
+      "mtimeMs": 1783701964150.4111,
+      "targetSize": 168956
+    },
+    "213 - Eurythmics - Sweet Dreams (Are Made of This) (Remastered).mp3": {
+      "source": "213 - Eurythmics - Sweet Dreams (Are Made of This) (Remastered).mp3",
+      "size": 8710038,
+      "mtimeMs": 1783699698141.0928,
+      "targetSize": 169015
+    },
+    "213 - Whitesnake - Love Ain't No Stranger (2003 Remastered Version).mp3": {
+      "source": "213 - Whitesnake - Love Ain't No Stranger (2003 Remastered Version).mp3",
+      "size": 10252881,
+      "mtimeMs": 1783701296316.499,
+      "targetSize": 169003
+    },
+    "214 - Shania Twain - Man! I Feel Like A Woman!.mp3": {
+      "source": "214 - Shania Twain - Man! I Feel Like A Woman!.mp3",
+      "size": 9455776,
+      "mtimeMs": 1783699698213.9363,
+      "targetSize": 169014
+    },
+    "215 - Queen - I Want To Break Free.mp3": {
+      "source": "215 - Queen - I Want To Break Free.mp3",
+      "size": 9151217,
+      "mtimeMs": 1783699698276.8855,
+      "targetSize": 168988
+    },
+    "216 - Madonna - Like a Virgin.mp3": {
+      "source": "216 - Madonna - Like a Virgin.mp3",
+      "size": 7882690,
+      "mtimeMs": 1783699698346.2427,
+      "targetSize": 168977
+    },
+    "216 - Nirvana - About A Girl.mp3": {
+      "source": "216 - Nirvana - About A Girl.mp3",
+      "size": 6690443,
+      "mtimeMs": 1783701296498.7874,
+      "targetSize": 168956
+    },
+    "216 - Twenty One Pilots - Stressed Out.mp3": {
+      "source": "216 - Twenty One Pilots - Stressed Out.mp3",
+      "size": 8191593,
+      "mtimeMs": 1783701964544.3054,
+      "targetSize": 168982
+    },
+    "216.Judas Priest-The Green Manalishi.mp3": {
+      "source": "216.Judas Priest-The Green Manalishi.mp3",
+      "size": 4715581,
+      "mtimeMs": 1301478658000,
+      "targetSize": 168865
+    },
+    "218 - Alan Jackson - I'll Try.mp3": {
+      "source": "218 - Alan Jackson - I'll Try.mp3",
+      "size": 9433826,
+      "mtimeMs": 1783699698561.0251,
+      "targetSize": 168980
+    },
+    "219 - Alan Jackson - Chattahoochee (Extended Mix).mp3": {
+      "source": "219 - Alan Jackson - Chattahoochee (Extended Mix).mp3",
+      "size": 9589832,
+      "mtimeMs": 1783699698636.0244,
+      "targetSize": 168984
+    },
+    "219 - R.E.M. - Everybody Hurts.mp3": {
+      "source": "219 - R.E.M. - Everybody Hurts.mp3",
+      "size": 13029152,
+      "mtimeMs": 1783701296784.132,
+      "targetSize": 168976
+    },
+    "220 - Alan Jackson - Livin' On Love.mp3": {
+      "source": "220 - Alan Jackson - Livin' On Love.mp3",
+      "size": 9285466,
+      "mtimeMs": 1783699698707.645,
+      "targetSize": 168988
+    },
+    "221 - R.E.M. - Losing My Religion.mp3": {
+      "source": "221 - R.E.M. - Losing My Religion.mp3",
+      "size": 10796445,
+      "mtimeMs": 1783699698790.4724,
+      "targetSize": 168960
+    },
+    "221.The Who-1971-Who's Next-08-Behind Blue Eyes.mp3": {
+      "source": "221.The Who-1971-Who's Next-08-Behind Blue Eyes.mp3",
+      "size": 4938651,
+      "mtimeMs": 1301478872000,
+      "targetSize": 168852
+    },
+    "225 - The Cure - Inbetween Days.mp3": {
+      "source": "225 - The Cure - Inbetween Days.mp3",
+      "size": 7277826,
+      "mtimeMs": 1783701297199.1587,
+      "targetSize": 168992
+    },
+    "227 - Coldplay - Clocks.mp3": {
+      "source": "227 - Coldplay - Clocks.mp3",
+      "size": 12396993,
+      "mtimeMs": 1783701297356.7893,
+      "targetSize": 168979
+    },
+    "228 - Van Halen - Jump (2015 Remaster).mp3": {
+      "source": "228 - Van Halen - Jump (2015 Remaster).mp3",
+      "size": 9812665,
+      "mtimeMs": 1783699570703.823,
+      "targetSize": 168979
+    },
+    "23 Fergie - L.A.LOVE (La La).mp3": {
+      "source": "23 Fergie - L.A.LOVE (La La).mp3",
+      "size": 8077130,
+      "mtimeMs": 1425204470390.5625,
+      "targetSize": 168976
+    },
+    "231 - a-ha - You Are the One.mp3": {
+      "source": "231 - a-ha - You Are the One.mp3",
+      "size": 9415057,
+      "mtimeMs": 1783701297649.0444,
+      "targetSize": 168959
+    },
+    "232 - Roxette - The Look.mp3": {
+      "source": "232 - Roxette - The Look.mp3",
+      "size": 9748992,
+      "mtimeMs": 1783699571098.382,
+      "targetSize": 168953
+    },
+    "233 - INXS - Never Tear Us Apart.mp3": {
+      "source": "233 - INXS - Never Tear Us Apart.mp3",
+      "size": 7556025,
+      "mtimeMs": 1783699571164.0305,
+      "targetSize": 168965
+    },
+    "233 - The Goo Goo Dolls - Iris.mp3": {
+      "source": "233 - The Goo Goo Dolls - Iris.mp3",
+      "size": 11725722,
+      "mtimeMs": 1783701297838.9727,
+      "targetSize": 168973
+    },
+    "233.Pearl Jam-1993-Vs.-03-Daughter.mp3": {
+      "source": "233.Pearl Jam-1993-Vs.-03-Daughter.mp3",
+      "size": 5584927,
+      "mtimeMs": 1301478567000,
+      "targetSize": 168848
+    },
+    "234 - Leonard Cohen - You Want It Darker.mp3": {
+      "source": "234 - Leonard Cohen - You Want It Darker.mp3",
+      "size": 11420983,
+      "mtimeMs": 1783701966079.4023,
+      "targetSize": 168974
+    },
+    "234 - The Goo Goo Dolls - Slide.mp3": {
+      "source": "234 - The Goo Goo Dolls - Slide.mp3",
+      "size": 8627600,
+      "mtimeMs": 1783701297899.2783,
+      "targetSize": 168973
+    },
+    "235 - The Goo Goo Dolls - Black Balloon.mp3": {
+      "source": "235 - The Goo Goo Dolls - Black Balloon.mp3",
+      "size": 10126000,
+      "mtimeMs": 1783701297978.8418,
+      "targetSize": 168981
+    },
+    "235.David Bowie-1969-Space Oddity-01-Space Oddity.mp3": {
+      "source": "235.David Bowie-1969-Space Oddity-01-Space Oddity.mp3",
+      "size": 7555954,
+      "mtimeMs": 1301478528000,
+      "targetSize": 168856
+    },
+    "236 - Green Day - Revolution Radio.mp3": {
+      "source": "236 - Green Day - Revolution Radio.mp3",
+      "size": 7360140,
+      "mtimeMs": 1783701966300.036,
+      "targetSize": 168968
+    },
+    "236 - Matchbox Twenty - 3AM.mp3": {
+      "source": "236 - Matchbox Twenty - 3AM.mp3",
+      "size": 9119669,
+      "mtimeMs": 1783701298048.7495,
+      "targetSize": 168983
+    },
+    "237 - Nena - 99 Luftballons.mp3": {
+      "source": "237 - Nena - 99 Luftballons.mp3",
+      "size": 9440764,
+      "mtimeMs": 1783699571570.8547,
+      "targetSize": 168966
+    },
+    "237 - Queen - We Will Rock You (Remastered 2011).mp3": {
+      "source": "237 - Queen - We Will Rock You (Remastered 2011).mp3",
+      "size": 5186824,
+      "mtimeMs": 1783701298088.8982,
+      "targetSize": 168983
+    },
+    "238.Offspring-Come Out and Play.mp3": {
+      "source": "238.Offspring-Come Out and Play.mp3",
+      "size": 3984631,
+      "mtimeMs": 1301478825000,
+      "targetSize": 168857
+    },
+    "242 - Bon Jovi - Livin' On A Prayer.mp3": {
+      "source": "242 - Bon Jovi - Livin' On A Prayer.mp3",
+      "size": 10320945,
+      "mtimeMs": 1783699572068.2664,
+      "targetSize": 168969
+    },
+    "243 - Nickelback - How You Remind Me.mp3": {
+      "source": "243 - Nickelback - How You Remind Me.mp3",
+      "size": 9096664,
+      "mtimeMs": 1783701298544.0205,
+      "targetSize": 168973
+    },
+    "244 - Michael Jackson - Beat It.mp3": {
+      "source": "244 - Michael Jackson - Beat It.mp3",
+      "size": 10496147,
+      "mtimeMs": 1783699572257.9905,
+      "targetSize": 168983
+    },
+    "246 - Neck Deep - In Bloom.mp3": {
+      "source": "246 - Neck Deep - In Bloom.mp3",
+      "size": 9055832,
+      "mtimeMs": 1783701967072.6704,
+      "targetSize": 168976
+    },
+    "248.Great White-2002-Rock Me-05-Rock Me.mp3": {
+      "source": "248.Great White-2002-Rock Me-05-Rock Me.mp3",
+      "size": 9467108,
+      "mtimeMs": 1301478818000,
+      "targetSize": 168851
+    },
+    "249 - Tina Turner - The Best (Edit).mp3": {
+      "source": "249 - Tina Turner - The Best (Edit).mp3",
+      "size": 10246781,
+      "mtimeMs": 1783699572673.705,
+      "targetSize": 168953
+    },
+    "25 Ed Sheeran - Don't.mp3": {
+      "source": "25 Ed Sheeran - Don't.mp3",
+      "size": 8905924,
+      "mtimeMs": 1414660450970.7031,
+      "targetSize": 169022
+    },
+    "250 - Creed - Don't Stop Dancing.mp3": {
+      "source": "250 - Creed - Don't Stop Dancing.mp3",
+      "size": 11209992,
+      "mtimeMs": 1783701299093.9905,
+      "targetSize": 168967
+    },
+    "251 - Bon Jovi - Bed Of Roses.mp3": {
+      "source": "251 - Bon Jovi - Bed Of Roses.mp3",
+      "size": 15999568,
+      "mtimeMs": 1783699572917.8015,
+      "targetSize": 168972
+    },
+    "251 - Lifehouse - You And Me.mp3": {
+      "source": "251 - Lifehouse - You And Me.mp3",
+      "size": 7949085,
+      "mtimeMs": 1783701299155.8694,
+      "targetSize": 168958
+    },
+    "252.Alice Cooper-1972-School's Out-01-School's Out.mp3": {
+      "source": "252.Alice Cooper-1972-School's Out-01-School's Out.mp3",
+      "size": 4893328,
+      "mtimeMs": 1301476909000,
+      "targetSize": 168858
+    },
+    "253 - Evanescence - Everybody's Fool.mp3": {
+      "source": "253 - Evanescence - Everybody's Fool.mp3",
+      "size": 7998932,
+      "mtimeMs": 1783701299293.9585,
+      "targetSize": 168972
+    },
+    "253 - Madonna - Frozen.mp3": {
+      "source": "253 - Madonna - Frozen.mp3",
+      "size": 14848538,
+      "mtimeMs": 1783699573138.827,
+      "targetSize": 168958
+    },
+    "255 - Volbeat - The Devil's Bleeding Crown.mp3": {
+      "source": "255 - Volbeat - The Devil's Bleeding Crown.mp3",
+      "size": 9801614,
+      "mtimeMs": 1783701967892.2678,
+      "targetSize": 168996
+    },
+    "256 - Judas Priest - Living After Midnight.mp3": {
+      "source": "256 - Judas Priest - Living After Midnight.mp3",
+      "size": 8587559,
+      "mtimeMs": 1783701299489.0732,
+      "targetSize": 168977
+    },
+    "256 - Mariah Carey - Vision of Love.mp3": {
+      "source": "256 - Mariah Carey - Vision of Love.mp3",
+      "size": 8511042,
+      "mtimeMs": 1783699573383.9087,
+      "targetSize": 168963
+    },
+    "257 - Green Day - 21 Guns.mp3": {
+      "source": "257 - Green Day - 21 Guns.mp3",
+      "size": 13058238,
+      "mtimeMs": 1783701299588.791,
+      "targetSize": 168966
+    },
+    "257 - Sum 41 - Fake My Own Death.mp3": {
+      "source": "257 - Sum 41 - Fake My Own Death.mp3",
+      "size": 7930243,
+      "mtimeMs": 1783701968028.067,
+      "targetSize": 168973
+    },
+    "257 - Tears For Fears - Woman In Chains.mp3": {
+      "source": "257 - Tears For Fears - Woman In Chains.mp3",
+      "size": 15915813,
+      "mtimeMs": 1783699573504.034,
+      "targetSize": 168984
+    },
+    "259 - Duran Duran - Ordinary World.mp3": {
+      "source": "259 - Duran Duran - Ordinary World.mp3",
+      "size": 11178509,
+      "mtimeMs": 1783699573690.1108,
+      "targetSize": 168961
+    },
+    "259 - Green Day - Last of the American Girls.mp3": {
+      "source": "259 - Green Day - Last of the American Girls.mp3",
+      "size": 9455468,
+      "mtimeMs": 1783701299733.89,
+      "targetSize": 168985
+    },
+    "260 - Sum 41 - War.mp3": {
+      "source": "260 - Sum 41 - War.mp3",
+      "size": 8533092,
+      "mtimeMs": 1783701968213.0732,
+      "targetSize": 168944
+    },
+    "261 - Genesis - Hold On My Heart (Remastered 2007).mp3": {
+      "source": "261 - Genesis - Hold On My Heart (Remastered 2007).mp3",
+      "size": 11253538,
+      "mtimeMs": 1783699573874.0073,
+      "targetSize": 168983
+    },
+    "261 - Ozzy Osbourne - Bark at the Moon.mp3": {
+      "source": "261 - Ozzy Osbourne - Bark at the Moon.mp3",
+      "size": 10446992,
+      "mtimeMs": 1783701299883.9019,
+      "targetSize": 168985
+    },
+    "264 - Madonna - Into the Groove.mp3": {
+      "source": "264 - Madonna - Into the Groove.mp3",
+      "size": 11755086,
+      "mtimeMs": 1783699574143.7917,
+      "targetSize": 168979
+    },
+    "265 - The Offspring - Want You Bad.mp3": {
+      "source": "265 - The Offspring - Want You Bad.mp3",
+      "size": 8162122,
+      "mtimeMs": 1783701300269.2124,
+      "targetSize": 168969
+    },
+    "265.Stevie Ray Vaughn - Little Wing.mp3": {
+      "source": "265.Stevie Ray Vaughn - Little Wing.mp3",
+      "size": 9574356,
+      "mtimeMs": 1301477101000,
+      "targetSize": 168869
+    },
+    "269 - Milky Chance - Doing Good.mp3": {
+      "source": "269 - Milky Chance - Doing Good.mp3",
+      "size": 10143835,
+      "mtimeMs": 1783701968888.8235,
+      "targetSize": 168974
+    },
+    "269.Jimi Hendrix-1984-Kiss The Sky-08-Red House.mp3": {
+      "source": "269.Jimi Hendrix-1984-Kiss The Sky-08-Red House.mp3",
+      "size": 5232519,
+      "mtimeMs": 1301477646000,
+      "targetSize": 168855
+    },
+    "271.John Lennon-1997-Lennon Legend-02-Instant Karma!.mp3": {
+      "source": "271.John Lennon-1997-Lennon Legend-02-Instant Karma!.mp3",
+      "size": 4230686,
+      "mtimeMs": 1301476752000,
+      "targetSize": 168858
+    },
+    "275 - Creed - Higher.mp3": {
+      "source": "275 - Creed - Higher.mp3",
+      "size": 12859635,
+      "mtimeMs": 1783701301314.0012,
+      "targetSize": 168955
+    },
+    "275 - Green Day - Troubled Times.mp3": {
+      "source": "275 - Green Day - Troubled Times.mp3",
+      "size": 7517918,
+      "mtimeMs": 1783701969349.0618,
+      "targetSize": 168967
+    },
+    "276 - Marvin Gaye - I Heard It Through The Grapevine.mp3": {
+      "source": "276 - Marvin Gaye - I Heard It Through The Grapevine.mp3",
+      "size": 12188320,
+      "mtimeMs": 1783699575043.9631,
+      "targetSize": 169007
+    },
+    "277 - Oasis - Stand by Me.mp3": {
+      "source": "277 - Oasis - Stand by Me.mp3",
+      "size": 14459102,
+      "mtimeMs": 1783701301534.099,
+      "targetSize": 168957
+    },
+    "277 - The Offspring - Coming for You.mp3": {
+      "source": "277 - The Offspring - Coming for You.mp3",
+      "size": 9390803,
+      "mtimeMs": 1783701969501.476,
+      "targetSize": 168917
+    },
+    "278 - Los Lobos - La Bamba.mp3": {
+      "source": "278 - Los Lobos - La Bamba.mp3",
+      "size": 7117833,
+      "mtimeMs": 1783699575212.7842,
+      "targetSize": 168999
+    },
+    "278 - Sugar Ray - Every Morning.mp3": {
+      "source": "278 - Sugar Ray - Every Morning.mp3",
+      "size": 9063548,
+      "mtimeMs": 1783701301598.997,
+      "targetSize": 168952
+    },
+    "280 - Duran Duran - A View to a Kill.mp3": {
+      "source": "280 - Duran Duran - A View to a Kill.mp3",
+      "size": 8776293,
+      "mtimeMs": 1783699575367.4355,
+      "targetSize": 168963
+    },
+    "281 - JAY-Z - Dirt off Your Shoulder _ Lying From You.mp3": {
+      "source": "281 - JAY-Z - Dirt off Your Shoulder _ Lying From You.mp3",
+      "size": 10136062,
+      "mtimeMs": 1783701969828.18,
+      "targetSize": 169019
+    },
+    "281 - New Radicals - You Get What You Give.mp3": {
+      "source": "281 - New Radicals - You Get What You Give.mp3",
+      "size": 12150251,
+      "mtimeMs": 1783701301848.092,
+      "targetSize": 168989
+    },
+    "282 - Smash Mouth - Walkin' On The Sun.mp3": {
+      "source": "282 - Smash Mouth - Walkin' On The Sun.mp3",
+      "size": 8540607,
+      "mtimeMs": 1783701301913.9224,
+      "targetSize": 168973
+    },
+    "285 - Bush - Swallowed (Remastered).mp3": {
+      "source": "285 - Bush - Swallowed (Remastered).mp3",
+      "size": 11812979,
+      "mtimeMs": 1783701302144.036,
+      "targetSize": 168978
+    },
+    "285 - Joe Cocker - You Can Leave Your Hat On.mp3": {
+      "source": "285 - Joe Cocker - You Can Leave Your Hat On.mp3",
+      "size": 10337604,
+      "mtimeMs": 1783699575774.0022,
+      "targetSize": 168976
+    },
+    "288 - Alice In Chains - Down In A Hole.mp3": {
+      "source": "288 - Alice In Chains - Down In A Hole.mp3",
+      "size": 13625454,
+      "mtimeMs": 1783701302373.8171,
+      "targetSize": 168923
+    },
+    "289 - Alice In Chains - Your Decision.mp3": {
+      "source": "289 - Alice In Chains - Your Decision.mp3",
+      "size": 11502454,
+      "mtimeMs": 1783701302464.1577,
+      "targetSize": 168921
+    },
+    "289.White Zombie-1992-La Sexorcisto Devil Music, Vol. 1-03-T.mp3": {
+      "source": "289.White Zombie-1992-La Sexorcisto Devil Music, Vol. 1-03-T.mp3",
+      "size": 5548461,
+      "mtimeMs": 1301477918000,
+      "targetSize": 168862
+    },
+    "290 - Alice In Chains - Rooster.mp3": {
+      "source": "290 - Alice In Chains - Rooster.mp3",
+      "size": 15137670,
+      "mtimeMs": 1783701302584.1572,
+      "targetSize": 168962
+    },
+    "290 - Prince - Purple Rain.mp3": {
+      "source": "290 - Prince - Purple Rain.mp3",
+      "size": 20997895,
+      "mtimeMs": 1783699576267.645,
+      "targetSize": 168957
+    },
+    "291 - AC_DC - Dirty Deeds Done Dirt Cheap.mp3": {
+      "source": "291 - AC_DC - Dirty Deeds Done Dirt Cheap.mp3",
+      "size": 9483764,
+      "mtimeMs": 1783701302663.787,
+      "targetSize": 168976
+    },
+    "291.Van Halen-(Oh) Pretty Woman.mp3": {
+      "source": "291.Van Halen-(Oh) Pretty Woman.mp3",
+      "size": 3637684,
+      "mtimeMs": 1301475967000,
+      "targetSize": 168857
+    },
+    "292 - The Rolling Stones - Angie (2020).mp3": {
+      "source": "292 - The Rolling Stones - Angie (2020).mp3",
+      "size": 11032305,
+      "mtimeMs": 1783699576443.8594,
+      "targetSize": 168976
+    },
+    "293 - Rod Stewart - I Don't Want to Talk About It (2009 Remaster).mp3": {
+      "source": "293 - Rod Stewart - I Don't Want to Talk About It (2009 Remaster).mp3",
+      "size": 11881442,
+      "mtimeMs": 1783699576537.708,
+      "targetSize": 169024
+    },
+    "293 - Volbeat - Seal The Deal.mp3": {
+      "source": "293 - Volbeat - Seal The Deal.mp3",
+      "size": 10227909,
+      "mtimeMs": 1783701970895.6199,
+      "targetSize": 168984
+    },
+    "296 - Thirty Seconds To Mars - The Kill.mp3": {
+      "source": "296 - Thirty Seconds To Mars - The Kill.mp3",
+      "size": 9398122,
+      "mtimeMs": 1783701303038.8955,
+      "targetSize": 168985
+    },
+    "299 - Bruce Springsteen - Born in the U.S.A.mp3": {
+      "source": "299 - Bruce Springsteen - Born in the U.S.A.mp3",
+      "size": 11283540,
+      "mtimeMs": 1783701303273.806,
+      "targetSize": 168982
+    },
+    "3 Doors Down - Here Without You.mp3": {
+      "source": "3 Doors Down - Here Without You.mp3",
+      "size": 9960021,
+      "mtimeMs": 1783861762094.6936,
+      "targetSize": 170188
+    },
+    "300 - Supertramp - Give A Little Bit.mp3": {
+      "source": "300 - Supertramp - Give A Little Bit.mp3",
+      "size": 10047980,
+      "mtimeMs": 1783699577195.7095,
+      "targetSize": 168972
+    },
+    "305 - AC_DC - Shoot to Thrill.mp3": {
+      "source": "305 - AC_DC - Shoot to Thrill.mp3",
+      "size": 12847166,
+      "mtimeMs": 1783701310774.0542,
+      "targetSize": 168946
+    },
+    "305 - Adele - Skyfall.mp3": {
+      "source": "305 - Adele - Skyfall.mp3",
+      "size": 11528629,
+      "mtimeMs": 1783699577685.607,
+      "targetSize": 168949
+    },
+    "305.Stevie Ray Vaughn - Pride And Joy.mp3": {
+      "source": "305.Stevie Ray Vaughn - Pride And Joy.mp3",
+      "size": 5094283,
+      "mtimeMs": 1301477605000,
+      "targetSize": 168871
+    },
+    "307 - AC_DC - It's a Long Way to the Top (If You Wanna Rock 'N' Roll).mp3": {
+      "source": "307 - AC_DC - It's a Long Way to the Top (If You Wanna Rock 'N' Roll).mp3",
+      "size": 12147325,
+      "mtimeMs": 1783701311024.1216,
+      "targetSize": 168989
+    },
+    "308 - AC_DC - Rock N Roll Train.mp3": {
+      "source": "308 - AC_DC - Rock N Roll Train.mp3",
+      "size": 10631824,
+      "mtimeMs": 1783701311143.7874,
+      "targetSize": 168948
+    },
+    "308 - Bee Gees - Stayin' Alive.mp3": {
+      "source": "308 - Bee Gees - Stayin' Alive.mp3",
+      "size": 11526556,
+      "mtimeMs": 1783699578013.904,
+      "targetSize": 169030
+    },
+    "309 - John Travolta - Summer Nights (From “Grease”).mp3": {
+      "source": "309 - John Travolta - Summer Nights (From “Grease”).mp3",
+      "size": 8890913,
+      "mtimeMs": 1783699578099.6091,
+      "targetSize": 169035
+    },
+    "310 - Meryl Streep - Dancing Queen (From 'Mamma Mia!' Original Motion Picture Soundtrack).mp3": {
+      "source": "310 - Meryl Streep - Dancing Queen (From 'Mamma Mia!' Original Motion Picture Soundtrack).mp3",
+      "size": 9992635,
+      "mtimeMs": 1783699578193.891,
+      "targetSize": 169064
+    },
+    "311 - Guns N' Roses - You Could Be Mine.mp3": {
+      "source": "311 - Guns N' Roses - You Could Be Mine.mp3",
+      "size": 13961933,
+      "mtimeMs": 1783701311563.769,
+      "targetSize": 168984
+    },
+    "312 - Elvis Presley - Jailhouse Rock.mp3": {
+      "source": "312 - Elvis Presley - Jailhouse Rock.mp3",
+      "size": 6307684,
+      "mtimeMs": 1783699578345.7786,
+      "targetSize": 168970
+    },
+    "313 - The Offspring - Hit That.mp3": {
+      "source": "313 - The Offspring - Hit That.mp3",
+      "size": 6922644,
+      "mtimeMs": 1783701311748.117,
+      "targetSize": 168974
+    },
+    "314 - Green Day - Welcome to Paradise.mp3": {
+      "source": "314 - Green Day - Welcome to Paradise.mp3",
+      "size": 9253170,
+      "mtimeMs": 1783701311845.0664,
+      "targetSize": 168961
+    },
+    "314 - The Beatles - Can't Buy Me Love (Remastered 2009).mp3": {
+      "source": "314 - The Beatles - Can't Buy Me Love (Remastered 2009).mp3",
+      "size": 5457305,
+      "mtimeMs": 1783699578483.724,
+      "targetSize": 169005
+    },
+    "315 - Linkin Park - Somewhere I Belong.mp3": {
+      "source": "315 - Linkin Park - Somewhere I Belong.mp3",
+      "size": 8638070,
+      "mtimeMs": 1783701311933.788,
+      "targetSize": 168988
+    },
+    "316.Smashing Pumpkins-1993-Siamese Dream-01-Cherub Rock.mp3": {
+      "source": "316.Smashing Pumpkins-1993-Siamese Dream-01-Cherub Rock.mp3",
+      "size": 6630819,
+      "mtimeMs": 1301477950000,
+      "targetSize": 168867
+    },
+    "319.Megadeth-1992-Countdown to Extinction-02-Symphony Of Des.mp3": {
+      "source": "319.Megadeth-1992-Countdown to Extinction-02-Symphony Of Des.mp3",
+      "size": 6972032,
+      "mtimeMs": 1301476497000,
+      "targetSize": 168861
+    },
+    "320.Johnny_&_Edgar_Winter_-_Rock_N'_Roll_-_04_-_Free_Ride.mp3": {
+      "source": "320.Johnny_&_Edgar_Winter_-_Rock_N'_Roll_-_04_-_Free_Ride.mp3",
+      "size": 4632589,
+      "mtimeMs": 1496671729027.9817,
+      "targetSize": 169262
+    },
+    "323 - George Michael - Faith (Remastered).mp3": {
+      "source": "323 - George Michael - Faith (Remastered).mp3",
+      "size": 7897312,
+      "mtimeMs": 1783699579167.0955,
+      "targetSize": 168958
+    },
+    "323 - Metallica - Master Of Puppets (Remastered).mp3": {
+      "source": "323 - Metallica - Master Of Puppets (Remastered).mp3",
+      "size": 20853992,
+      "mtimeMs": 1783701312694.1516,
+      "targetSize": 169038
+    },
+    "325 - The Strokes - Threat of Joy.mp3": {
+      "source": "325 - The Strokes - Threat of Joy.mp3",
+      "size": 10636123,
+      "mtimeMs": 1783701973449.359,
+      "targetSize": 168931
+    },
+    "326 - Metallica - Mama Said.mp3": {
+      "source": "326 - Metallica - Mama Said.mp3",
+      "size": 12973600,
+      "mtimeMs": 1783701313033.9187,
+      "targetSize": 168973
+    },
+    "326.Jerry Lee Lewis-Great Balls Of Fire.mp3": {
+      "source": "326.Jerry Lee Lewis-Great Balls Of Fire.mp3",
+      "size": 2014456,
+      "mtimeMs": 1496671729703.0203,
+      "targetSize": 169362
+    },
+    "327 - Red Hot Chili Peppers - Under the Bridge.mp3": {
+      "source": "327 - Red Hot Chili Peppers - Under the Bridge.mp3",
+      "size": 10751044,
+      "mtimeMs": 1783701313137.4011,
+      "targetSize": 169022
+    },
+    "329 - Against The Current - Wasteland.mp3": {
+      "source": "329 - Against The Current - Wasteland.mp3",
+      "size": 8327754,
+      "mtimeMs": 1783701973770.9663,
+      "targetSize": 168984
+    },
+    "329 - The Bangles - Walk Like An Egyptian.mp3": {
+      "source": "329 - The Bangles - Walk Like An Egyptian.mp3",
+      "size": 8250295,
+      "mtimeMs": 1783699579613.7092,
+      "targetSize": 168966
+    },
+    "332 - The Black Eyed Peas - Shut Up.mp3": {
+      "source": "332 - The Black Eyed Peas - Shut Up.mp3",
+      "size": 12061113,
+      "mtimeMs": 1783699579897.9568,
+      "targetSize": 168908
+    },
+    "333 - Ace of Base - All That She Wants.mp3": {
+      "source": "333 - Ace of Base - All That She Wants.mp3",
+      "size": 8601442,
+      "mtimeMs": 1783699579969.173,
+      "targetSize": 169000
+    },
+    "334 - Daft Punk - Get Lucky (Radio Edit - feat. Pharrell Williams and Nile Rodgers).mp3": {
+      "source": "334 - Daft Punk - Get Lucky (Radio Edit - feat. Pharrell Williams and Nile Rodgers).mp3",
+      "size": 9997246,
+      "mtimeMs": 1783699580047.5466,
+      "targetSize": 169063
+    },
+    "334 - The Stone Roses - All for One.mp3": {
+      "source": "334 - The Stone Roses - All for One.mp3",
+      "size": 8753811,
+      "mtimeMs": 1783701974082.6997,
+      "targetSize": 168971
+    },
+    "335 - OutKast - Hey Ya!.mp3": {
+      "source": "335 - OutKast - Hey Ya!.mp3",
+      "size": 9609471,
+      "mtimeMs": 1783699580123.9158,
+      "targetSize": 168965
+    },
+    "336.Rolling Stones-1973-Goats Head Soup-04-Doo Doo Doo Doo D.mp3": {
+      "source": "336.Rolling Stones-1973-Goats Head Soup-04-Doo Doo Doo Doo D.mp3",
+      "size": 4850201,
+      "mtimeMs": 1301477531000,
+      "targetSize": 168884
+    },
+    "337 - The Clash - Rock the Casbah (Remastered).mp3": {
+      "source": "337 - The Clash - Rock the Casbah (Remastered).mp3",
+      "size": 9102327,
+      "mtimeMs": 1783701313909.1338,
+      "targetSize": 168994
+    },
+    "339 - David Bowie - No Plan.mp3": {
+      "source": "339 - David Bowie - No Plan.mp3",
+      "size": 8906050,
+      "mtimeMs": 1783701974548.2651,
+      "targetSize": 168953
+    },
+    "34 John Legend - All Of Me.mp3": {
+      "source": "34 John Legend - All Of Me.mp3",
+      "size": 10846324,
+      "mtimeMs": 1425204470390.5625,
+      "targetSize": 169027
+    },
+    "341 - Alter Bridge - Show Me a Leader.mp3": {
+      "source": "341 - Alter Bridge - Show Me a Leader.mp3",
+      "size": 12370951,
+      "mtimeMs": 1783701974756.7693,
+      "targetSize": 168926
+    },
+    "348 - Coldplay - A Sky Full of Stars.mp3": {
+      "source": "348 - Coldplay - A Sky Full of Stars.mp3",
+      "size": 10862825,
+      "mtimeMs": 1783701314819.5188,
+      "targetSize": 168978
+    },
+    "35 The Vaccines - If You Wanna.mp3": {
+      "source": "35 The Vaccines - If You Wanna.mp3",
+      "size": 7005075,
+      "mtimeMs": 1401820978000,
+      "targetSize": 168994
+    },
+    "350 - U2 - Beautiful Day.mp3": {
+      "source": "350 - U2 - Beautiful Day.mp3",
+      "size": 10053820,
+      "mtimeMs": 1783699581560.2266,
+      "targetSize": 168980
+    },
+    "351 - Volbeat - Heaven Nor Hell.mp3": {
+      "source": "351 - Volbeat - Heaven Nor Hell.mp3",
+      "size": 13189708,
+      "mtimeMs": 1783701315108.7712,
+      "targetSize": 168933
+    },
+    "352 - Bryan Adams - Summer Of '69.mp3": {
+      "source": "352 - Bryan Adams - Summer Of '69.mp3",
+      "size": 8816194,
+      "mtimeMs": 1783699581754.0986,
+      "targetSize": 168934
+    },
+    "357 - Elvis Presley - Suspicious Minds.mp3": {
+      "source": "357 - Elvis Presley - Suspicious Minds.mp3",
+      "size": 10923030,
+      "mtimeMs": 1783701315541.607,
+      "targetSize": 169018
+    },
+    "357.The Allman Brothers Band-2005-Gold-22-Ramblin' Man.mp3": {
+      "source": "357.The Allman Brothers Band-2005-Gold-22-Ramblin' Man.mp3",
+      "size": 7032161,
+      "mtimeMs": 1301477493000,
+      "targetSize": 168917
+    },
+    "358 - Bryan Adams - Please Forgive Me.mp3": {
+      "source": "358 - Bryan Adams - Please Forgive Me.mp3",
+      "size": 14298646,
+      "mtimeMs": 1783699582382.0566,
+      "targetSize": 168966
+    },
+    "359 - Bon Jovi - It's My Life.mp3": {
+      "source": "359 - Bon Jovi - It's My Life.mp3",
+      "size": 9141546,
+      "mtimeMs": 1783699582463.8267,
+      "targetSize": 168951
+    },
+    "360 - Bon Jovi - You Give Love A Bad Name.mp3": {
+      "source": "360 - Bon Jovi - You Give Love A Bad Name.mp3",
+      "size": 9048926,
+      "mtimeMs": 1783699582539.309,
+      "targetSize": 169015
+    },
+    "364 - Bon Jovi - Never Say Goodbye.mp3": {
+      "source": "364 - Bon Jovi - Never Say Goodbye.mp3",
+      "size": 11906053,
+      "mtimeMs": 1783699582976.0154,
+      "targetSize": 168968
+    },
+    "365 - Bon Jovi - These Days.mp3": {
+      "source": "365 - Bon Jovi - These Days.mp3",
+      "size": 15776485,
+      "mtimeMs": 1783699583096.7734,
+      "targetSize": 168939
+    },
+    "366 - Bon Jovi - This Ain't A Love Song.mp3": {
+      "source": "366 - Bon Jovi - This Ain't A Love Song.mp3",
+      "size": 12513293,
+      "mtimeMs": 1783699583198.6033,
+      "targetSize": 168951
+    },
+    "367 - Bon Jovi - Have A Nice Day.mp3": {
+      "source": "367 - Bon Jovi - Have A Nice Day.mp3",
+      "size": 9210904,
+      "mtimeMs": 1783701316328.932,
+      "targetSize": 168949
+    },
+    "368 - Bon Jovi - Someday I'll Be Saturday Night.mp3": {
+      "source": "368 - Bon Jovi - Someday I'll Be Saturday Night.mp3",
+      "size": 11285641,
+      "mtimeMs": 1783701316405.9565,
+      "targetSize": 169015
+    },
+    "369 - Bon Jovi - Keep The Faith.mp3": {
+      "source": "369 - Bon Jovi - Keep The Faith.mp3",
+      "size": 14097021,
+      "mtimeMs": 1783701316512.6152,
+      "targetSize": 168947
+    },
+    "37 One Direction - Night Changes.mp3": {
+      "source": "37 One Direction - Night Changes.mp3",
+      "size": 9291755,
+      "mtimeMs": 1425204470390.5625,
+      "targetSize": 168972
+    },
+    "371 - Bonnie Tyler - It's a Heartache.mp3": {
+      "source": "371 - Bonnie Tyler - It's a Heartache.mp3",
+      "size": 8527799,
+      "mtimeMs": 1783701316681.2944,
+      "targetSize": 168916
+    },
+    "372 - Guns N' Roses - Knockin' On Heaven's Door.mp3": {
+      "source": "372 - Guns N' Roses - Knockin' On Heaven's Door.mp3",
+      "size": 13656837,
+      "mtimeMs": 1783699583802.2424,
+      "targetSize": 168991
+    },
+    "372.Deep Purple-2003-The Universal Masters Collection-01-Kno.mp3": {
+      "source": "372.Deep Purple-2003-The Universal Masters Collection-01-Kno.mp3",
+      "size": 9678002,
+      "mtimeMs": 1301477290000,
+      "targetSize": 168870
+    },
+    "373 - Bon Jovi - Misunderstood.mp3": {
+      "source": "373 - Bon Jovi - Misunderstood.mp3",
+      "size": 8522323,
+      "mtimeMs": 1783701316853.7803,
+      "targetSize": 168938
+    },
+    "373 - Elton John - Something About The Way You Look Tonight (Single Edit _ Remastered).mp3": {
+      "source": "373 - Elton John - Something About The Way You Look Tonight (Single Edit _ Remastered).mp3",
+      "size": 9793147,
+      "mtimeMs": 1783699583881.1104,
+      "targetSize": 168997
+    },
+    "377 - Elton John - Crocodile Rock (Remastered).mp3": {
+      "source": "377 - Elton John - Crocodile Rock (Remastered).mp3",
+      "size": 9590355,
+      "mtimeMs": 1783699584207.7163,
+      "targetSize": 168956
+    },
+    "378 - Billy Idol - Rebel Yell.mp3": {
+      "source": "378 - Billy Idol - Rebel Yell.mp3",
+      "size": 11602091,
+      "mtimeMs": 1783701317200.8464,
+      "targetSize": 168915
+    },
+    "378 - Elton John - Tonight.mp3": {
+      "source": "378 - Elton John - Tonight.mp3",
+      "size": 19137137,
+      "mtimeMs": 1783699584354.4988,
+      "targetSize": 168943
+    },
+    "38 Calvin Harris Feat Ellie Goulding - Outside.mp3": {
+      "source": "38 Calvin Harris Feat Ellie Goulding - Outside.mp3",
+      "size": 9370357,
+      "mtimeMs": 1425204470390.5625,
+      "targetSize": 168986
+    },
+    "380.Accept_-_Balls_To_The_Walls.mp3": {
+      "source": "380.Accept_-_Balls_To_The_Walls.mp3",
+      "size": 7659237,
+      "mtimeMs": 1301477746000,
+      "targetSize": 168852
+    },
+    "381.Grateful Dead-1974-Best of Skeletons From the Closet Gre.mp3": {
+      "source": "381.Grateful Dead-1974-Best of Skeletons From the Closet Gre.mp3",
+      "size": 7546074,
+      "mtimeMs": 1301477625000,
+      "targetSize": 168856
+    },
+    "383 - Phil Collins - Something Happened on the Way to Heaven (Live 1990; 2019 Remaster).mp3": {
+      "source": "383 - Phil Collins - Something Happened on the Way to Heaven (Live 1990; 2019 Remaster).mp3",
+      "size": 12241272,
+      "mtimeMs": 1783699584875.89,
+      "targetSize": 169034
+    },
+    "387 - Duffy - Mercy (Acoustic Version).mp3": {
+      "source": "387 - Duffy - Mercy (Acoustic Version).mp3",
+      "size": 8746613,
+      "mtimeMs": 1783699585152.0605,
+      "targetSize": 168975
+    },
+    "389 - Greta Van Fleet - Highway Tune.mp3": {
+      "source": "389 - Greta Van Fleet - Highway Tune.mp3",
+      "size": 7383040,
+      "mtimeMs": 1783701317921.1257,
+      "targetSize": 168972
+    },
+    "389.Judas Priest-1981-Point Of Entry-01-Heading Out To The H.mp3": {
+      "source": "389.Judas Priest-1981-Point Of Entry-01-Heading Out To The H.mp3",
+      "size": 4989638,
+      "mtimeMs": 1301476162000,
+      "targetSize": 168872
+    },
+    "39 Sleep Rock-a-Roll Rock-a-Baby.mp3": {
+      "source": "39 Sleep Rock-a-Roll Rock-a-Baby.mp3",
+      "size": 5229796,
+      "mtimeMs": 1783701807344.2651,
+      "targetSize": 168802
+    },
+    "39. Olly Murs - Dear Darlin'.mp3": {
+      "source": "39. Olly Murs - Dear Darlin'.mp3",
+      "size": 8511154,
+      "mtimeMs": 1414680232046.875,
+      "targetSize": 168810
+    },
+    "391 - Greta Van Fleet - When The Curtain Falls.mp3": {
+      "source": "391 - Greta Van Fleet - When The Curtain Falls.mp3",
+      "size": 9121415,
+      "mtimeMs": 1783701318074.1367,
+      "targetSize": 168957
+    },
+    "392 - ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3": {
+      "source": "392 - ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3",
+      "size": 11615866,
+      "mtimeMs": 1783699585651.7844,
+      "targetSize": 168992
+    },
+    "392 - Greta Van Fleet - Black Smoke Rising.mp3": {
+      "source": "392 - Greta Van Fleet - Black Smoke Rising.mp3",
+      "size": 10553272,
+      "mtimeMs": 1783701318154.033,
+      "targetSize": 168978
+    },
+    "394 - ABBA - Mamma Mia.mp3": {
+      "source": "394 - ABBA - Mamma Mia.mp3",
+      "size": 8487371,
+      "mtimeMs": 1783699585790.559,
+      "targetSize": 168957
+    },
+    "395 - ABBA - Chiquitita.mp3": {
+      "source": "395 - ABBA - Chiquitita.mp3",
+      "size": 13082451,
+      "mtimeMs": 1783699585888.2542,
+      "targetSize": 168964
+    },
+    "396 - ABBA - Fernando.mp3": {
+      "source": "396 - ABBA - Fernando.mp3",
+      "size": 10155688,
+      "mtimeMs": 1783699585971.3594,
+      "targetSize": 168962
+    },
+    "397 - ABBA - I Have A Dream.mp3": {
+      "source": "397 - ABBA - I Have A Dream.mp3",
+      "size": 11387633,
+      "mtimeMs": 1783699586069.7605,
+      "targetSize": 168967
+    },
+    "400 - ABBA - Our Last Summer.mp3": {
+      "source": "400 - ABBA - Our Last Summer.mp3",
+      "size": 10414835,
+      "mtimeMs": 1783699586296.1782,
+      "targetSize": 168968
+    },
+    "401 - Sting - Every Breath You Take (My Songs Version).mp3": {
+      "source": "401 - Sting - Every Breath You Take (My Songs Version).mp3",
+      "size": 10493441,
+      "mtimeMs": 1783699586390.1345,
+      "targetSize": 168992
+    },
+    "402 - Silverchair - Miss You Love.mp3": {
+      "source": "402 - Silverchair - Miss You Love.mp3",
+      "size": 9796070,
+      "mtimeMs": 1783701318895.6768,
+      "targetSize": 168964
+    },
+    "402 - Sting - Fields Of Gold.mp3": {
+      "source": "402 - Sting - Fields Of Gold.mp3",
+      "size": 9106834,
+      "mtimeMs": 1783699586462.2788,
+      "targetSize": 168950
+    },
+    "403 - Evanescence - Bring Me To Life.mp3": {
+      "source": "403 - Evanescence - Bring Me To Life.mp3",
+      "size": 9599716,
+      "mtimeMs": 1783699586542.6921,
+      "targetSize": 168972
+    },
+    "404 - Elvis Presley - Can't Help Falling In Love.mp3": {
+      "source": "404 - Elvis Presley - Can't Help Falling In Love.mp3",
+      "size": 7163995,
+      "mtimeMs": 1783701319030.567,
+      "targetSize": 168989
+    },
+    "410 - Muse - Feeling Good.mp3": {
+      "source": "410 - Muse - Feeling Good.mp3",
+      "size": 8165084,
+      "mtimeMs": 1783701319562.2822,
+      "targetSize": 168962
+    },
+    "420.Queen-1981-Greatest Hits-10-Somebody To Love.mp3": {
+      "source": "420.Queen-1981-Greatest Hits-10-Somebody To Love.mp3",
+      "size": 6845197,
+      "mtimeMs": 1301477598000,
+      "targetSize": 168848
+    },
+    "429 - Ramones - Sheena Is a Punk Rocker (2001 Remaster).mp3": {
+      "source": "429 - Ramones - Sheena Is a Punk Rocker (2001 Remaster).mp3",
+      "size": 7041207,
+      "mtimeMs": 1783701321119.1758,
+      "targetSize": 169010
+    },
+    "433 - Dire Straits - Money For Nothing.mp3": {
+      "source": "433 - Dire Straits - Money For Nothing.mp3",
+      "size": 20315963,
+      "mtimeMs": 1783701321495.767,
+      "targetSize": 169014
+    },
+    "436 - Eric Clapton - Change the World.mp3": {
+      "source": "436 - Eric Clapton - Change the World.mp3",
+      "size": 9527024,
+      "mtimeMs": 1783701321730.6033,
+      "targetSize": 168949
+    },
+    "437 - Europe - Carrie.mp3": {
+      "source": "437 - Europe - Carrie.mp3",
+      "size": 11086589,
+      "mtimeMs": 1783701321813.9297,
+      "targetSize": 168980
+    },
+    "439 - Evanescence - Call Me When You're Sober.mp3": {
+      "source": "439 - Evanescence - Call Me When You're Sober.mp3",
+      "size": 8779163,
+      "mtimeMs": 1783701321961.57,
+      "targetSize": 168988
+    },
+    "440 - Gorillaz - Clint Eastwood.mp3": {
+      "source": "440 - Gorillaz - Clint Eastwood.mp3",
+      "size": 13750990,
+      "mtimeMs": 1783701322061.0664,
+      "targetSize": 168962
+    },
+    "441.Bon Jovi-1994-Crossroad-05-Wanted Dead Or Alive.mp3": {
+      "source": "441.Bon Jovi-1994-Crossroad-05-Wanted Dead Or Alive.mp3",
+      "size": 6951130,
+      "mtimeMs": 1301477365000,
+      "targetSize": 168858
+    },
+    "447 - Iron Maiden - The Wicker Man (2015 Remaster).mp3": {
+      "source": "447 - Iron Maiden - The Wicker Man (2015 Remaster).mp3",
+      "size": 11205532,
+      "mtimeMs": 1783701322661.228,
+      "targetSize": 168970
+    },
+    "454 - New Order - Bizarre Love Triangle.mp3": {
+      "source": "454 - New Order - Bizarre Love Triangle.mp3",
+      "size": 7205466,
+      "mtimeMs": 1783701323076.186,
+      "targetSize": 168995
+    },
+    "457 - Prince - Kiss.mp3": {
+      "source": "457 - Prince - Kiss.mp3",
+      "size": 9156806,
+      "mtimeMs": 1783701323357.8806,
+      "targetSize": 168994
+    },
+    "458 - Skid Row - I Remember You.mp3": {
+      "source": "458 - Skid Row - I Remember You.mp3",
+      "size": 12674365,
+      "mtimeMs": 1783701323451.9187,
+      "targetSize": 168957
+    },
+    "459.Judas Priest-1982-Screaming For Vengeance-02-Electric Ey.mp3": {
+      "source": "459.Judas Priest-1982-Screaming For Vengeance-02-Electric Ey.mp3",
+      "size": 5293270,
+      "mtimeMs": 1301477477000,
+      "targetSize": 168858
+    },
+    "46. 5 Seconds Of Summer - Amnesia.mp3": {
+      "source": "46. 5 Seconds Of Summer - Amnesia.mp3",
+      "size": 9882305,
+      "mtimeMs": 1414680232046.875,
+      "targetSize": 168815
+    },
+    "461 - Bon Jovi - Wanted Dead Or Alive.mp3": {
+      "source": "461 - Bon Jovi - Wanted Dead Or Alive.mp3",
+      "size": 12398437,
+      "mtimeMs": 1783701323714.1484,
+      "targetSize": 169005
+    },
+    "462 - The Goo Goo Dolls - Name.mp3": {
+      "source": "462 - The Goo Goo Dolls - Name.mp3",
+      "size": 10954929,
+      "mtimeMs": 1783701323796.2463,
+      "targetSize": 168970
+    },
+    "467.Alice Cooper-1973-Billion Dollar Babies-04-Billion Dolla.mp3": {
+      "source": "467.Alice Cooper-1973-Billion Dollar Babies-04-Billion Dolla.mp3",
+      "size": 4691903,
+      "mtimeMs": 1301477092000,
+      "targetSize": 168867
+    },
+    "468 - Foo Fighters - Monkey Wrench.mp3": {
+      "source": "468 - Foo Fighters - Monkey Wrench.mp3",
+      "size": 9376229,
+      "mtimeMs": 1783701324273.8652,
+      "targetSize": 168977
+    },
+    "468.Aerosmith-1994-Big Ones-02-Love In An Elevator.mp3": {
+      "source": "468.Aerosmith-1994-Big Ones-02-Love In An Elevator.mp3",
+      "size": 7904952,
+      "mtimeMs": 1301475640000,
+      "targetSize": 168859
+    },
+    "476 - My Chemical Romance - Helena.mp3": {
+      "source": "476 - My Chemical Romance - Helena.mp3",
+      "size": 8360857,
+      "mtimeMs": 1783701324864.105,
+      "targetSize": 168985
+    },
+    "479.joe_satriani-satch_boogie.mp3": {
+      "source": "479.joe_satriani-satch_boogie.mp3",
+      "size": 3997853,
+      "mtimeMs": 1301477651000,
+      "targetSize": 168858
+    },
+    "48. Katy Perry - This Is How We Do.mp3": {
+      "source": "48. Katy Perry - This Is How We Do.mp3",
+      "size": 8266733,
+      "mtimeMs": 1414680232046.875,
+      "targetSize": 168816
+    },
+    "486 - Iggy Pop - Candy.mp3": {
+      "source": "486 - Iggy Pop - Candy.mp3",
+      "size": 10360471,
+      "mtimeMs": 1783701325655.1045,
+      "targetSize": 168996
+    },
+    "487 - Spin Doctors - Two Princes.mp3": {
+      "source": "487 - Spin Doctors - Two Princes.mp3",
+      "size": 10420724,
+      "mtimeMs": 1783701325734.1443,
+      "targetSize": 168983
+    },
+    "488 - New Order - Blue Monday '88.mp3": {
+      "source": "488 - New Order - Blue Monday '88.mp3",
+      "size": 9831492,
+      "mtimeMs": 1783701325808.057,
+      "targetSize": 168972
+    },
+    "491.Megadeth-1986-Peace Sell...But Who's Buying-03-Peace Sel.mp3": {
+      "source": "491.Megadeth-1986-Peace Sell...But Who's Buying-03-Peace Sel.mp3",
+      "size": 7071802,
+      "mtimeMs": 1301477101000,
+      "targetSize": 168849
+    },
+    "493 - Alien Ant Farm - Smooth Criminal.mp3": {
+      "source": "493 - Alien Ant Farm - Smooth Criminal.mp3",
+      "size": 8508167,
+      "mtimeMs": 1783701326088.1526,
+      "targetSize": 168967
+    },
+    "495 - The Black Crowes - Hard To Handle.mp3": {
+      "source": "495 - The Black Crowes - Hard To Handle.mp3",
+      "size": 7682344,
+      "mtimeMs": 1783701326232.0298,
+      "targetSize": 169040
+    },
+    "495.Aldo Nova-1991-A Portrait Of Aldo Nova-01-Fantasy.mp3": {
+      "source": "495.Aldo Nova-1991-A Portrait Of Aldo Nova-01-Fantasy.mp3",
+      "size": 6840918,
+      "mtimeMs": 1301477388000,
+      "targetSize": 168847
+    },
+    "498 - Sex Pistols - God Save The Queen.mp3": {
+      "source": "498 - Sex Pistols - God Save The Queen.mp3",
+      "size": 8116122,
+      "mtimeMs": 1783701326483.7244,
+      "targetSize": 169031
+    },
+    "499 - Weezer - Hash Pipe.mp3": {
+      "source": "499 - Weezer - Hash Pipe.mp3",
+      "size": 7560950,
+      "mtimeMs": 1783701326542.4612,
+      "targetSize": 168937
+    },
+    "50. Avicii - The Days.mp3": {
+      "source": "50. Avicii - The Days.mp3",
+      "size": 11329496,
+      "mtimeMs": 1414667470283.2031,
+      "targetSize": 168803
+    },
+    "500 - Korn - Word Up!.mp3": {
+      "source": "500 - Korn - Word Up!.mp3",
+      "size": 7086308,
+      "mtimeMs": 1783701326596.9534,
+      "targetSize": 168954
+    },
+    "501.Dio-1984-The Last In Line-02-The Last In Line.mp3": {
+      "source": "501.Dio-1984-The Last In Line-02-The Last In Line.mp3",
+      "size": 7541101,
+      "mtimeMs": 1301477316000,
+      "targetSize": 168844
+    },
+    "505 - Chuck Berry - Johnny B. Goode.mp3": {
+      "source": "505 - Chuck Berry - Johnny B. Goode.mp3",
+      "size": 6559960,
+      "mtimeMs": 1783701326858.542,
+      "targetSize": 168943
+    },
+    "507.Tom Petty & The Heartbreakers-1993-Tom Petty Greatest Hi.mp3": {
+      "source": "507.Tom Petty & The Heartbreakers-1993-Tom Petty Greatest Hi.mp3",
+      "size": 7515416,
+      "mtimeMs": 1441924830469.4233,
+      "targetSize": 169212
+    },
+    "512 - AC_DC - Thunderstruck.mp3": {
+      "source": "512 - AC_DC - Thunderstruck.mp3",
+      "size": 11850980,
+      "mtimeMs": 1783701327336.2776,
+      "targetSize": 168950
+    },
+    "516 - Aerosmith - Crazy.mp3": {
+      "source": "516 - Aerosmith - Crazy.mp3",
+      "size": 12937950,
+      "mtimeMs": 1783701327732.2812,
+      "targetSize": 168918
+    },
+    "517 - Iggy Pop - The Passenger.mp3": {
+      "source": "517 - Iggy Pop - The Passenger.mp3",
+      "size": 11513711,
+      "mtimeMs": 1783701327817.882,
+      "targetSize": 168931
+    },
+    "517.Screaming Trees-2005-Ocean Of Confusion-06-Nearly Lost Y.mp3": {
+      "source": "517.Screaming Trees-2005-Ocean Of Confusion-06-Nearly Lost Y.mp3",
+      "size": 6849122,
+      "mtimeMs": 1301477106000,
+      "targetSize": 168867
+    },
+    "521.Offspring-Self Esteem.mp3": {
+      "source": "521.Offspring-Self Esteem.mp3",
+      "size": 5160177,
+      "mtimeMs": 1301477605000,
+      "targetSize": 168851
+    },
+    "524 - Green Day - She.mp3": {
+      "source": "524 - Green Day - She.mp3",
+      "size": 5658689,
+      "mtimeMs": 1783701328353.8845,
+      "targetSize": 168945
+    },
+    "525 - The Beatles - Yesterday (Remastered 2009).mp3": {
+      "source": "525 - The Beatles - Yesterday (Remastered 2009).mp3",
+      "size": 5091121,
+      "mtimeMs": 1783701328393.9429,
+      "targetSize": 168984
+    },
+    "526 - The Beatles - Help! (Remastered 2009).mp3": {
+      "source": "526 - The Beatles - Help! (Remastered 2009).mp3",
+      "size": 5734849,
+      "mtimeMs": 1783701328437.4639,
+      "targetSize": 168997
+    },
+    "532 - Bruce Springsteen - Dancing In the Dark.mp3": {
+      "source": "532 - Bruce Springsteen - Dancing In the Dark.mp3",
+      "size": 9788295,
+      "mtimeMs": 1783701328925.9658,
+      "targetSize": 168984
+    },
+    "536.Megadeth-1997-Cryptic Writings-01-Trust.mp3": {
+      "source": "536.Megadeth-1997-Cryptic Writings-01-Trust.mp3",
+      "size": 8566590,
+      "mtimeMs": 1301477303000,
+      "targetSize": 168843
+    },
+    "537.The Rolling Stones-1969-Let It Bleed-01-Gimme Shelter.mp3": {
+      "source": "537.The Rolling Stones-1969-Let It Bleed-01-Gimme Shelter.mp3",
+      "size": 6117571,
+      "mtimeMs": 1301477342000,
+      "targetSize": 168863
+    },
+    "546.The Doors-1971-The Best Of The Doors-17-Love Her Madly.mp3": {
+      "source": "546.The Doors-1971-The Best Of The Doors-17-Love Her Madly.mp3",
+      "size": 5017933,
+      "mtimeMs": 1301478315000,
+      "targetSize": 168854
+    },
+    "549 - INXS - Disappear.mp3": {
+      "source": "549 - INXS - Disappear.mp3",
+      "size": 10112167,
+      "mtimeMs": 1783701330084.0693,
+      "targetSize": 168979
+    },
+    "551 - Guns N' Roses - Patience.mp3": {
+      "source": "551 - Guns N' Roses - Patience.mp3",
+      "size": 14452703,
+      "mtimeMs": 1783701330255.5027,
+      "targetSize": 168919
+    },
+    "551.Under_My_Wheels_-_(Alice_Cooper).mp3": {
+      "source": "551.Under_My_Wheels_-_(Alice_Cooper).mp3",
+      "size": 3941561,
+      "mtimeMs": 1301477579000,
+      "targetSize": 168861
+    },
+    "552 - Guns N' Roses - Don't Cry (Original).mp3": {
+      "source": "552 - Guns N' Roses - Don't Cry (Original).mp3",
+      "size": 11654901,
+      "mtimeMs": 1783701330343.7998,
+      "targetSize": 168985
+    },
+    "552.Metallica-1997-ReLoad-01-Fuel.mp3": {
+      "source": "552.Metallica-1997-ReLoad-01-Fuel.mp3",
+      "size": 5710649,
+      "mtimeMs": 1301476051000,
+      "targetSize": 168844
+    },
+    "553 - a-ha - Crying in the Rain.mp3": {
+      "source": "553 - a-ha - Crying in the Rain.mp3",
+      "size": 10705721,
+      "mtimeMs": 1783701330423.9849,
+      "targetSize": 168975
+    },
+    "554 - a-ha - Stay on These Roads.mp3": {
+      "source": "554 - a-ha - Stay on These Roads.mp3",
+      "size": 11558151,
+      "mtimeMs": 1783701330514.0105,
+      "targetSize": 168963
+    },
+    "555 - a-ha - Hunting High and Low.mp3": {
+      "source": "555 - a-ha - Hunting High and Low.mp3",
+      "size": 9280989,
+      "mtimeMs": 1783701330583.7283,
+      "targetSize": 168956
+    },
+    "560.ZZ Top-1983-Eliminator-03-Sharp Dressed Man.mp3": {
+      "source": "560.ZZ Top-1983-Eliminator-03-Sharp Dressed Man.mp3",
+      "size": 5314544,
+      "mtimeMs": 1301476815000,
+      "targetSize": 168851
+    },
+    "561 - Coldplay - Hymn for the Weekend.mp3": {
+      "source": "561 - Coldplay - Hymn for the Weekend.mp3",
+      "size": 10559341,
+      "mtimeMs": 1783701331165.6047,
+      "targetSize": 168980
+    },
+    "568 - Counting Crows - Accidentally In Love (From _Shrek 2_ Soundtrack).mp3": {
+      "source": "568 - Counting Crows - Accidentally In Love (From _Shrek 2_ Soundtrack).mp3",
+      "size": 7820091,
+      "mtimeMs": 1783701331813.8816,
+      "targetSize": 169053
+    },
+    "570 - The Beatles - Let It Be (Remastered 2009).mp3": {
+      "source": "570 - The Beatles - Let It Be (Remastered 2009).mp3",
+      "size": 9831074,
+      "mtimeMs": 1783701331983.9446,
+      "targetSize": 168988
+    },
+    "575 - The Beatles - Twist And Shout (Remastered 2009).mp3": {
+      "source": "575 - The Beatles - Twist And Shout (Remastered 2009).mp3",
+      "size": 6446865,
+      "mtimeMs": 1783701332257.3152,
+      "targetSize": 169002
+    },
+    "578.The Rolling Stones-1969-Let It Bleed-08-Monkey Man.mp3": {
+      "source": "578.The Rolling Stones-1969-Let It Bleed-08-Monkey Man.mp3",
+      "size": 6151775,
+      "mtimeMs": 1301477515000,
+      "targetSize": 168860
+    },
+    "580 - The Beatles - She Loves You (Mono _ Remastered).mp3": {
+      "source": "580 - The Beatles - She Loves You (Mono _ Remastered).mp3",
+      "size": 5665539,
+      "mtimeMs": 1783701332518.8257,
+      "targetSize": 169004
+    },
+    "583.Kiss-1982-Killers-05-Shout It Out Loud.mp3": {
+      "source": "583.Kiss-1982-Killers-05-Shout It Out Loud.mp3",
+      "size": 3441197,
+      "mtimeMs": 1301477301000,
+      "targetSize": 168847
+    },
+    "592 - The Killers - Somebody Told Me.mp3": {
+      "source": "592 - The Killers - Somebody Told Me.mp3",
+      "size": 8035215,
+      "mtimeMs": 1783701333848.8474,
+      "targetSize": 168974
+    },
+    "593 - The Strokes - Someday.mp3": {
+      "source": "593 - The Strokes - Someday.mp3",
+      "size": 7419185,
+      "mtimeMs": 1783701333912.9204,
+      "targetSize": 168960
+    },
+    "593.Alice Cooper-1973-Billion Dollar Babies-03-Elected.mp3": {
+      "source": "593.Alice Cooper-1973-Billion Dollar Babies-03-Elected.mp3",
+      "size": 6027272,
+      "mtimeMs": 1301477280000,
+      "targetSize": 168853
+    },
+    "597.Aerosmith-1993-Get A Grip-05-Livin' On The Edge.mp3": {
+      "source": "597.Aerosmith-1993-Get A Grip-05-Livin' On The Edge.mp3",
+      "size": 8469955,
+      "mtimeMs": 1301477903000,
+      "targetSize": 168858
+    },
+    "601 - The Cult - Fire Woman.mp3": {
+      "source": "601 - The Cult - Fire Woman.mp3",
+      "size": 12586686,
+      "mtimeMs": 1783701822013.913,
+      "targetSize": 168949
+    },
+    "605.Scorpions-1979-Lovedrive-07-Lovedrive.mp3": {
+      "source": "605.Scorpions-1979-Lovedrive-07-Lovedrive.mp3",
+      "size": 6542986,
+      "mtimeMs": 1301477993000,
+      "targetSize": 168849
+    },
+    "607.Joe_Walsh_-_Turn_To_Stone.mp3": {
+      "source": "607.Joe_Walsh_-_Turn_To_Stone.mp3",
+      "size": 8255129,
+      "mtimeMs": 1301476246000,
+      "targetSize": 168847
+    },
+    "610 - U2 - Elevation.mp3": {
+      "source": "610 - U2 - Elevation.mp3",
+      "size": 9182367,
+      "mtimeMs": 1783701822873.917,
+      "targetSize": 168976
+    },
+    "621 - Blondie - Maria.mp3": {
+      "source": "621 - Blondie - Maria.mp3",
+      "size": 10034048,
+      "mtimeMs": 1783701823643.922,
+      "targetSize": 169009
+    },
+    "622 - Blur - Girls & Boys.mp3": {
+      "source": "622 - Blur - Girls & Boys.mp3",
+      "size": 10503731,
+      "mtimeMs": 1783701823723.8953,
+      "targetSize": 168955
+    },
+    "628.Judas Priest-2004-Metalogy-47-Turbo Lover.mp3": {
+      "source": "628.Judas Priest-2004-Metalogy-47-Turbo Lover.mp3",
+      "size": 10088227,
+      "mtimeMs": 1301477616000,
+      "targetSize": 168857
+    },
+    "633 - Alanis Morissette - Offer.mp3": {
+      "source": "633 - Alanis Morissette - Offer.mp3",
+      "size": 9915471,
+      "mtimeMs": 1783701824579.1296,
+      "targetSize": 168964
+    },
+    "633.Offspring-Gone Away.mp3": {
+      "source": "633.Offspring-Gone Away.mp3",
+      "size": 5547839,
+      "mtimeMs": 1301477826000,
+      "targetSize": 168849
+    },
+    "634 - Alanis Morissette - Crazy (James Michael Mix).mp3": {
+      "source": "634 - Alanis Morissette - Crazy (James Michael Mix).mp3",
+      "size": 8810180,
+      "mtimeMs": 1783701824643.868,
+      "targetSize": 168942
+    },
+    "636.Buckcherry-1999-Buckcherry-01-Lit Up.mp3": {
+      "source": "636.Buckcherry-1999-Buckcherry-01-Lit Up.mp3",
+      "size": 4856004,
+      "mtimeMs": 1301477868000,
+      "targetSize": 168848
+    },
+    "643 - Sugar Ray - Someday.mp3": {
+      "source": "643 - Sugar Ray - Someday.mp3",
+      "size": 9980956,
+      "mtimeMs": 1783701825464.2349,
+      "targetSize": 168946
+    },
+    "645 - Radiohead - Karma Police.mp3": {
+      "source": "645 - Radiohead - Karma Police.mp3",
+      "size": 10586950,
+      "mtimeMs": 1783701825655.864,
+      "targetSize": 168921
+    },
+    "650 - Limp Bizkit - Behind Blue Eyes.mp3": {
+      "source": "650 - Limp Bizkit - Behind Blue Eyes.mp3",
+      "size": 11067339,
+      "mtimeMs": 1783701826115.0225,
+      "targetSize": 168967
+    },
+    "651 - Skid Row - 18 and Life.mp3": {
+      "source": "651 - Skid Row - 18 and Life.mp3",
+      "size": 9325458,
+      "mtimeMs": 1783701826183.784,
+      "targetSize": 168952
+    },
+    "655 - The Presidents of the United States of America - Lump.mp3": {
+      "source": "655 - The Presidents of the United States of America - Lump.mp3",
+      "size": 5579051,
+      "mtimeMs": 1783701826384.1309,
+      "targetSize": 169027
+    },
+    "656 - The Presidents of the United States of America - Peaches.mp3": {
+      "source": "656 - The Presidents of the United States of America - Peaches.mp3",
+      "size": 7078485,
+      "mtimeMs": 1783701826447.5188,
+      "targetSize": 169029
+    },
+    "658 - Alice In Chains - Heaven Beside You.mp3": {
+      "source": "658 - Alice In Chains - Heaven Beside You.mp3",
+      "size": 13302849,
+      "mtimeMs": 1783701826623.9148,
+      "targetSize": 168972
+    },
+    "659 - Stone Temple Pilots - Creep.mp3": {
+      "source": "659 - Stone Temple Pilots - Creep.mp3",
+      "size": 13435207,
+      "mtimeMs": 1783701826733.9963,
+      "targetSize": 168955
+    },
+    "667 - Stone Sour - Tired.mp3": {
+      "source": "667 - Stone Sour - Tired.mp3",
+      "size": 10310678,
+      "mtimeMs": 1783701827343.8225,
+      "targetSize": 168976
+    },
+    "675 - Lenny Kravitz - Fly Away.mp3": {
+      "source": "675 - Lenny Kravitz - Fly Away.mp3",
+      "size": 8966575,
+      "mtimeMs": 1783701827927.0042,
+      "targetSize": 168930
+    },
+    "676 - Lenny Kravitz - Can't Get You Off My Mind.mp3": {
+      "source": "676 - Lenny Kravitz - Can't Get You Off My Mind.mp3",
+      "size": 11074786,
+      "mtimeMs": 1783701828011.5042,
+      "targetSize": 168967
+    },
+    "680 - Lenny Kravitz - American Woman.mp3": {
+      "source": "680 - Lenny Kravitz - American Woman.mp3",
+      "size": 10593080,
+      "mtimeMs": 1783701828323.9475,
+      "targetSize": 168971
+    },
+    "682 - Lenny Kravitz - I'll Be Waiting.mp3": {
+      "source": "682 - Lenny Kravitz - I'll Be Waiting.mp3",
+      "size": 10557986,
+      "mtimeMs": 1783701828525.639,
+      "targetSize": 168960
+    },
+    "682.Judas Priest-1977-Sin After Sin-02-Diamonds And Rust.mp3": {
+      "source": "682.Judas Priest-1977-Sin After Sin-02-Diamonds And Rust.mp3",
+      "size": 4645609,
+      "mtimeMs": 1301476397000,
+      "targetSize": 168863
+    },
+    "684 - Lenny Kravitz - Believe In Me.mp3": {
+      "source": "684 - Lenny Kravitz - Believe In Me.mp3",
+      "size": 11421782,
+      "mtimeMs": 1783701828713.8557,
+      "targetSize": 168962
+    },
+    "687 - Lenny Kravitz - California.mp3": {
+      "source": "687 - Lenny Kravitz - California.mp3",
+      "size": 6393011,
+      "mtimeMs": 1783701828942.9111,
+      "targetSize": 168945
+    },
+    "688.Bush-1994-Sixteen Stone-10-Glycerine.mp3": {
+      "source": "688.Bush-1994-Sixteen Stone-10-Glycerine.mp3",
+      "size": 6176872,
+      "mtimeMs": 1301478002000,
+      "targetSize": 168839
+    },
+    "690.Pearl Jam-1993-Vs.-01-Go.mp3": {
+      "source": "690.Pearl Jam-1993-Vs.-01-Go.mp3",
+      "size": 4681729,
+      "mtimeMs": 1301477953000,
+      "targetSize": 168842
+    },
+    "693 - Poison - Unskinny Bop.mp3": {
+      "source": "693 - Poison - Unskinny Bop.mp3",
+      "size": 9301592,
+      "mtimeMs": 1783701829583.927,
+      "targetSize": 168955
+    },
+    "697 - Poison - Nothin' But A Good Time (Remastered 2006).mp3": {
+      "source": "697 - Poison - Nothin' But A Good Time (Remastered 2006).mp3",
+      "size": 9125770,
+      "mtimeMs": 1783701830039.7893,
+      "targetSize": 168987
+    },
+    "699 - The Police - Walking On The Moon Remastered 2003.mp3": {
+      "source": "699 - The Police - Walking On The Moon Remastered 2003.mp3",
+      "size": 12302324,
+      "mtimeMs": 1783701830277.9524,
+      "targetSize": 168996
+    },
+    "703 - Aerosmith - I Don't Want To Miss A Thing.mp3": {
+      "source": "703 - Aerosmith - I Don't Want To Miss A Thing.mp3",
+      "size": 12101714,
+      "mtimeMs": 1783701830736.934,
+      "targetSize": 169013
+    },
+    "705 - Aerosmith - Amazing.mp3": {
+      "source": "705 - Aerosmith - Amazing.mp3",
+      "size": 14570085,
+      "mtimeMs": 1783701831015.9006,
+      "targetSize": 168920
+    },
+    "707 - Aerosmith - Janie's Got A Gun.mp3": {
+      "source": "707 - Aerosmith - Janie's Got A Gun.mp3",
+      "size": 13407030,
+      "mtimeMs": 1783701831277.5247,
+      "targetSize": 168968
+    },
+    "708 - Aerosmith - Rag Doll.mp3": {
+      "source": "708 - Aerosmith - Rag Doll.mp3",
+      "size": 10801035,
+      "mtimeMs": 1783701831409.8218,
+      "targetSize": 168958
+    },
+    "709 - Aerosmith - Love In An Elevator (Single Version).mp3": {
+      "source": "709 - Aerosmith - Love In An Elevator (Single Version).mp3",
+      "size": 13030474,
+      "mtimeMs": 1783701831570.5847,
+      "targetSize": 169034
+    },
+    "711 - Aerosmith - Livin' On The Edge.mp3": {
+      "source": "711 - Aerosmith - Livin' On The Edge.mp3",
+      "size": 15365272,
+      "mtimeMs": 1783701831934.02,
+      "targetSize": 168930
+    },
+    "713 - Aerosmith - Come Together.mp3": {
+      "source": "713 - Aerosmith - Come Together.mp3",
+      "size": 9057892,
+      "mtimeMs": 1783701832193.8755,
+      "targetSize": 168926
+    },
+    "714 - Aerosmith - Angel.mp3": {
+      "source": "714 - Aerosmith - Angel.mp3",
+      "size": 12492721,
+      "mtimeMs": 1783701832348.0288,
+      "targetSize": 168956
+    },
+    "718.Smashing Pumpkins - 1979 - 01 - 1979.mp3": {
+      "source": "718.Smashing Pumpkins - 1979 - 01 - 1979.mp3",
+      "size": 6076334,
+      "mtimeMs": 1301475946000,
+      "targetSize": 168860
+    },
+    "719 - Aerosmith - What It Takes.mp3": {
+      "source": "719 - Aerosmith - What It Takes.mp3",
+      "size": 12660965,
+      "mtimeMs": 1783701833014.0005,
+      "targetSize": 168964
+    },
+    "736 - Bruce Springsteen - Streets of Philadelphia.mp3": {
+      "source": "736 - Bruce Springsteen - Streets of Philadelphia.mp3",
+      "size": 8002507,
+      "mtimeMs": 1783701835028.0642,
+      "targetSize": 168949
+    },
+    "736.Bush-1994-Sixteen Stone-07-Machinehead.mp3": {
+      "source": "736.Bush-1994-Sixteen Stone-07-Machinehead.mp3",
+      "size": 7215622,
+      "mtimeMs": 1301477565000,
+      "targetSize": 168841
+    },
+    "737 - Bruce Springsteen - Glory Days.mp3": {
+      "source": "737 - Bruce Springsteen - Glory Days.mp3",
+      "size": 10325354,
+      "mtimeMs": 1783701835144.9124,
+      "targetSize": 168975
+    },
+    "739 - Green Day - Boulevard of Broken Dreams.mp3": {
+      "source": "739 - Green Day - Boulevard of Broken Dreams.mp3",
+      "size": 10769344,
+      "mtimeMs": 1783701835366.1792,
+      "targetSize": 168988
+    },
+    "741 - Green Day - Oh Yeah!.mp3": {
+      "source": "741 - Green Day - Oh Yeah!.mp3",
+      "size": 7090796,
+      "mtimeMs": 1783701835565.697,
+      "targetSize": 168937
+    },
+    "743 - Green Day - Jesus of Suburbia.mp3": {
+      "source": "743 - Green Day - Jesus of Suburbia.mp3",
+      "size": 22015189,
+      "mtimeMs": 1783701835930.17,
+      "targetSize": 168976
+    },
+    "745 - Green Day - Know Your Enemy.mp3": {
+      "source": "745 - Green Day - Know Your Enemy.mp3",
+      "size": 7886007,
+      "mtimeMs": 1783701836079.542,
+      "targetSize": 168973
+    },
+    "746 - Green Day - Minority.mp3": {
+      "source": "746 - Green Day - Minority.mp3",
+      "size": 6971183,
+      "mtimeMs": 1783701836159.944,
+      "targetSize": 168979
+    },
+    "747 - Green Day - Oh Love.mp3": {
+      "source": "747 - Green Day - Oh Love.mp3",
+      "size": 12374349,
+      "mtimeMs": 1783701836294.1997,
+      "targetSize": 168978
+    },
+    "748 - Green Day - Warning.mp3": {
+      "source": "748 - Green Day - Warning.mp3",
+      "size": 9009221,
+      "mtimeMs": 1783701836394.0403,
+      "targetSize": 168950
+    },
+    "749 - Green Day - Still Breathing.mp3": {
+      "source": "749 - Green Day - Still Breathing.mp3",
+      "size": 9116597,
+      "mtimeMs": 1783701836503.9714,
+      "targetSize": 168952
+    },
+    "750.Joe Satriani-1987-Surfing With The Alien-04-Always With .mp3": {
+      "source": "750.Joe Satriani-1987-Surfing With The Alien-04-Always With .mp3",
+      "size": 5406669,
+      "mtimeMs": 1301476449000,
+      "targetSize": 168912
+    },
+    "752 - Green Day - Let Yourself Go.mp3": {
+      "source": "752 - Green Day - Let Yourself Go.mp3",
+      "size": 7325902,
+      "mtimeMs": 1783701836745.921,
+      "targetSize": 168957
+    },
+    "756 - Jet - Look What You've Done.mp3": {
+      "source": "756 - Jet - Look What You've Done.mp3",
+      "size": 9429863,
+      "mtimeMs": 1783701837133.9846,
+      "targetSize": 168946
+    },
+    "757 - Mötley Crüe - Girls, Girls, Girls.mp3": {
+      "source": "757 - Mötley Crüe - Girls, Girls, Girls.mp3",
+      "size": 10963647,
+      "mtimeMs": 1783701837248.2124,
+      "targetSize": 168940
+    },
+    "758 - Mötley Crüe - Home Sweet Home.mp3": {
+      "source": "758 - Mötley Crüe - Home Sweet Home.mp3",
+      "size": 9771393,
+      "mtimeMs": 1783701837349.7983,
+      "targetSize": 168930
+    },
+    "778 - Guns N' Roses - Used To Love Her.mp3": {
+      "source": "778 - Guns N' Roses - Used To Love Her.mp3",
+      "size": 7863593,
+      "mtimeMs": 1783701839353.982,
+      "targetSize": 168927
+    },
+    "785 - 3 Doors Down - Here Without You.mp3": {
+      "source": "785 - 3 Doors Down - Here Without You.mp3",
+      "size": 9645814,
+      "mtimeMs": 1783701840115.058,
+      "targetSize": 168963
+    },
+    "786 - 3 Doors Down - It's Not My Time.mp3": {
+      "source": "786 - 3 Doors Down - It's Not My Time.mp3",
+      "size": 9931910,
+      "mtimeMs": 1783701840214.0413,
+      "targetSize": 168959
+    },
+    "788 - AC_DC - For Those About to Rock (We Salute You).mp3": {
+      "source": "788 - AC_DC - For Those About to Rock (We Salute You).mp3",
+      "size": 13850950,
+      "mtimeMs": 1783701840481.0388,
+      "targetSize": 169000
+    },
+    "789 - a-ha - There's Never a Forever Thing.mp3": {
+      "source": "789 - a-ha - There's Never a Forever Thing.mp3",
+      "size": 7059884,
+      "mtimeMs": 1783701840556.4885,
+      "targetSize": 168972
+    },
+    "790 - a-ha - Touchy!.mp3": {
+      "source": "790 - a-ha - Touchy!.mp3",
+      "size": 11286453,
+      "mtimeMs": 1783701840666.4734,
+      "targetSize": 168951
+    },
+    "798 - Led Zeppelin - All My Love (1990 Remaster).mp3": {
+      "source": "798 - Led Zeppelin - All My Love (1990 Remaster).mp3",
+      "size": 14201331,
+      "mtimeMs": 1783701841549.5735,
+      "targetSize": 169009
+    },
+    "799 - Led Zeppelin - D'yer Mak'er.mp3": {
+      "source": "799 - Led Zeppelin - D'yer Mak'er.mp3",
+      "size": 10701853,
+      "mtimeMs": 1783701841651.3933,
+      "targetSize": 168929
+    },
+    "804 - The Cranberries - Ode To My Family.mp3": {
+      "source": "804 - The Cranberries - Ode To My Family.mp3",
+      "size": 10930284,
+      "mtimeMs": 1783701842134.2183,
+      "targetSize": 168999
+    },
+    "806 - The Cranberries - Just My Imagination.mp3": {
+      "source": "806 - The Cranberries - Just My Imagination.mp3",
+      "size": 8941714,
+      "mtimeMs": 1783701842338.3162,
+      "targetSize": 169002
+    },
+    "808 - The Cranberries - Animal Instinct.mp3": {
+      "source": "808 - The Cranberries - Animal Instinct.mp3",
+      "size": 8562408,
+      "mtimeMs": 1783701842533.7893,
+      "targetSize": 168998
+    },
+    "811 - Deep Blue Something - Breakfast At Tiffany's.mp3": {
+      "source": "811 - Deep Blue Something - Breakfast At Tiffany's.mp3",
+      "size": 10551033,
+      "mtimeMs": 1783701842797.4294,
+      "targetSize": 168977
+    },
+    "812 - Rancid - Time Bomb.mp3": {
+      "source": "812 - Rancid - Time Bomb.mp3",
+      "size": 6099606,
+      "mtimeMs": 1783701842861.231,
+      "targetSize": 168953
+    },
+    "816 - Bad Religion - American Jesus.mp3": {
+      "source": "816 - Bad Religion - American Jesus.mp3",
+      "size": 8217622,
+      "mtimeMs": 1783701843374.1523,
+      "targetSize": 168956
+    },
+    "817 - Bad Religion - Infected.mp3": {
+      "source": "817 - Bad Religion - Infected.mp3",
+      "size": 10167083,
+      "mtimeMs": 1783701843473.7915,
+      "targetSize": 168971
+    },
+    "821 - The Offspring - Original Prankster.mp3": {
+      "source": "821 - The Offspring - Original Prankster.mp3",
+      "size": 8906116,
+      "mtimeMs": 1783701843823.89,
+      "targetSize": 168975
+    },
+    "824 - The Offspring - What Happened to You_.mp3": {
+      "source": "824 - The Offspring - What Happened to You_.mp3",
+      "size": 5423412,
+      "mtimeMs": 1783701844068.8767,
+      "targetSize": 168918
+    },
+    "827 - Bon Jovi - Bed Of Roses.mp3": {
+      "source": "827 - Bon Jovi - Bed Of Roses.mp3",
+      "size": 16012315,
+      "mtimeMs": 1783701844474.063,
+      "targetSize": 168945
+    },
+    "828 - Bon Jovi - In These Arms (Album Version).mp3": {
+      "source": "828 - Bon Jovi - In These Arms (Album Version).mp3",
+      "size": 12887469,
+      "mtimeMs": 1783701844593.8984,
+      "targetSize": 169015
+    },
+    "829 - Bon Jovi - Runaway.mp3": {
+      "source": "829 - Bon Jovi - Runaway.mp3",
+      "size": 9431632,
+      "mtimeMs": 1783701844694.1526,
+      "targetSize": 168933
+    },
+    "830 - Bon Jovi - Lay Your Hands On Me (Edit).mp3": {
+      "source": "830 - Bon Jovi - Lay Your Hands On Me (Edit).mp3",
+      "size": 9289882,
+      "mtimeMs": 1783701844794.0725,
+      "targetSize": 169013
+    },
+    "833 - Bon Jovi - These Days (Album Version).mp3": {
+      "source": "833 - Bon Jovi - These Days (Album Version).mp3",
+      "size": 15631365,
+      "mtimeMs": 1783701845144.2297,
+      "targetSize": 169012
+    },
+    "835 - Kiss - Heaven's On Fire.mp3": {
+      "source": "835 - Kiss - Heaven's On Fire.mp3",
+      "size": 8232723,
+      "mtimeMs": 1783701845334.0564,
+      "targetSize": 168945
+    },
+    "838 - Tom Petty - Free Fallin'.mp3": {
+      "source": "838 - Tom Petty - Free Fallin'.mp3",
+      "size": 10438584,
+      "mtimeMs": 1783701845644.89,
+      "targetSize": 168941
+    },
+    "841 - The Verve - Lucky Man.mp3": {
+      "source": "841 - The Verve - Lucky Man.mp3",
+      "size": 11999527,
+      "mtimeMs": 1783701845953.9749,
+      "targetSize": 169000
+    },
+    "855 - Jimi Hendrix - Hey Joe.mp3": {
+      "source": "855 - Jimi Hendrix - Hey Joe.mp3",
+      "size": 8558488,
+      "mtimeMs": 1783701847294.1348,
+      "targetSize": 168995
+    },
+    "859 - Ramones - Poison Heart.mp3": {
+      "source": "859 - Ramones - Poison Heart.mp3",
+      "size": 9901003,
+      "mtimeMs": 1783701847673.8904,
+      "targetSize": 168963
+    },
+    "866 - The Clash - I Fought the Law.mp3": {
+      "source": "866 - The Clash - I Fought the Law.mp3",
+      "size": 6677988,
+      "mtimeMs": 1783701848194.2693,
+      "targetSize": 168968
+    },
+    "874 - Elvis Presley - A Little Less Conversation (JXL Radio Edit Remix).mp3": {
+      "source": "874 - Elvis Presley - A Little Less Conversation (JXL Radio Edit Remix).mp3",
+      "size": 8588839,
+      "mtimeMs": 1783701849127.6033,
+      "targetSize": 169018
+    },
+    "878 - Pretenders - Don't Get Me Wrong (2007 Remaster).mp3": {
+      "source": "878 - Pretenders - Don't Get Me Wrong (2007 Remaster).mp3",
+      "size": 9226331,
+      "mtimeMs": 1783701849686.264,
+      "targetSize": 169010
+    },
+    "881 - Queen - Love Of My Life (Remastered 2011).mp3": {
+      "source": "881 - Queen - Love Of My Life (Remastered 2011).mp3",
+      "size": 8625721,
+      "mtimeMs": 1783701850141.784,
+      "targetSize": 168963
+    },
+    "884 - blink-182 - What's My Age Again_.mp3": {
+      "source": "884 - blink-182 - What's My Age Again_.mp3",
+      "size": 6023963,
+      "mtimeMs": 1783701850523.7712,
+      "targetSize": 168961
+    },
+    "890 - Paramore - The Only Exception.mp3": {
+      "source": "890 - Paramore - The Only Exception.mp3",
+      "size": 10912714,
+      "mtimeMs": 1783701851210.5947,
+      "targetSize": 168974
+    },
+    "895 - Soundgarden - Fell On Black Days.mp3": {
+      "source": "895 - Soundgarden - Fell On Black Days.mp3",
+      "size": 11461727,
+      "mtimeMs": 1783701851945.0784,
+      "targetSize": 168978
+    },
+    "899 - Korn - Falling Away from Me.mp3": {
+      "source": "899 - Korn - Falling Away from Me.mp3",
+      "size": 10974048,
+      "mtimeMs": 1783701852502.2249,
+      "targetSize": 168961
+    },
+    "901 - Megadeth - Symphony Of Destruction.mp3": {
+      "source": "901 - Megadeth - Symphony Of Destruction.mp3",
+      "size": 9998996,
+      "mtimeMs": 1783701852883.023,
+      "targetSize": 168990
+    },
+    "911 - Pearl Jam - Rearviewmirror (Remastered).mp3": {
+      "source": "911 - Pearl Jam - Rearviewmirror (Remastered).mp3",
+      "size": 11490030,
+      "mtimeMs": 1783701854428.047,
+      "targetSize": 168970
+    },
+    "915 - Linkin Park - BURN IT DOWN.mp3": {
+      "source": "915 - Linkin Park - BURN IT DOWN.mp3",
+      "size": 9292587,
+      "mtimeMs": 1783701855140.815,
+      "targetSize": 168972
+    },
+    "918 - Linkin Park - Leave Out All The Rest.mp3": {
+      "source": "918 - Linkin Park - Leave Out All The Rest.mp3",
+      "size": 8445389,
+      "mtimeMs": 1783701855579.8943,
+      "targetSize": 168988
+    },
+    "919 - Linkin Park - Breaking the Habit.mp3": {
+      "source": "919 - Linkin Park - Breaking the Habit.mp3",
+      "size": 7956796,
+      "mtimeMs": 1783701855720.3958,
+      "targetSize": 168988
+    },
+    "920 - Linkin Park - One Step Closer.mp3": {
+      "source": "920 - Linkin Park - One Step Closer.mp3",
+      "size": 6484818,
+      "mtimeMs": 1783701855857.942,
+      "targetSize": 168990
+    },
+    "921 - Linkin Park - CASTLE OF GLASS.mp3": {
+      "source": "921 - Linkin Park - CASTLE OF GLASS.mp3",
+      "size": 8297850,
+      "mtimeMs": 1783701855987.1653,
+      "targetSize": 168975
+    },
+    "924 - Linkin Park - Points of Authority.mp3": {
+      "source": "924 - Linkin Park - Points of Authority.mp3",
+      "size": 8201593,
+      "mtimeMs": 1783701856438.2915,
+      "targetSize": 168994
+    },
+    "927 - Ugly Kid Joe - Everything About You.mp3": {
+      "source": "927 - Ugly Kid Joe - Everything About You.mp3",
+      "size": 10746313,
+      "mtimeMs": 1783701857000.4048,
+      "targetSize": 168985
+    },
+    "928 - The Lemonheads - Mrs. Robinson.mp3": {
+      "source": "928 - The Lemonheads - Mrs. Robinson.mp3",
+      "size": 9021414,
+      "mtimeMs": 1783701857157.7292,
+      "targetSize": 168954
+    },
+    "929 - Ugly Kid Joe - Cats In The Cradle.mp3": {
+      "source": "929 - Ugly Kid Joe - Cats In The Cradle.mp3",
+      "size": 10012788,
+      "mtimeMs": 1783701857309.7664,
+      "targetSize": 168982
+    },
+    "937 - Nirvana - All Apologies.mp3": {
+      "source": "937 - Nirvana - All Apologies.mp3",
+      "size": 9473584,
+      "mtimeMs": 1783701858396.7932,
+      "targetSize": 168953
+    },
+    "940 - The Goo Goo Dolls - Here Is Gone.mp3": {
+      "source": "940 - The Goo Goo Dolls - Here Is Gone.mp3",
+      "size": 9757826,
+      "mtimeMs": 1783701858799.2532,
+      "targetSize": 168975
+    },
+    "941 - Limp Bizkit - Take A Look Around.mp3": {
+      "source": "941 - Limp Bizkit - Take A Look Around.mp3",
+      "size": 13006947,
+      "mtimeMs": 1783701858988.1416,
+      "targetSize": 169004
+    },
+    "942 - Beck - Loser.mp3": {
+      "source": "942 - Beck - Loser.mp3",
+      "size": 9625366,
+      "mtimeMs": 1783701859129.1733,
+      "targetSize": 168926
+    },
+    "946 - Oasis - Supersonic (Remastered).mp3": {
+      "source": "946 - Oasis - Supersonic (Remastered).mp3",
+      "size": 11534274,
+      "mtimeMs": 1783701859689.8984,
+      "targetSize": 168977
+    },
+    "947 - Bush - The Chemicals Between Us.mp3": {
+      "source": "947 - Bush - The Chemicals Between Us.mp3",
+      "size": 8793703,
+      "mtimeMs": 1783701859812.0676,
+      "targetSize": 168948
+    },
+    "950 - Stone Temple Pilots - Wicked Garden.mp3": {
+      "source": "950 - Stone Temple Pilots - Wicked Garden.mp3",
+      "size": 9941084,
+      "mtimeMs": 1783701860045.356,
+      "targetSize": 168963
+    },
+    "952 - Green Day - Father of All.mp3": {
+      "source": "952 - Green Day - Father of All.mp3",
+      "size": 6298809,
+      "mtimeMs": 1783701860248.4497,
+      "targetSize": 168968
+    },
+    "958 - blink-182 - Adam's Song.mp3": {
+      "source": "958 - blink-182 - Adam's Song.mp3",
+      "size": 9928729,
+      "mtimeMs": 1783701861038.2021,
+      "targetSize": 168952
+    },
+    "967 - Twenty One Pilots - Heathens.mp3": {
+      "source": "967 - Twenty One Pilots - Heathens.mp3",
+      "size": 7973393,
+      "mtimeMs": 1783962985775.1262,
+      "targetSize": 169734
+    },
+    "970 - The Offspring - All I Want.mp3": {
+      "source": "970 - The Offspring - All I Want.mp3",
+      "size": 4849327,
+      "mtimeMs": 1783701862610.5046,
+      "targetSize": 168988
+    },
+    "971 - Beastie Boys - No Sleep Till Brooklyn.mp3": {
+      "source": "971 - Beastie Boys - No Sleep Till Brooklyn.mp3",
+      "size": 10021926,
+      "mtimeMs": 1783701862752.0503,
+      "targetSize": 168989
+    },
+    "A01. Story of My Life.mp3": {
+      "source": "A01. Story of My Life.mp3",
+      "size": 13983795,
+      "mtimeMs": 1461348821656.25,
+      "targetSize": 169340
+    },
+    "Alejandro Sanz - Corazon Partio.mp3": {
+      "source": "Alejandro Sanz - Corazon Partio.mp3",
+      "size": 14154706,
+      "mtimeMs": 1783861762545.385,
+      "targetSize": 170200
+    },
+    "Alex Ubago - A Gritos De Esperanza.mp3": {
+      "source": "Alex Ubago - A Gritos De Esperanza.mp3",
+      "size": 11397890,
+      "mtimeMs": 1783861762494.1675,
+      "targetSize": 170093
+    },
+    "Alex Ubago Ft Amaia Montero - Sin Miedo A Nada.mp3": {
+      "source": "Alex Ubago Ft Amaia Montero - Sin Miedo A Nada.mp3",
+      "size": 12901976,
+      "mtimeMs": 1783861762520.535,
+      "targetSize": 170089
+    },
+    "Alex, Jorge Y Lena - Estar Contigo.mp3": {
+      "source": "Alex, Jorge Y Lena - Estar Contigo.mp3",
+      "size": 10976692,
+      "mtimeMs": 1783861762573.146,
+      "targetSize": 170213
+    },
+    "Amy Macdonald - This Is The Life.mp3": {
+      "source": "Amy Macdonald - This Is The Life.mp3",
+      "size": 7910267,
+      "mtimeMs": 1783861762621.9412,
+      "targetSize": 170201
+    },
+    "Andres Calamaro - Flaca.mp3": {
+      "source": "Andres Calamaro - Flaca.mp3",
+      "size": 11488979,
+      "mtimeMs": 1783861762677.458,
+      "targetSize": 170155
+    },
+    "Aqua - Barbie Girl.mp3": {
+      "source": "Aqua - Barbie Girl.mp3",
+      "size": 3120115,
+      "mtimeMs": 1748008879330.404,
+      "targetSize": 168761
+    },
+    "Avril Lavigne - Complicated.mp3": {
+      "source": "Avril Lavigne - Complicated.mp3",
+      "size": 10253885,
+      "mtimeMs": 1783861762757.0747,
+      "targetSize": 169864
+    },
+    "B.O. Collateral - 02 - the roots featuring cody chesnutt - the seed (2.0).mp3": {
+      "source": "B.O. Collateral - 02 - the roots featuring cody chesnutt - the seed (2.0).mp3",
+      "size": 6432262,
+      "mtimeMs": 1096483534000,
+      "targetSize": 168872
+    },
+    "B.O. Collateral - 12 - paul oakenfold - ready steady go.mp3": {
+      "source": "B.O. Collateral - 12 - paul oakenfold - ready steady go.mp3",
+      "size": 6144128,
+      "mtimeMs": 1096484228000,
+      "targetSize": 168967
+    },
+    "Backstreet Boys - Everybody (Extended Version).mp3": {
+      "source": "Backstreet Boys - Everybody (Extended Version).mp3",
+      "size": 11722920,
+      "mtimeMs": 1783861976704,
+      "targetSize": 168897
+    },
+    "Backstreet Boys - Get Down.mp3": {
+      "source": "Backstreet Boys - Get Down.mp3",
+      "size": 9835875,
+      "mtimeMs": 1783861762872.187,
+      "targetSize": 169944
+    },
+    "Beyoncé - Naughty Girl.mp3": {
+      "source": "Beyoncé - Naughty Girl.mp3",
+      "size": 8866180,
+      "mtimeMs": 1783861763396.572,
+      "targetSize": 169924
+    },
+    "Beyoncé - Single Ladies.mp3": {
+      "source": "Beyoncé - Single Ladies.mp3",
+      "size": 8143315,
+      "mtimeMs": 1783861763321.557,
+      "targetSize": 169786
+    },
+    "Beyoncé, Jay-Z - Crazy In Love.mp3": {
+      "source": "Beyoncé, Jay-Z - Crazy In Love.mp3",
+      "size": 9918501,
+      "mtimeMs": 1783861763374.5654,
+      "targetSize": 169954
+    },
+    "Beyoncé, Shakira - Beautiful Liar.mp3": {
+      "source": "Beyoncé, Shakira - Beautiful Liar.mp3",
+      "size": 8446347,
+      "mtimeMs": 1783861763597.934,
+      "targetSize": 169811
+    },
+    "Britney Spears - ...Baby One More Time.mp3": {
+      "source": "Britney Spears - ...Baby One More Time.mp3",
+      "size": 8896088,
+      "mtimeMs": 1783861763677.5996,
+      "targetSize": 169876
+    },
+    "Britney Spears - I Love Rock N Roll.mp3": {
+      "source": "Britney Spears - I Love Rock N Roll.mp3",
+      "size": 7867196,
+      "mtimeMs": 1783861763745.958,
+      "targetSize": 169869
+    },
+    "Britney Spears - Im A Slave 4 U.mp3": {
+      "source": "Britney Spears - Im A Slave 4 U.mp3",
+      "size": 8582167,
+      "mtimeMs": 1783861763716.6,
+      "targetSize": 169864
+    },
+    "Britney Spears - Oops!...I Did It Again.mp3": {
+      "source": "Britney Spears - Oops!...I Did It Again.mp3",
+      "size": 8902814,
+      "mtimeMs": 1783861762727.0261,
+      "targetSize": 169878
+    },
+    "Britney Spears - Toxic.mp3": {
+      "source": "Britney Spears - Toxic.mp3",
+      "size": 8539131,
+      "mtimeMs": 1783861763848.0234,
+      "targetSize": 169859
+    },
+    "Britney Spears - Womanizer.mp3": {
+      "source": "Britney Spears - Womanizer.mp3",
+      "size": 9384717,
+      "mtimeMs": 1783861763822.1892,
+      "targetSize": 169854
+    },
+    "Bullet With Butterfly Wings - The Smashing Pumpkins (320).mp3": {
+      "source": "Bullet With Butterfly Wings - The Smashing Pumpkins (320).mp3",
+      "size": 10713268,
+      "mtimeMs": 1783930995260.406,
+      "targetSize": 170946
+    },
+    "Call on me   Erik Prydz.mp3": {
+      "source": "Call on me   Erik Prydz.mp3",
+      "size": 5368416,
+      "mtimeMs": 1783861762789.974,
+      "targetSize": 169680
+    },
+    "Castaway.mp3": {
+      "source": "Castaway.mp3",
+      "size": 468191,
+      "mtimeMs": 1279371846000,
+      "targetSize": 468191
+    },
+    "Christina Aguilera - Lady Marmalade.mp3": {
+      "source": "Christina Aguilera - Lady Marmalade.mp3",
+      "size": 11007814,
+      "mtimeMs": 1783861764107.964,
+      "targetSize": 169962
+    },
+    "Christina Aguilera - Ven Conmigo (Extended Version).mp3": {
+      "source": "Christina Aguilera - Ven Conmigo (Extended Version).mp3",
+      "size": 9013815,
+      "mtimeMs": 1783861976711,
+      "targetSize": 168902
+    },
+    "Cinnamon_feat_Albert_Hammond_Jr_Damiano_David_Albert_Hammond_Jr.mp3": {
+      "source": "Cinnamon_feat_Albert_Hammond_Jr_Damiano_David_Albert_Hammond_Jr.mp3",
+      "size": 6081648,
+      "mtimeMs": 1776062805324.7595,
+      "targetSize": 169282
+    },
+    "CROSSING - Parem el temps.mp3": {
+      "source": "CROSSING - Parem el temps.mp3",
+      "size": 3342221,
+      "mtimeMs": 1419189248437.7283,
+      "targetSize": 168909
+    },
+    "CROSSING - Que ens deixin en pau.mp3": {
+      "source": "CROSSING - Que ens deixin en pau.mp3",
+      "size": 3575796,
+      "mtimeMs": 1783962496962,
+      "targetSize": 168691
+    },
+    "Damiano David - Tango.mp3": {
+      "source": "Damiano David - Tango.mp3",
+      "size": 7824645,
+      "mtimeMs": 1759500679373.8901,
+      "targetSize": 168756
+    },
+    "Damiano-David-The-First-Time-320.mp3": {
+      "source": "Damiano-David-The-First-Time-320.mp3",
+      "size": 5275930,
+      "mtimeMs": 1772201611947.1436,
+      "targetSize": 168806
+    },
+    "Dani california.mp3": {
+      "source": "Dani california.mp3",
+      "size": 4494171,
+      "mtimeMs": 1380976011868.164,
+      "targetSize": 168775
+    },
+    "Dani Martín - Mi lamento con letra.mp3": {
+      "source": "Dani Martín - Mi lamento con letra.mp3",
+      "size": 3875206,
+      "mtimeMs": 1783962094572.755,
+      "targetSize": 169747
+    },
+    "Don't Pick It Up.mp3": {
+      "source": "Don't Pick It Up.mp3",
+      "size": 472830,
+      "mtimeMs": 1279373664000,
+      "targetSize": 472830
+    },
+    "dover- let me out.mp3": {
+      "source": "dover- let me out.mp3",
+      "size": 8685060,
+      "mtimeMs": 1159731856000,
+      "targetSize": 168830
+    },
+    "Dr. Dre, Snoop Dogg - The Next Episode.mp3": {
+      "source": "Dr. Dre, Snoop Dogg - The Next Episode.mp3",
+      "size": 6893724,
+      "mtimeMs": 1783861764294.3672,
+      "targetSize": 169957
+    },
+    "Ella Baila Sola - Lo Echamos A Suertes.mp3": {
+      "source": "Ella Baila Sola - Lo Echamos A Suertes.mp3",
+      "size": 9961814,
+      "mtimeMs": 1783861764445.6023,
+      "targetSize": 170174
+    },
+    "Ellie Goulding - Burn.mp3": {
+      "source": "Ellie Goulding - Burn.mp3",
+      "size": 9357860,
+      "mtimeMs": 1380033204484.375,
+      "targetSize": 168998
+    },
+    "Eminem - The Real Slim Shady.mp3": {
+      "source": "Eminem - The Real Slim Shady.mp3",
+      "size": 11850283,
+      "mtimeMs": 1783861764423.8926,
+      "targetSize": 169881
+    },
+    "Eminem - Without Me.mp3": {
+      "source": "Eminem - Without Me.mp3",
+      "size": 12068415,
+      "mtimeMs": 1783861764384.3384,
+      "targetSize": 169871
+    },
+    "Enrique Iglesias - Bailamos.mp3": {
+      "source": "Enrique Iglesias - Bailamos.mp3",
+      "size": 3413007,
+      "mtimeMs": 1739368385830.159,
+      "targetSize": 168739
+    },
+    "Eve - Let Me Blow Ya Mind.mp3": {
+      "source": "Eve - Let Me Blow Ya Mind.mp3",
+      "size": 9617879,
+      "mtimeMs": 1783861762344.3936,
+      "targetSize": 170140
+    },
+    "George Ezra - Blame It on Me by www.RadioFLy.ws.mp3": {
+      "source": "George Ezra - Blame It on Me by www.RadioFLy.ws.mp3",
+      "size": 7917659,
+      "mtimeMs": 1783962094904.1248,
+      "targetSize": 169986
+    },
+    "Gorillaz - 19-2000 (Soulchild Remix).mp3": {
+      "source": "Gorillaz - 19-2000 (Soulchild Remix).mp3",
+      "size": 8713749,
+      "mtimeMs": 1783861764671.9185,
+      "targetSize": 169786
+    },
+    "Gwen Stefani - Hollaback Girl.mp3": {
+      "source": "Gwen Stefani - Hollaback Girl.mp3",
+      "size": 8404067,
+      "mtimeMs": 1783861764145.287,
+      "targetSize": 170191
+    },
+    "Gwen Stefani - Rich Girl.mp3": {
+      "source": "Gwen Stefani - Rich Girl.mp3",
+      "size": 9892312,
+      "mtimeMs": 1783861764872.4485,
+      "targetSize": 169901
+    },
+    "Gwen Stefani - The Sweet Escape.mp3": {
+      "source": "Gwen Stefani - The Sweet Escape.mp3",
+      "size": 10274061,
+      "mtimeMs": 1783861763415.5662,
+      "targetSize": 170215
+    },
+    "Gwen Stefani - What You Waiting For.mp3": {
+      "source": "Gwen Stefani - What You Waiting For.mp3",
+      "size": 9293575,
+      "mtimeMs": 1783861764848.4502,
+      "targetSize": 169885
+    },
+    "Haiducii - Dragostea Din Tei.mp3": {
+      "source": "Haiducii - Dragostea Din Tei.mp3",
+      "size": 6864689,
+      "mtimeMs": 1757267999510.2314,
+      "targetSize": 168803
+    },
+    "Hole - 01 - Celebrity Skin.mp3": {
+      "source": "Hole - 01 - Celebrity Skin.mp3",
+      "size": 5207266,
+      "mtimeMs": 1014546192000,
+      "targetSize": 168842
+    },
+    "Hole - 02 - Awful.mp3": {
+      "source": "Hole - 02 - Awful.mp3",
+      "size": 6273889,
+      "mtimeMs": 1014546240000,
+      "targetSize": 168833
+    },
+    "Hole - 04 - Malibu.mp3": {
+      "source": "Hole - 04 - Malibu.mp3",
+      "size": 7363092,
+      "mtimeMs": 1014546358000,
+      "targetSize": 168834
+    },
+    "Hole - 08 - Northern Star.mp3": {
+      "source": "Hole - 08 - Northern Star.mp3",
+      "size": 9542338,
+      "mtimeMs": 1014546644000,
+      "targetSize": 168841
+    },
+    "Hole - 11 - Playing Your Song.mp3": {
+      "source": "Hole - 11 - Playing Your Song.mp3",
+      "size": 6446101,
+      "mtimeMs": 1014546824000,
+      "targetSize": 168846
+    },
+    "Inna feat. J Balvin - Cola Song.mp3": {
+      "source": "Inna feat. J Balvin - Cola Song.mp3",
+      "size": 8026259,
+      "mtimeMs": 1403003486000,
+      "targetSize": 168901
+    },
+    "Inna Ft. Yandel - In Your Eyes.mp3": {
+      "source": "Inna Ft. Yandel - In Your Eyes.mp3",
+      "size": 8059896,
+      "mtimeMs": 1391787106000,
+      "targetSize": 168823
+    },
+    "Jeniffer Lopez - Lets Get Now.mp3": {
+      "source": "Jeniffer Lopez - Lets Get Now.mp3",
+      "size": 10216120,
+      "mtimeMs": 1783861764966.9912,
+      "targetSize": 169890
+    },
+    "Jennifer Lopez - Play.mp3": {
+      "source": "Jennifer Lopez - Play.mp3",
+      "size": 8933361,
+      "mtimeMs": 1783861764892.45,
+      "targetSize": 169878
+    },
+    "Justin Bieber, Ludacris - Baby.mp3": {
+      "source": "Justin Bieber, Ludacris - Baby.mp3",
+      "size": 9077963,
+      "mtimeMs": 1783861763972.1094,
+      "targetSize": 169826
+    },
+    "Justin Timberlake, Timbaland - Sexyback.mp3": {
+      "source": "Justin Timberlake, Timbaland - Sexyback.mp3",
+      "size": 10178720,
+      "mtimeMs": 1783861764986.555,
+      "targetSize": 169923
+    },
+    "Katy Perry - Hot N Cold.mp3": {
+      "source": "Katy Perry - Hot N Cold.mp3",
+      "size": 9265260,
+      "mtimeMs": 1783861763124.1262,
+      "targetSize": 170132
+    },
+    "Keane - Somewhere Only We Know.mp3": {
+      "source": "Keane - Somewhere Only We Know.mp3",
+      "size": 9863609,
+      "mtimeMs": 1783861762283.128,
+      "targetSize": 170118
+    },
+    "Kriptonite   3 Doors Down (2).mp3": {
+      "source": "Kriptonite   3 Doors Down (2).mp3",
+      "size": 5761489,
+      "mtimeMs": 1783962094791.1182,
+      "targetSize": 169719
+    },
+    "La Oreja de Van Gogh - El 28.mp3": {
+      "source": "La Oreja de Van Gogh - El 28.mp3",
+      "size": 2719579,
+      "mtimeMs": 1057841858000,
+      "targetSize": 168811
+    },
+    "La Oreja de Van Gogh - La Carta.mp3": {
+      "source": "La Oreja de Van Gogh - La Carta.mp3",
+      "size": 2603805,
+      "mtimeMs": 1057842376000,
+      "targetSize": 168815
+    },
+    "La Oreja de Van Gogh - La Estrella y la Luna.mp3": {
+      "source": "La Oreja de Van Gogh - La Estrella y la Luna.mp3",
+      "size": 3671272,
+      "mtimeMs": 1057842022000,
+      "targetSize": 168827
+    },
+    "Lady Gaga - Bad Romance.mp3": {
+      "source": "Lady Gaga - Bad Romance.mp3",
+      "size": 12281364,
+      "mtimeMs": 1783861765148.134,
+      "targetSize": 170253
+    },
+    "Lady Gaga - Poker Face.mp3": {
+      "source": "Lady Gaga - Poker Face.mp3",
+      "size": 9969576,
+      "mtimeMs": 1783861764020.664,
+      "targetSize": 170130
+    },
+    "Lemon Pain-Never real.mp3": {
+      "source": "Lemon Pain-Never real.mp3",
+      "size": 6008694,
+      "mtimeMs": 1781505526733.6465,
+      "targetSize": 170670
+    },
+    "Mana - Eres Mi Religion.mp3": {
+      "source": "Mana - Eres Mi Religion.mp3",
+      "size": 13633308,
+      "mtimeMs": 1783861765192.0105,
+      "targetSize": 170154
+    },
+    "Maroon 5 - She Will Be Loved.mp3": {
+      "source": "Maroon 5 - She Will Be Loved.mp3",
+      "size": 10736191,
+      "mtimeMs": 1783861764583.3743,
+      "targetSize": 170184
+    },
+    "Maroon 5 - This Love.mp3": {
+      "source": "Maroon 5 - This Love.mp3",
+      "size": 8646105,
+      "mtimeMs": 1783861762475.48,
+      "targetSize": 170114
+    },
+    "Maroon5 - This Love.mp3": {
+      "source": "Maroon5 - This Love.mp3",
+      "size": 9424599,
+      "mtimeMs": 1783861765161.1296,
+      "targetSize": 169839
+    },
+    "Mary J. Blige - Family Affair.mp3": {
+      "source": "Mary J. Blige - Family Affair.mp3",
+      "size": 11443002,
+      "mtimeMs": 1783861763274.5583,
+      "targetSize": 170216
+    },
+    "Marylin Manson – The Beautiful People .mp3": {
+      "source": "Marylin Manson – The Beautiful People .mp3",
+      "size": 3450880,
+      "mtimeMs": 1783944834469.5427,
+      "targetSize": 169021
+    },
+    "Melanie C - First Day of my Life.mp3": {
+      "source": "Melanie C - First Day of my Life.mp3",
+      "size": 5881774,
+      "mtimeMs": 1139048846000,
+      "targetSize": 168844
+    },
+    "Melendi - Destino O Casualidad.mp3": {
+      "source": "Melendi - Destino O Casualidad.mp3",
+      "size": 10819048,
+      "mtimeMs": 1783861765272.5437,
+      "targetSize": 170121
+    },
+    "Mika - Grace Kelly.mp3": {
+      "source": "Mika - Grace Kelly.mp3",
+      "size": 7986036,
+      "mtimeMs": 1783861764491.8867,
+      "targetSize": 169927
+    },
+    "Mika - Live Your Life.mp3": {
+      "source": "Mika - Live Your Life.mp3",
+      "size": 9758812,
+      "mtimeMs": 1380034575236.3281,
+      "targetSize": 169128
+    },
+    "Millencolin_-_Penguins_And_Polar_Bears_63498465.mp3": {
+      "source": "Millencolin_-_Penguins_And_Polar_Bears_63498465.mp3",
+      "size": 7027379,
+      "mtimeMs": 1783930809948.2283,
+      "targetSize": 168768
+    },
+    "My Chemical Romance - Na Na Na (Na Na Na Na Na Na Na Na Na).mp3": {
+      "source": "My Chemical Romance - Na Na Na (Na Na Na Na Na Na Na Na Na).mp3",
+      "size": 8374983,
+      "mtimeMs": 1783931091384.4011,
+      "targetSize": 169045
+    },
+    "My Secret People   Dover.mp3": {
+      "source": "My Secret People   Dover.mp3",
+      "size": 5228403,
+      "mtimeMs": 1783929502362.631,
+      "targetSize": 168736
+    },
+    "N Sync - Its Gonna Be Me.mp3": {
+      "source": "N Sync - Its Gonna Be Me.mp3",
+      "size": 8199597,
+      "mtimeMs": 1783861765246.5425,
+      "targetSize": 169864
+    },
+    "Nacho Cano - Vivimos Siempre Juntos.mp3": {
+      "source": "Nacho Cano - Vivimos Siempre Juntos.mp3",
+      "size": 10634301,
+      "mtimeMs": 1783861765088.3247,
+      "targetSize": 170174
+    },
+    "nada surf-popular.mp3": {
+      "source": "nada surf-popular.mp3",
+      "size": 3757908,
+      "mtimeMs": 1783962094838.117,
+      "targetSize": 169706
+    },
+    "Nek - Para ti sería.mp3": {
+      "source": "Nek - Para ti sería.mp3",
+      "size": 5296157,
+      "mtimeMs": 1783962094707.1797,
+      "targetSize": 169804
+    },
+    "Nelly - Dilemma.mp3": {
+      "source": "Nelly - Dilemma.mp3",
+      "size": 12316494,
+      "mtimeMs": 1783861763302.5547,
+      "targetSize": 170216
+    },
+    "Nelly Furtado - Promiscuous.mp3": {
+      "source": "Nelly Furtado - Promiscuous.mp3",
+      "size": 10130388,
+      "mtimeMs": 1783861764253.3489,
+      "targetSize": 170205
+    },
+    "Nil Moliner - NEXO 04. Tu cuerpo en braille.mp3": {
+      "source": "Nil Moliner - NEXO 04. Tu cuerpo en braille.mp3",
+      "size": 2748704,
+      "mtimeMs": 1757265805254.0447,
+      "targetSize": 168928
+    },
+    "Nirvana (Best)_02_About A Girl.mp3": {
+      "source": "Nirvana (Best)_02_About A Girl.mp3",
+      "size": 4041411,
+      "mtimeMs": 1035501444000,
+      "targetSize": 168833
+    },
+    "Nirvana (Best)_04_Sliver.mp3": {
+      "source": "Nirvana (Best)_04_Sliver.mp3",
+      "size": 3278427,
+      "mtimeMs": 1035501460000,
+      "targetSize": 168827
+    },
+    "Nirvana (Best)_14_The Man Who Sold the World.mp3": {
+      "source": "Nirvana (Best)_14_The Man Who Sold the World.mp3",
+      "size": 6267671,
+      "mtimeMs": 1035502134000,
+      "targetSize": 168848
+    },
+    "No Doubt - Its My Life.mp3": {
+      "source": "No Doubt - Its My Life.mp3",
+      "size": 9511407,
+      "mtimeMs": 1783861765038.6274,
+      "targetSize": 169888
+    },
+    "No Doubt, Bounty Killer - Hey Baby.mp3": {
+      "source": "No Doubt, Bounty Killer - Hey Baby.mp3",
+      "size": 8707426,
+      "mtimeMs": 1783861764921.4497,
+      "targetSize": 169911
+    },
+    "Olly Murs - Up (Feat. Demi Lovato) by www.RadioFLy.ws.mp3": {
+      "source": "Olly Murs - Up (Feat. Demi Lovato) by www.RadioFLy.ws.mp3",
+      "size": 9069337,
+      "mtimeMs": 1783962094880.1157,
+      "targetSize": 169968
+    },
+    "Passenger - Let Her Go.mp3": {
+      "source": "Passenger - Let Her Go.mp3",
+      "size": 8144062,
+      "mtimeMs": 1380033525141.6016,
+      "targetSize": 168828
+    },
+    "Plain White T's - Hey There Delilah.mp3": {
+      "source": "Plain White T's - Hey There Delilah.mp3",
+      "size": 9729803,
+      "mtimeMs": 1783861762437.6526,
+      "targetSize": 170149
+    },
+    "Quan tot s'enlaira.mp3": {
+      "source": "Quan tot s'enlaira.mp3",
+      "size": 8229143,
+      "mtimeMs": 1329169048000,
+      "targetSize": 169035
+    },
+    "RAMMSTEIN-BENZIN.mp3": {
+      "source": "RAMMSTEIN-BENZIN.mp3",
+      "size": 3617777,
+      "mtimeMs": 1161362781000,
+      "targetSize": 168809
+    },
+    "RAMMSTEIN-ROSENROT.mp3": {
+      "source": "RAMMSTEIN-ROSENROT.mp3",
+      "size": 3756960,
+      "mtimeMs": 1161362900000,
+      "targetSize": 168811
+    },
+    "RAMMSTEIN-TE QUIERO PUTA.mp3": {
+      "source": "RAMMSTEIN-TE QUIERO PUTA.mp3",
+      "size": 3771594,
+      "mtimeMs": 1161363109000,
+      "targetSize": 168817
+    },
+    "Rihanna - Dont Stop The Music.mp3": {
+      "source": "Rihanna - Dont Stop The Music.mp3",
+      "size": 11124114,
+      "mtimeMs": 1783861764655.9167,
+      "targetSize": 169855
+    },
+    "Rihanna, Jay-Z - Umbrella.mp3": {
+      "source": "Rihanna, Jay-Z - Umbrella.mp3",
+      "size": 11480700,
+      "mtimeMs": 1783861764623.3665,
+      "targetSize": 169870
+    },
+    "Rob Thomas - Lonely no more.mp3": {
+      "source": "Rob Thomas - Lonely no more.mp3",
+      "size": 3681273,
+      "mtimeMs": 1783962094774.116,
+      "targetSize": 169836
+    },
+    "Robbie Williams - Feel.mp3": {
+      "source": "Robbie Williams - Feel.mp3",
+      "size": 11031389,
+      "mtimeMs": 1783861764522.3516,
+      "targetSize": 169955
+    },
+    "Robbie Williams - Rock DJ.mp3": {
+      "source": "Robbie Williams - Rock DJ.mp3",
+      "size": 11010131,
+      "mtimeMs": 1783861762833.6667,
+      "targetSize": 169934
+    },
+    "Ronnan Keating - When You Say Nothing at all.mp3": {
+      "source": "Ronnan Keating - When You Say Nothing at all.mp3",
+      "size": 6329887,
+      "mtimeMs": 1783962094759.116,
+      "targetSize": 169679
+    },
+    "Rosana - Si Tu No Estas.mp3": {
+      "source": "Rosana - Si Tu No Estas.mp3",
+      "size": 10667722,
+      "mtimeMs": 1783861764469.6064,
+      "targetSize": 170006
+    },
+    "Scooby snacks.mp3": {
+      "source": "Scooby snacks.mp3",
+      "size": 2948973,
+      "mtimeMs": 1380970180685.5469,
+      "targetSize": 168769
+    },
+    "Sexy Sadie - Butterflies - 01 - I Don't Know.mp3": {
+      "source": "Sexy Sadie - Butterflies - 01 - I Don't Know.mp3",
+      "size": 5416583,
+      "mtimeMs": 1018475036000,
+      "targetSize": 168840
+    },
+    "Sexy Sadie - Butterflies - 03 - Someone Like You.mp3": {
+      "source": "Sexy Sadie - Butterflies - 03 - Someone Like You.mp3",
+      "size": 5762030,
+      "mtimeMs": 1018475154000,
+      "targetSize": 168844
+    },
+    "Shaggy - Angel.mp3": {
+      "source": "Shaggy - Angel.mp3",
+      "size": 9862529,
+      "mtimeMs": 1783861763142.6648,
+      "targetSize": 170132
+    },
+    "Shoop.mp3": {
+      "source": "Shoop.mp3",
+      "size": 3983613,
+      "mtimeMs": 1380978639038.086,
+      "targetSize": 168746
+    },
+    "Snoop Dogg - Drop It Like It's Hot.mp3": {
+      "source": "Snoop Dogg - Drop It Like It's Hot.mp3",
+      "size": 11135766,
+      "mtimeMs": 1783861763877.0286,
+      "targetSize": 170198
+    },
+    "Spare Me The Details   The Offspring.mp3": {
+      "source": "Spare Me The Details   The Offspring.mp3",
+      "size": 5734400,
+      "mtimeMs": 1783930761028.4338,
+      "targetSize": 168784
+    },
+    "Spice Girls - Wannabe.mp3": {
+      "source": "Spice Girls - Wannabe.mp3",
+      "size": 7266919,
+      "mtimeMs": 1783861764035.8066,
+      "targetSize": 169897
+    },
+    "sugababes- Hole In The Head.mp3": {
+      "source": "sugababes- Hole In The Head.mp3",
+      "size": 6087898,
+      "mtimeMs": 1783962094741.1157,
+      "targetSize": 169749
+    },
+    "Sugababes- Round Round  -.mp3": {
+      "source": "Sugababes- Round Round  -.mp3",
+      "size": 6761763,
+      "mtimeMs": 1783962094691.137,
+      "targetSize": 169594
+    },
+    "SunFlowers-Happy Birthday.mp3": {
+      "source": "SunFlowers-Happy Birthday.mp3",
+      "size": 2924394,
+      "mtimeMs": 1124544616000,
+      "targetSize": 168820
+    },
+    "Susana Hoffs -My side of the bed.mp3": {
+      "source": "Susana Hoffs -My side of the bed.mp3",
+      "size": 3294906,
+      "mtimeMs": 1126134698000,
+      "targetSize": 168955
+    },
+    "Sympathy - The Goo Goo Dolls.mp3": {
+      "source": "Sympathy - The Goo Goo Dolls.mp3",
+      "size": 7196371,
+      "mtimeMs": 1783861764077.5916,
+      "targetSize": 169733
+    },
+    "t.A.T.u. - All The Things She Said.mp3": {
+      "source": "t.A.T.u. - All The Things She Said.mp3",
+      "size": 9011399,
+      "mtimeMs": 1783861762935.682,
+      "targetSize": 170226
+    },
+    "Taio Cruz - Dynamite.mp3": {
+      "source": "Taio Cruz - Dynamite.mp3",
+      "size": 8534551,
+      "mtimeMs": 1783861763906.0183,
+      "targetSize": 170128
+    },
+    "Take That - Patience (1).mp3": {
+      "source": "Take That - Patience (1).mp3",
+      "size": 3560355,
+      "mtimeMs": 1783962094821.114,
+      "targetSize": 169705
+    },
+    "Tam Tam Go! - Atrapados En La Red.mp3": {
+      "source": "Tam Tam Go! - Atrapados En La Red.mp3",
+      "size": 11276807,
+      "mtimeMs": 1783861763494.528,
+      "targetSize": 170177
+    },
+    "terrorvision-oblivion.mp3": {
+      "source": "terrorvision-oblivion.mp3",
+      "size": 7363614,
+      "mtimeMs": 1761315625306.316,
+      "targetSize": 169327
+    },
+    "TestimoMolt.mp3": {
+      "source": "TestimoMolt.mp3",
+      "size": 7274368,
+      "mtimeMs": 1414673831183.5938,
+      "targetSize": 168879
+    },
+    "The All-American Rejects - Dirty Little Secret.mp3": {
+      "source": "The All-American Rejects - Dirty Little Secret.mp3",
+      "size": 8188839,
+      "mtimeMs": 1783861763768.9644,
+      "targetSize": 170194
+    },
+    "The Black Eyed Peas - I Gotta Feeling.mp3": {
+      "source": "The Black Eyed Peas - I Gotta Feeling.mp3",
+      "size": 12039135,
+      "mtimeMs": 1783861763106.016,
+      "targetSize": 170151
+    },
+    "The Black Eyed Peas - Pump It.mp3": {
+      "source": "The Black Eyed Peas - Pump It.mp3",
+      "size": 8958219,
+      "mtimeMs": 1783861763439.5876,
+      "targetSize": 170201
+    },
+    "The Pussycat Dolls - Stickwitu.mp3": {
+      "source": "The Pussycat Dolls - Stickwitu.mp3",
+      "size": 8773697,
+      "mtimeMs": 1783861763165.021,
+      "targetSize": 170155
+    },
+    "THE_RASMUS_IN_THE_SHADOWS.mp3": {
+      "source": "THE_RASMUS_IN_THE_SHADOWS.MP3",
+      "size": 5926944,
+      "mtimeMs": 1075176510000,
+      "targetSize": 168838
+    },
+    "Timbaland - Apologize.mp3": {
+      "source": "Timbaland - Apologize.mp3",
+      "size": 7797295,
+      "mtimeMs": 1783861763258.56,
+      "targetSize": 170240
+    },
+    "Timbaland - The Way I Are.mp3": {
+      "source": "Timbaland - The Way I Are.mp3",
+      "size": 7627574,
+      "mtimeMs": 1783861763209.0154,
+      "targetSize": 170194
+    },
+    "Tinie Tempah ft. Eric Turner - Written in the Stars (Official Audio).mp3": {
+      "source": "Tinie Tempah ft. Eric Turner - Written in the Stars (Official Audio).mp3",
+      "size": 3450141,
+      "mtimeMs": 1783962094806.1301,
+      "targetSize": 169830
+    },
+    "Txarango - Quan tot s'enlaira - Lletra.mp3": {
+      "source": "Txarango - Quan tot s'enlaira - Lletra.mp3",
+      "size": 3362340,
+      "mtimeMs": 1783962094723.0837,
+      "targetSize": 169656
+    },
+    "Velvet Suspiro- Contigo.mp3": {
+      "source": "Velvet Suspiro- Contigo.mp3",
+      "size": 3606797,
+      "mtimeMs": 1781508795017.7815,
+      "targetSize": 170061
+    },
+    "Westlife - Uptown Girl.mp3": {
+      "source": "Westlife - Uptown Girl.mp3",
+      "size": 7870670,
+      "mtimeMs": 1783861762773.9749,
+      "targetSize": 169848
+    },
+    "wiskyn's-cada cop.mp3": {
+      "source": "wiskyn's-cada cop.mp3",
+      "size": 3862737,
+      "mtimeMs": 1783962094857.1118,
+      "targetSize": 169560
+    },
+    "01 2 Unlimited - No Limit (Original Mix).mp3": {
+      "source": "01 2 Unlimited - No Limit (Original Mix).mp3",
+      "size": 9079766,
+      "mtimeMs": 1784046163301.9187,
+      "targetSize": 168902
+    },
+    "Australian Blonde - Chup chup.mp3": {
+      "source": "Australian Blonde - Chup chup.mp3",
+      "size": 2317835,
+      "mtimeMs": 1784045463165.722,
+      "targetSize": 169256
+    },
+    "Authority   Biohazard.mp3": {
+      "source": "Authority   Biohazard.mp3",
+      "size": 5342562,
+      "mtimeMs": 1783948814395.958,
+      "targetSize": 168691
+    },
+    "Blue (Da Ba Dee)   Eiffel 65.mp3": {
+      "source": "Blue (Da Ba Dee)   Eiffel 65.mp3",
+      "size": 11398791,
+      "mtimeMs": 1784046352347.301,
+      "targetSize": 168691
+    },
+    "Boom, Boom, Boom, Boom!! - Vengaboys (320).mp3": {
+      "source": "Boom, Boom, Boom, Boom!! - Vengaboys (320).mp3",
+      "size": 8280883,
+      "mtimeMs": 1784045952325.9243,
+      "targetSize": 169152
+    },
+    "Come Into My Life   Gala.mp3": {
+      "source": "Come Into My Life   Gala.mp3",
+      "size": 8638215,
+      "mtimeMs": 1784045911841.253,
+      "targetSize": 168691
+    },
+    "DJ Ötzi - Sweet Caroline (Party Remix).mp3": {
+      "source": "DJ Ötzi - Sweet Caroline (Party Remix).mp3",
+      "size": 8430536,
+      "mtimeMs": 1784047401545.4783,
+      "targetSize": 168924
+    },
+    "Freеd from desire   Gala.mp3": {
+      "source": "Freеd from desire   Gala.mp3",
+      "size": 5116032,
+      "mtimeMs": 1784045891813.118,
+      "targetSize": 168810
+    },
+    "Girl From Mars   Ash.mp3": {
+      "source": "Girl From Mars   Ash.mp3",
+      "size": 8530546,
+      "mtimeMs": 1784045726484.2405,
+      "targetSize": 168691
+    },
+    "Jump for Joy (Original Mix) - 2 Unlimited.mp3": {
+      "source": "Jump for Joy (Original Mix) - 2 Unlimited.mp3",
+      "size": 3555470,
+      "mtimeMs": 1784046114972.4006,
+      "targetSize": 168753
+    },
+    "Kung Fu   Ash.mp3": {
+      "source": "Kung Fu   Ash.mp3",
+      "size": 5559901,
+      "mtimeMs": 1784045715946.0525,
+      "targetSize": 168691
+    },
+    "Move Your Body   Eiffel 65.mp3": {
+      "source": "Move Your Body   Eiffel 65.mp3",
+      "size": 8370676,
+      "mtimeMs": 1784046321512.196,
+      "targetSize": 168691
+    },
+    "Sia - Move Your Body.mp3": {
+      "source": "Sia - Move Your Body.mp3",
+      "size": 3997167,
+      "mtimeMs": 1784047469278.6565,
+      "targetSize": 169049
+    },
+    "Sopa de Cabra – Si et quedes amb mi.mp3": {
+      "source": "Sopa de Cabra – Si et quedes amb mi.mp3",
+      "size": 3064632,
+      "mtimeMs": 1784046948252.047,
+      "targetSize": 168844
+    }
+  }
+}

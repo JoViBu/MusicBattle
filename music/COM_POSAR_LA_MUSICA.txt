@@ -1,0 +1,17 @@
+COPIA AQUÍ ELS TEUS MP3.
+
+Format recomanat del nom:
+096 - Peter Cetera & Crystal Bernard - I Wanna Take Forever Tonight.mp3
+
+El joc interpreta automàticament:
+- Artista: Peter Cetera & Crystal Bernard
+- Cançó: I Wanna Take Forever Tonight
+
+Pots crear subcarpetes per categories:
+music\Rock\
+music\Pop\
+music\Britpop\
+music\Anys 90\
+
+En reiniciar el servidor, el joc detecta automàticament els fitxers nous.
+Calen almenys 4 cançons vàlides per jugar en una categoria.

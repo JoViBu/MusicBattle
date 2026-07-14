@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10031d">
+  <title>Music Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <section id="homeScreen" class="screen active">
+    <div class="card home-card">
+      <h1>Music Battle</h1>
+      <p class="tagline">Batalla musical en temps real</p>
+      <div id="libraryInfo" class="library-info">Llegint biblioteca...</div>
+      <label class="field-label" for="playerName">Nom</label>
+      <input id="playerName" maxlength="20" placeholder="Escriu el teu nom" autocomplete="nickname">
+      <div class="home-actions">
+        <button id="createRoom" class="primary">Crear sala</button>
+        <button id="joinRoom">Unir-me</button>
+      </div>
+      <p id="connectionStatus" class="status">Connectant...</p>
+    </div>
+  </section>
+
+  <section id="lobbyScreen" class="screen">
+    <div class="card lobby-card">
+      <header class="lobby-header">
+        <div><small>SALA</small><div class="room-line"><strong id="roomCode">-----</strong><button id="copyCode" class="icon-button" title="Copiar codi">⧉</button></div></div>
+        <button id="leaveRoom" class="ghost compact">Sortir</button>
+      </header>
+
+      <div class="players">
+        <article id="playerOneCard" class="player-card"><b id="playerOneName">Esperant...</b><span id="playerOneStatus">No connectat</span></article>
+        <div class="vs">VS</div>
+        <article id="playerTwoCard" class="player-card"><b id="playerTwoName">Esperant...</b><span id="playerTwoStatus">No connectat</span></article>
+      </div>
+
+      <section class="config-section">
+        <div class="section-title"><span>Què vols endevinar?</span></div>
+        <div class="choice-row" id="questionTypeChoices">
+          <button class="choice any selected" data-value="__any__">Qualsevol</button>
+          <button class="choice multi" data-value="artist">Artista</button>
+          <button class="choice multi" data-value="title">Títol</button>
+          <button class="choice multi optional-type" data-value="album">Disc</button>
+          <button class="choice multi optional-type" data-value="year">Any</button>
+          <button class="choice multi optional-type" data-value="decade">Dècada</button>
+          <button class="choice multi optional-type" data-value="genre">Gènere</button>
+        </div>
+      </section>
+
+      <section class="config-section">
+        <div class="section-title"><span>Categories</span></div>
+        <div id="categoryChoices" class="category-grid"></div>
+      </section>
+
+      <div class="two-columns">
+        <section class="config-section">
+          <div class="section-title"><span>Temps</span></div>
+          <div class="choice-row" id="timeChoices">
+            <button class="choice single selected" data-value="10">10 s</button>
+            <button class="choice single" data-value="8">8 s</button>
+            <button class="choice single" data-value="5">5 s</button>
+          </div>
+        </section>
+        <section class="config-section">
+          <div class="section-title"><span>Preguntes</span></div>
+          <div class="choice-row" id="countChoices">
+            <button class="choice single selected" data-value="10">10</button>
+            <button class="choice single" data-value="20">20</button>
+            <button class="choice single" data-value="30">30</button>
+          </div>
+        </section>
+      </div>
+
+      <p id="lobbyMessage" class="lobby-message">Esperant rival...</p>
+      <div class="lobby-actions">
+        <button id="randomConfig" class="ghost" type="button">🎲 Configuració aleatòria</button>
+        <button id="startGame" class="primary" disabled>Esperant rival</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="countdownScreen" class="screen">
+    <div class="countdown-wrap"><div id="countdownValue" class="countdown-value">3</div><p>Prepareu-vos</p></div>
+  </section>
+
+  <section id="gameScreen" class="screen">
+    <div class="card game-card">
+      <div class="game-topbar"><button id="leaveGame" class="ghost compact" type="button">Sortir</button></div>
+      <div class="scorebar">
+        <div><span id="gamePlayerOneName">Jugador 1</span><b id="gamePlayerOneScore">0</b></div>
+        <div><small>Pregunta</small><b><span id="currentQuestionNumber">1</span>/<span id="totalQuestions">10</span></b></div>
+        <div><span id="gamePlayerTwoName">Jugador 2</span><b id="gamePlayerTwoScore">0</b></div>
+      </div>
+      <div id="timer" class="timer">10</div>
+      <h2 id="questionText">Prepara't...</h2>
+      <audio id="audioPlayer" preload="auto"></audio>
+      <div class="answers">
+        <button class="answer-button" data-index="0"></button><button class="answer-button" data-index="1"></button>
+        <button class="answer-button" data-index="2"></button><button class="answer-button" data-index="3"></button>
+      </div>
+      <p id="gameMessage" class="game-message"></p>
+    </div>
+  </section>
+
+  <section id="resultsScreen" class="screen">
+    <div class="card results-card">
+      <h2 id="winnerMessage">Resultat final</h2>
+      <div class="result-grid">
+        <article><h3 id="finalPlayerOneName"></h3><strong id="finalPlayerOneScore"></strong><p id="finalPlayerOneStats"></p></article>
+        <article><h3 id="finalPlayerTwoName"></h3><strong id="finalPlayerTwoScore"></strong><p id="finalPlayerTwoStats"></p></article>
+      </div>
+      <div id="creatorResultActions" class="result-actions">
+        <button id="rematch" class="primary">Revanxa</button>
+        <button id="changeConfig">Canviar configuració</button>
+      </div>
+      <p id="guestResultMessage" class="lobby-message" style="display:none"></p>
+      <button id="backHome" class="ghost">Sortir de la sala</button>
+    </div>
+  </section>
+</main>
+
+<div id="audioUnlock" class="audio-unlock" hidden>
+  <div class="audio-unlock-card">
+    <div class="audio-unlock-icon">🔊</div>
+    <h2>Activa el so</h2>
+    <p>Prem el botó una vegada perquè el navegador pugui reproduir la música.</p>
+    <button id="activateAudio" class="primary" type="button">Activar so i continuar</button>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

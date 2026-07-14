@@ -80,10 +80,19 @@ async function unlockAudio() {
   };
 
   try {
+    audio.pause();
+    audio.src = SILENT_WAV;
+    audio.muted = false;
+    audio.volume = 0.01;
+    audio.load();
+
+    // A Safari, play() i resume() s’han d’iniciar abans del primer await.
+    const playAttempt = audio.play();
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    let resumeAttempt = null;
     if (AudioContextClass) {
       if (!audioContext) audioContext = new AudioContextClass();
-      await audioContext.resume();
+      resumeAttempt = audioContext.resume();
       const oscillator = audioContext.createOscillator();
       const gain = audioContext.createGain();
       gain.gain.value = 0.00001;
@@ -93,12 +102,8 @@ async function unlockAudio() {
       oscillator.stop(audioContext.currentTime + 0.03);
     }
 
-    audio.pause();
-    audio.src = SILENT_WAV;
-    audio.muted = false;
-    audio.volume = 0.01;
-    audio.load();
-    await audio.play();
+    await playAttempt;
+    if (resumeAttempt) await resumeAttempt;
     audio.pause();
     audio.currentTime = 0;
     audioUnlocked = true;
@@ -298,6 +303,38 @@ function startTimer(seconds, startAt) {
   timerInterval = setInterval(update, 100);
 }
 
+function waitForAudio(audio, eventNames, timeoutMs, minimumReadyState) {
+  return new Promise((resolve, reject) => {
+    if (audio.readyState >= minimumReadyState) return resolve();
+    let finished = false;
+    const cleanup = () => {
+      eventNames.forEach((name) => audio.removeEventListener(name, done));
+      audio.removeEventListener('error', failed);
+      clearTimeout(timer);
+    };
+    const done = () => {
+      if (finished) return;
+      finished = true;
+      cleanup();
+      resolve();
+    };
+    const failed = () => {
+      if (finished) return;
+      finished = true;
+      cleanup();
+      reject(new Error('audio error'));
+    };
+    const timer = setTimeout(() => {
+      if (finished) return;
+      finished = true;
+      cleanup();
+      reject(new Error('audio timeout'));
+    }, timeoutMs);
+    eventNames.forEach((name) => audio.addEventListener(name, done));
+    audio.addEventListener('error', failed);
+  });
+}
+
 async function prepareAudio(data) {
   pendingRoundData = data;
   if (!audioUnlocked) {
@@ -309,7 +346,7 @@ async function prepareAudio(data) {
   clearTimeout(audioStopTimer);
   audio.pause();
   audio.src = data.audioUrl;
-  audio.preload = 'metadata';
+  audio.preload = 'auto';
   audio.load();
   preparedAudio = null;
   $('gameMessage').textContent = 'Preparant fragment...';
@@ -317,12 +354,7 @@ async function prepareAudio(data) {
   if (gameCard) gameCard.classList.add('preparing-audio');
 
   try {
-    await new Promise((resolve, reject) => {
-      if (audio.readyState >= 1) return resolve();
-      const timer = setTimeout(() => reject(new Error('metadata timeout')), 20000);
-      audio.addEventListener('loadedmetadata', () => { clearTimeout(timer); resolve(); }, { once: true });
-      audio.addEventListener('error', () => { clearTimeout(timer); reject(new Error('audio error')); }, { once: true });
-    });
+    await waitForAudio(audio, ['loadeddata', 'canplay', 'canplaythrough'], 18000, 2);
 
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
     const maxStart = Math.max(0, duration - data.seconds - 1);
@@ -339,7 +371,7 @@ async function prepareAudio(data) {
           audio.removeEventListener('seeked', done);
           resolve();
         };
-        const timer = setTimeout(done, 15000);
+        const timer = setTimeout(done, 8000);
         audio.addEventListener('seeked', done, { once: true });
         try {
           audio.currentTime = startSecond;
@@ -349,14 +381,9 @@ async function prepareAudio(data) {
       });
     }
 
-    await new Promise((resolve) => {
-      if (audio.readyState >= 3) return resolve();
-      const done = () => { clearTimeout(timer); resolve(); };
-      const timer = setTimeout(done, 15000);
-      audio.addEventListener('canplay', done, { once: true });
-    });
-
     preparedAudio = { startSecond, seconds: data.seconds };
+    pendingRoundData = null;
+    $('gameMessage').textContent = 'Fragment preparat. Esperant el rival...';
     send('round_ready', { roundNumber: data.roundNumber });
   } catch (error) {
     console.warn('Error preparant l’àudio:', error);
@@ -485,7 +512,7 @@ function connectSocket() {
     const data = JSON.parse(event.data);
     switch (data.type) {
       case 'connected':
-        if (!storageGet('sessionStorage', 'musicBattlePlayerId')) myId = data.playerId;
+        myId = data.playerId;
         break;
       case 'resumed':
         myId = data.playerId;
@@ -506,6 +533,9 @@ function connectSocket() {
         storageSet('sessionStorage', 'musicBattlePlayerId', myId);
         storageSet('sessionStorage', 'musicBattleRoomCode', roomCode);
         show('lobbyScreen');
+        setTimeout(() => {
+          if (!audioUnlocked) showAudioUnlock();
+        }, 700);
         break;
       case 'room_state':
         roomCode = data.roomCode;

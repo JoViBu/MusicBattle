@@ -794,6 +794,7 @@ function safeServe(baseDir, requestedPath, request, response) {
     const contentType = MIME_TYPES[extension] || 'application/octet-stream';
     const isAudio = ['.mp3', '.wav', '.ogg', '.m4a', '.aac', '.flac'].includes(extension);
     const rangeHeader = request.headers.range;
+    const isHead = request.method === 'HEAD';
 
     if (isAudio && rangeHeader) {
       const match = /^bytes=(\d*)-(\d*)$/.exec(rangeHeader.trim());
@@ -806,8 +807,16 @@ function safeServe(baseDir, requestedPath, request, response) {
         return response.end();
       }
 
-      let start = match[1] ? Number(match[1]) : 0;
-      let end = match[2] ? Number(match[2]) : stats.size - 1;
+      let start;
+      let end;
+      if (!match[1] && match[2]) {
+        const suffixLength = Math.min(Number(match[2]), stats.size);
+        start = stats.size - suffixLength;
+        end = stats.size - 1;
+      } else {
+        start = match[1] ? Number(match[1]) : 0;
+        end = match[2] ? Number(match[2]) : stats.size - 1;
+      }
 
       if (!Number.isFinite(start) || !Number.isFinite(end) || start < 0 || end < start || start >= stats.size) {
         response.writeHead(416, {
@@ -828,6 +837,7 @@ function safeServe(baseDir, requestedPath, request, response) {
         'Cache-Control': 'private, max-age=3600'
       });
 
+      if (isHead) return response.end();
       return fs.createReadStream(target, { start, end }).pipe(response);
     }
 
@@ -838,6 +848,7 @@ function safeServe(baseDir, requestedPath, request, response) {
       'Cache-Control': isAudio ? 'private, max-age=3600' : 'no-store, no-cache, must-revalidate'
     });
 
+    if (isHead) return response.end();
     fs.createReadStream(target).pipe(response);
   });
 }

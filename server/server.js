@@ -835,7 +835,7 @@ function safeServe(baseDir, requestedPath, request, response) {
       'Content-Type': contentType,
       'Content-Length': stats.size,
       'Accept-Ranges': isAudio ? 'bytes' : 'none',
-      'Cache-Control': 'private, max-age=3600'
+      'Cache-Control': isAudio ? 'private, max-age=3600' : 'no-store, no-cache, must-revalidate'
     });
 
     fs.createReadStream(target).pipe(response);

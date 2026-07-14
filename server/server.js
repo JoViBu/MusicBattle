@@ -73,6 +73,11 @@ function cleanTitle(value) {
     .trim();
 }
 
+function isGenericArtist(value) {
+  const normalized = tidyText(value).toLowerCase();
+  return !normalized || /^(various(?:\s+artists?)?|v\.?a\.?|unknown(?:\s+artist)?|artista\s+desconegut|desconegut|sense\s+artista|sin\s+artista|multiple\s+artists?)$/i.test(normalized);
+}
+
 function usefulFolderArtist(folders) {
   const ignored = /^(music|musica|música|audio|mp3|disc|disk|cd|album|albums?|various|diversos|compilation|complet|complete|box set|soundtrack)$/i;
   for (let i = folders.length - 1; i >= 0; i -= 1) {
@@ -152,7 +157,7 @@ async function parseTrack(relativePath, parseFile) {
     // Un MP3 mal etiquetat continua sent usable gràcies al nom del fitxer.
   }
 
-  const artist = metadataArtist || fallback.artist;
+  const artist = !isGenericArtist(metadataArtist) ? metadataArtist : fallback.artist;
   const title = metadataTitle || fallback.title;
   const hasArtist = Boolean(artist && artist.toLowerCase() !== title.toLowerCase());
   const hasTitle = Boolean(title);
@@ -288,9 +293,105 @@ function normalizeConfig(input = {}) {
   };
 }
 
-function buildOptions(correct, values) {
-  const unique = [...new Set(values.filter(Boolean))].filter((value) => value !== correct);
-  return shuffle([correct, ...shuffle(unique).slice(0, 3)]);
+function sameText(left, right) {
+  return tidyText(left).toLowerCase() === tidyText(right).toLowerCase();
+}
+
+function genreFamilies(value) {
+  const text = tidyText(value).toLowerCase();
+  const families = new Set();
+  if (!text || /^(top 40|billboard|other|revisado|films?\/?games?)$/i.test(text)) return families;
+  if (/rock|metal|punk|grunge|alternative|indie|britpop|emo|hardcore/.test(text)) families.add('rock');
+  if (/dance|electro|electronic|house|techno|trance|euro|club|disco|edm|synth/.test(text)) families.add('dance');
+  if (/hip[ -]?hop|rap|trap/.test(text)) families.add('hiphop');
+  if (/r&b|rnb|soul|funk|motown|gospel/.test(text)) families.add('soul');
+  if (/latin|reggaeton|salsa|bachata|flamenco/.test(text)) families.add('latin');
+  if (/country|folk|americana|bluegrass/.test(text)) families.add('folk');
+  if (/reggae|ska|dub/.test(text)) families.add('reggae');
+  if (/jazz|blues/.test(text)) families.add('jazz-blues');
+  if (/classical|opera|orchestral/.test(text)) families.add('classical');
+  if (/pop/.test(text)) families.add('pop');
+  return families;
+}
+
+function artistKey(track) {
+  const artist = tidyText(track?.artist || '');
+  return isGenericArtist(artist) ? '' : artist.toLowerCase();
+}
+
+function artistFamilyIndex(pool) {
+  const index = new Map();
+  for (const track of pool) {
+    const key = artistKey(track);
+    if (!key) continue;
+    if (!index.has(key)) index.set(key, new Set());
+    for (const family of genreFamilies(track.genre)) index.get(key).add(family);
+  }
+  return index;
+}
+
+function familiesForTrack(track, profiles) {
+  const result = new Set(genreFamilies(track.genre));
+  const profile = profiles.get(artistKey(track));
+  if (profile) for (const family of profile) result.add(family);
+  return result;
+}
+
+function sharesFamily(left, right) {
+  for (const family of left) if (right.has(family)) return true;
+  return false;
+}
+
+function buildContextualOptions(track, type, pool) {
+  const correct = questionValue(track, type);
+  const profiles = artistFamilyIndex(pool);
+  const targetFamilies = familiesForTrack(track, profiles);
+  const targetYear = Number(track.year) || null;
+  const targetCategory = tidyText(track.category);
+  const meaningfulCategory = targetCategory && !/^sense categoria$/i.test(targetCategory);
+
+  const candidates = pool.filter((candidate) => {
+    if (candidate.id === track.id) return false;
+    const value = questionValue(candidate, type);
+    if (!value || sameText(value, correct)) return false;
+    return type !== 'artist' || !isGenericArtist(value);
+  });
+
+  const score = (candidate) => {
+    let points = 0;
+    const candidateFamilies = familiesForTrack(candidate, profiles);
+    if (targetFamilies.size && candidateFamilies.size) {
+      points += sharesFamily(targetFamilies, candidateFamilies) ? 120 : -80;
+    }
+
+    const candidateYear = Number(candidate.year) || null;
+    if (targetYear && candidateYear) {
+      const difference = Math.abs(targetYear - candidateYear);
+      if (difference <= 5) points += 40;
+      else if (difference <= 10) points += 30;
+      else if (difference <= 20) points += 15;
+      else if (difference <= 30) points += 4;
+      else points -= 12;
+    }
+
+    if (meaningfulCategory && sameText(candidate.category, targetCategory)) points += 8;
+    if (type === 'title' && artistKey(candidate) === artistKey(track)) points += 25;
+    return points;
+  };
+
+  const ranked = shuffle(candidates).sort((left, right) => score(right) - score(left));
+  const distractors = [];
+  const seenValues = new Set([tidyText(correct).toLowerCase()]);
+  for (const candidate of ranked) {
+    const value = questionValue(candidate, type);
+    const key = tidyText(value).toLowerCase();
+    if (!key || seenValues.has(key)) continue;
+    seenValues.add(key);
+    distractors.push(value);
+    if (distractors.length === 3) break;
+  }
+
+  return shuffle([correct, ...distractors]);
 }
 
 const recentTrackIds = [];
@@ -300,7 +401,7 @@ function rememberTracks(trackIds) {
 }
 
 function questionValue(track, type) {
-  if (type === 'artist') return track.artist;
+  if (type === 'artist') return isGenericArtist(track.artist) ? '' : track.artist;
   if (type === 'title') return track.title;
   if (type === 'album') return track.album;
   if (type === 'year') return track.year ? String(track.year) : '';
@@ -353,8 +454,7 @@ function createRounds(config) {
     const track = candidates[Math.floor(Math.random() * candidates.length)];
     used.add(track.id);
     const correct = questionValue(track, type);
-    const values = fullPool.map((item) => questionValue(item, type));
-    const options = buildOptions(correct, values);
+    const options = buildContextualOptions(track, type, fullPool);
     if (options.length < 4) { index -= 1; continue; }
 
     const duration = Number(track.duration) || 0;

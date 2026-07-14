@@ -243,7 +243,7 @@ function library() { return libraryState.valid; }
 function categoryStats() {
   const counts = new Map();
   for (const track of library()) counts.set(track.category, (counts.get(track.category) || 0) + 1);
-  return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ca')).map(([name, count]) => ({ name, count }));
+  return [...counts.entries()].filter(([name]) => typeof name === 'string' && name.trim()).sort((a, b) => a[0].localeCompare(b[0], 'ca')).map(([name, count]) => ({ name, count }));
 }
 
 function publicPlayers(room) {

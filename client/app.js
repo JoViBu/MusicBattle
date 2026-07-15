@@ -1,3 +1,4 @@
+console.log('Music Battle v0.8 motor final de varietat');
 let socket = null;
 let reconnectTimer = null;
 let reconnectAttempts = 0;
@@ -5,19 +6,6 @@ let manualClose = false;
 const $ = (id) => document.getElementById(id);
 const screens = [...document.querySelectorAll('.screen')];
 const answerButtons = [...document.querySelectorAll('.answer-button')];
-
-function storageGet(type, key) {
-  try { return window[type].getItem(key); }
-  catch { return null; }
-}
-function storageSet(type, key, value) {
-  try { window[type].setItem(key, value); return true; }
-  catch { return false; }
-}
-function storageRemove(type, key) {
-  try { window[type].removeItem(key); }
-  catch {}
-}
 
 let myId = null;
 let roomCode = null;
@@ -34,9 +22,10 @@ let audioUnlocked = false;
 let pendingRoomAction = null;
 let pendingRoundData = null;
 let audioContext = null;
+let countdownActive = false;
 
 const savedConfig = (() => {
-  try { return JSON.parse(storageGet('localStorage', 'musicBattleConfig') || '{}'); }
+  try { return JSON.parse(localStorage.getItem('musicBattleConfig') || '{}'); }
   catch { return {}; }
 })();
 
@@ -66,12 +55,15 @@ function hideAudioUnlock() {
 }
 
 async function unlockAudio() {
+  const audio = $('audioPlayer');
+
   if (audioUnlocked) {
-    try { if (audioContext && audioContext.resume) await audioContext.resume(); } catch {}
+    try {
+      if (audioContext?.state === 'suspended') await audioContext.resume();
+    } catch {}
     return true;
   }
 
-  const audio = $('audioPlayer');
   const previous = {
     src: audio.getAttribute('src') || '',
     currentTime: audio.currentTime || 0,
@@ -79,20 +71,23 @@ async function unlockAudio() {
     muted: audio.muted
   };
 
+  let playPromise = null;
+
   try {
+    // Safari d'iPhone exigeix que play() es cridi directament dins del clic,
+    // abans de qualsevol await.
     audio.pause();
     audio.src = SILENT_WAV;
     audio.muted = false;
     audio.volume = 0.01;
     audio.load();
+    playPromise = audio.play();
 
-    // A Safari, play() i resume() s’han d’iniciar abans del primer await.
-    const playAttempt = audio.play();
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    let resumeAttempt = null;
     if (AudioContextClass) {
-      if (!audioContext) audioContext = new AudioContextClass();
-      resumeAttempt = audioContext.resume();
+      audioContext ||= new AudioContextClass();
+      if (audioContext.state === 'suspended') await audioContext.resume();
+
       const oscillator = audioContext.createOscillator();
       const gain = audioContext.createGain();
       gain.gain.value = 0.00001;
@@ -102,12 +97,12 @@ async function unlockAudio() {
       oscillator.stop(audioContext.currentTime + 0.03);
     }
 
-    await playAttempt;
-    if (resumeAttempt) await resumeAttempt;
+    if (playPromise) await playPromise;
+
     audio.pause();
-    audio.currentTime = 0;
+    try { audio.currentTime = 0; } catch {}
     audioUnlocked = true;
-    storageSet('localStorage', 'musicBattleAudioUnlocked', '1');
+    localStorage.setItem('musicBattleAudioUnlocked', '1');
     return true;
   } catch (error) {
     console.warn('No s’ha pogut activar l’àudio:', error);
@@ -117,8 +112,10 @@ async function unlockAudio() {
     audio.pause();
     audio.muted = previous.muted;
     audio.volume = previous.volume;
+
     if (previous.src) {
       audio.src = previous.src;
+      audio.load();
       try { audio.currentTime = previous.currentTime; } catch {}
     } else {
       audio.removeAttribute('src');
@@ -128,13 +125,7 @@ async function unlockAudio() {
 }
 
 async function runWithAudio(action) {
-  const ok = await unlockAudio();
-  if (!ok) {
-    showAudioUnlock(action);
-    return false;
-  }
-  hideAudioUnlock();
-  if (action) action();
+  action?.();
   return true;
 }
 
@@ -157,7 +148,7 @@ function send(type, payload = {}) {
 
 function setPlayerCard(number, value) {
   const key = number === 1 ? 'One' : 'Two';
-  $(`player${key}Name`).textContent = value && value.name ? value.name : 'Esperant...';
+  $(`player${key}Name`).textContent = value?.name || 'Esperant...';
   $(`player${key}Status`).textContent = value ? 'Connectat' : 'No connectat';
   $(`player${key}Card`).classList.toggle('connected', Boolean(value));
 }
@@ -166,10 +157,9 @@ function setScores(values = players, animate = false) {
   players = values;
   for (const number of [1, 2]) {
     const key = number === 1 ? 'One' : 'Two';
-    const currentPlayer = player(number);
-    const target = currentPlayer && currentPlayer.score ? currentPlayer.score : 0;
+    const target = player(number)?.score || 0;
     const scoreEl = $(`gamePlayer${key}Score`);
-    $(`gamePlayer${key}Name`).textContent = currentPlayer && currentPlayer.name ? currentPlayer.name : `Jugador ${number}`;
+    $(`gamePlayer${key}Name`).textContent = player(number)?.name || `Jugador ${number}`;
     if (!animate) {
       scoreEl.textContent = target;
       continue;
@@ -241,13 +231,13 @@ function selectSingle(key, value) {
 }
 
 function syncConfig() {
-  storageSet('localStorage', 'musicBattleConfig', JSON.stringify(configState));
+  localStorage.setItem('musicBattleConfig', JSON.stringify(configState));
   send('update_config', { config: configState });
 }
 
 function updateLobby(config = configState) {
   configState = { ...configState, ...config };
-  storageSet('localStorage', 'musicBattleConfig', JSON.stringify(configState));
+  localStorage.setItem('musicBattleConfig', JSON.stringify(configState));
   setPlayerCard(1, player(1));
   setPlayerCard(2, player(2));
   $('roomCode').textContent = roomCode || '-----';
@@ -303,58 +293,25 @@ function startTimer(seconds, startAt) {
   timerInterval = setInterval(update, 100);
 }
 
-function waitForAudio(audio, eventNames, timeoutMs, minimumReadyState) {
-  return new Promise((resolve, reject) => {
-    if (audio.readyState >= minimumReadyState) return resolve();
-    let finished = false;
-    const cleanup = () => {
-      eventNames.forEach((name) => audio.removeEventListener(name, done));
-      audio.removeEventListener('error', failed);
-      clearTimeout(timer);
-    };
-    const done = () => {
-      if (finished) return;
-      finished = true;
-      cleanup();
-      resolve();
-    };
-    const failed = () => {
-      if (finished) return;
-      finished = true;
-      cleanup();
-      reject(new Error('audio error'));
-    };
-    const timer = setTimeout(() => {
-      if (finished) return;
-      finished = true;
-      cleanup();
-      reject(new Error('audio timeout'));
-    }, timeoutMs);
-    eventNames.forEach((name) => audio.addEventListener(name, done));
-    audio.addEventListener('error', failed);
-  });
-}
-
 async function prepareAudio(data) {
   pendingRoundData = data;
-  if (!audioUnlocked) {
-    $('gameMessage').textContent = 'Cal activar el so per continuar.';
-    showAudioUnlock();
-    return;
-  }
   const audio = $('audioPlayer');
   clearTimeout(audioStopTimer);
   audio.pause();
   audio.src = data.audioUrl;
-  audio.preload = 'auto';
+  audio.preload = 'metadata';
   audio.load();
   preparedAudio = null;
   $('gameMessage').textContent = 'Preparant fragment...';
-  const gameCard = document.querySelector('.game-card');
-  if (gameCard) gameCard.classList.add('preparing-audio');
+  document.querySelector('.game-card')?.classList.add('preparing-audio');
 
   try {
-    await waitForAudio(audio, ['loadeddata', 'canplay', 'canplaythrough'], 18000, 2);
+    await new Promise((resolve, reject) => {
+      if (audio.readyState >= 1) return resolve();
+      const timer = setTimeout(() => reject(new Error('metadata timeout')), 20000);
+      audio.addEventListener('loadedmetadata', () => { clearTimeout(timer); resolve(); }, { once: true });
+      audio.addEventListener('error', () => { clearTimeout(timer); reject(new Error('audio error')); }, { once: true });
+    });
 
     const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
     const maxStart = Math.max(0, duration - data.seconds - 1);
@@ -371,7 +328,7 @@ async function prepareAudio(data) {
           audio.removeEventListener('seeked', done);
           resolve();
         };
-        const timer = setTimeout(done, 8000);
+        const timer = setTimeout(done, 15000);
         audio.addEventListener('seeked', done, { once: true });
         try {
           audio.currentTime = startSecond;
@@ -381,9 +338,21 @@ async function prepareAudio(data) {
       });
     }
 
+    await new Promise((resolve) => {
+      if (audio.readyState >= 3) return resolve();
+      const done = () => { clearTimeout(timer); resolve(); };
+      const timer = setTimeout(done, 15000);
+      audio.addEventListener('canplay', done, { once: true });
+    });
+
     preparedAudio = { startSecond, seconds: data.seconds };
-    pendingRoundData = null;
-    $('gameMessage').textContent = 'Fragment preparat. Esperant el rival...';
+
+    if (!audioUnlocked) {
+      $('gameMessage').textContent = 'Prem “Activar so i continuar” per començar.';
+      showAudioUnlock();
+      return;
+    }
+
     send('round_ready', { roundNumber: data.roundNumber });
   } catch (error) {
     console.warn('Error preparant l’àudio:', error);
@@ -394,26 +363,24 @@ async function prepareAudio(data) {
 }
 
 function startPreparedAudio(data) {
+  countdownActive = false;
+  show('gameScreen');
   const audio = $('audioPlayer');
-  const startSecond = preparedAudio && preparedAudio.startSecond != null
-    ? preparedAudio.startSecond
-    : (Number(data.fragmentStart) || 0);
+  const startSecond = preparedAudio?.startSecond ?? (Number(data.fragmentStart) || 0);
   const delay = Math.max(0, data.startAt - Date.now());
   setTimeout(async () => {
     try {
       if (Math.abs(audio.currentTime - startSecond) > 0.35) audio.currentTime = startSecond;
       await audio.play();
       $('gameMessage').textContent = 'Escolta i respon.';
-      const gameCard = document.querySelector('.game-card');
-      if (gameCard) gameCard.classList.remove('preparing-audio');
+      document.querySelector('.game-card')?.classList.remove('preparing-audio');
       startTimer(data.seconds, Date.now());
       audioStopTimer = setTimeout(() => audio.pause(), data.seconds * 1000 + 80);
     } catch (error) {
       console.warn('Reproducció bloquejada:', error);
       audioUnlocked = false;
       $('gameMessage').textContent = 'Toca “Activar so” per continuar.';
-      const gameCard = document.querySelector('.game-card');
-      if (gameCard) gameCard.classList.remove('preparing-audio');
+      document.querySelector('.game-card')?.classList.remove('preparing-audio');
       pendingRoundData = { ...pendingRoundData, ...data };
       showAudioUnlock();
       send('round_audio_failed', { roundNumber: data.roundNumber });
@@ -423,7 +390,7 @@ function startPreparedAudio(data) {
 
 function prepareRound(data) {
   selectedAnswer = null;
-  show('gameScreen');
+  if (!countdownActive) show('gameScreen');
   $('currentQuestionNumber').textContent = data.roundNumber;
   $('totalQuestions').textContent = data.totalRounds;
   $('questionText').textContent = data.prompt;
@@ -438,6 +405,7 @@ function prepareRound(data) {
 }
 
 function runCountdown() {
+  countdownActive = true;
   show('countdownScreen');
   let value = 3;
   $('countdownValue').textContent = value;
@@ -477,9 +445,13 @@ fetch('/api/library')
     availableQuestionTypes = data.questionTypes || ['artist', 'title'];
     renderQuestionTypes();
     renderCategories(data.count);
-    $('libraryInfo').textContent = `${data.count} cançons · ${data.parsedArtists} artistes`;
+    $('libraryInfo').textContent = ''; 
+    $('libraryInfo').hidden = true;
   })
-  .catch(() => $('libraryInfo').textContent = 'No s’ha pogut llegir la biblioteca');
+  .catch(() => {
+    $('libraryInfo').textContent = '';
+    $('libraryInfo').hidden = true;
+  });
 
 function connectSocket() {
   clearTimeout(reconnectTimer);
@@ -487,21 +459,29 @@ function connectSocket() {
   socket = new WebSocket(wsUrl);
 
   socket.onopen = () => {
+    clearTimeout(connectSocket.statusTimer);
     reconnectAttempts = 0;
     $('connectionStatus').textContent = 'Connectat al servidor';
     $('connectionStatus').className = 'status connected';
-    const savedPlayerId = storageGet('sessionStorage', 'musicBattlePlayerId');
-    const savedRoomCode = storageGet('sessionStorage', 'musicBattleRoomCode');
+    const savedPlayerId = sessionStorage.getItem('musicBattlePlayerId');
+    const savedRoomCode = sessionStorage.getItem('musicBattleRoomCode');
     if (savedPlayerId && savedRoomCode) {
       socket.send(JSON.stringify({ type: 'resume_room', playerId: savedPlayerId, roomCode: savedRoomCode }));
     }
   };
 
   socket.onclose = () => {
-    $('connectionStatus').textContent = 'Reconnectant...';
-    $('connectionStatus').className = 'status disconnected';
     if (manualClose) return;
-    const delay = Math.min(5000, 700 + reconnectAttempts * 700);
+
+    clearTimeout(connectSocket.statusTimer);
+    connectSocket.statusTimer = setTimeout(() => {
+      if (!socket || socket.readyState !== WebSocket.OPEN) {
+        $('connectionStatus').textContent = 'Reconnectant...';
+        $('connectionStatus').className = 'status disconnected';
+      }
+    }, 1200);
+
+    const delay = Math.min(4000, 250 + reconnectAttempts * 500);
     reconnectAttempts += 1;
     reconnectTimer = setTimeout(connectSocket, delay);
   };
@@ -512,30 +492,27 @@ function connectSocket() {
     const data = JSON.parse(event.data);
     switch (data.type) {
       case 'connected':
-        myId = data.playerId;
+        if (!sessionStorage.getItem('musicBattlePlayerId')) myId = data.playerId;
         break;
       case 'resumed':
         myId = data.playerId;
         roomCode = data.roomCode;
-        storageSet('sessionStorage', 'musicBattlePlayerId', myId);
-        storageSet('sessionStorage', 'musicBattleRoomCode', roomCode);
+        sessionStorage.setItem('musicBattlePlayerId', myId);
+        sessionStorage.setItem('musicBattleRoomCode', roomCode);
         notify('Connexió recuperada');
         break;
       case 'resume_failed':
-        storageRemove('sessionStorage', 'musicBattlePlayerId');
-        storageRemove('sessionStorage', 'musicBattleRoomCode');
+        sessionStorage.removeItem('musicBattlePlayerId');
+        sessionStorage.removeItem('musicBattleRoomCode');
         roomCode = null;
         myId = null;
         break;
       case 'room_created':
       case 'room_joined':
         roomCode = data.roomCode;
-        storageSet('sessionStorage', 'musicBattlePlayerId', myId);
-        storageSet('sessionStorage', 'musicBattleRoomCode', roomCode);
+        sessionStorage.setItem('musicBattlePlayerId', myId);
+        sessionStorage.setItem('musicBattleRoomCode', roomCode);
         show('lobbyScreen');
-        setTimeout(() => {
-          if (!audioUnlocked) showAudioUnlock();
-        }, 700);
         break;
       case 'room_state':
         roomCode = data.roomCode;
@@ -546,7 +523,12 @@ function connectSocket() {
       case 'player_left':
         notify('L’altre jugador ha sortit');
         break;
+      case 'game_audio_check':
+        pendingRoomAction = () => send('game_audio_ready');
+        showAudioUnlock(pendingRoomAction);
+        break;
       case 'game_started':
+        pendingRoomAction = null;
         setScores(data.players);
         runCountdown();
         break;
@@ -586,9 +568,7 @@ function connectSocket() {
           else if (index === selectedAnswer) button.classList.add('incorrect');
         });
         const mine = data.results.find((result) => result.playerId === myId);
-        $('gameMessage').textContent = mine && mine.correct
-          ? `Correcte! +${mine.points} punts`
-          : !mine || mine.answerIndex == null ? 'Temps esgotat' : 'Incorrecte';
+        $('gameMessage').textContent = mine?.correct ? `Correcte! +${mine.points} punts` : mine?.answerIndex == null ? 'Temps esgotat' : 'Incorrecte';
         break;
       }
       case 'game_finished':
@@ -598,9 +578,9 @@ function connectSocket() {
         for (const number of [1, 2]) {
           const value = player(number);
           const key = number === 1 ? 'One' : 'Two';
-          const stats = value && value.stats ? value.stats : {};
-          $(`finalPlayer${key}Name`).textContent = value && value.name ? value.name : `Jugador ${number}`;
-          $(`finalPlayer${key}Score`).textContent = `${value && value.score ? value.score : 0} punts`;
+          const stats = value?.stats || {};
+          $(`finalPlayer${key}Name`).textContent = value?.name || `Jugador ${number}`;
+          $(`finalPlayer${key}Score`).textContent = `${value?.score || 0} punts`;
           $(`finalPlayer${key}Stats`).textContent = `Precisió ${stats.accuracy || 0}% · Ratxa ${stats.bestStreak || 0} · Mitjana ${stats.averageMs ? `${(stats.averageMs / 1000).toFixed(2)} s` : '—'}`;
         }
         $('creatorResultActions').style.display = 'grid';
@@ -610,8 +590,8 @@ function connectSocket() {
         show('lobbyScreen');
         break;
       case 'room_left':
-        storageRemove('sessionStorage', 'musicBattlePlayerId');
-        storageRemove('sessionStorage', 'musicBattleRoomCode');
+        sessionStorage.removeItem('musicBattlePlayerId');
+        sessionStorage.removeItem('musicBattleRoomCode');
         location.reload();
         break;
       case 'error':
@@ -626,60 +606,83 @@ connectSocket();
 $('createRoom').onclick = () => {
   const playerName = $('playerName').value.trim();
   if (!playerName) return notify('Escriu el teu nom');
-  storageSet('localStorage', 'musicBattleName', playerName);
-  unlockAudio().catch(() => {});
-  send('create_room', { playerName, config: configState });
+  runWithAudio(() => {
+    localStorage.setItem('musicBattleName', playerName);
+    send('create_room', { playerName, config: configState });
+  });
 };
 
 $('joinRoom').onclick = () => {
   const playerName = $('playerName').value.trim();
   if (!playerName) return notify('Escriu el teu nom');
-  // Safari només permet obrir prompt directament dins del toc de l’usuari.
-  const code = prompt('Codi de la sala:');
-  if (!code) return;
-  storageSet('localStorage', 'musicBattleName', playerName);
-  unlockAudio().catch(() => {});
-  send('join_room', { playerName, roomCode: code });
+  runWithAudio(() => {
+    const code = prompt('Codi de la sala:');
+    if (!code) return;
+    localStorage.setItem('musicBattleName', playerName);
+    send('join_room', { playerName, roomCode: code });
+  });
 };
 
-$('copyCode').onclick = () => {
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(roomCode).then(() => notify('Codi copiat')).catch(() => notify(roomCode));
-  } else notify(roomCode);
-};
+$('copyCode').onclick = () => navigator.clipboard?.writeText(roomCode).then(() => notify('Codi copiat')).catch(() => notify(roomCode));
 $('randomConfig').onclick = randomizeConfig;
 $('startGame').onclick = () => runWithAudio(() => send('start_game'));
-$('leaveRoom').onclick = () => { storageRemove('sessionStorage', 'musicBattlePlayerId'); storageRemove('sessionStorage', 'musicBattleRoomCode'); send('leave_room'); };
+$('leaveRoom').onclick = () => { sessionStorage.removeItem('musicBattlePlayerId'); sessionStorage.removeItem('musicBattleRoomCode'); send('leave_room'); };
 $('rematch').onclick = () => send('rematch');
 $('changeConfig').onclick = () => send('back_to_lobby');
-$('backHome').onclick = () => { storageRemove('sessionStorage', 'musicBattlePlayerId'); storageRemove('sessionStorage', 'musicBattleRoomCode'); send('leave_room'); };
-$('playerName').value = storageGet('localStorage', 'musicBattleName') || '';
+$('backHome').onclick = () => { sessionStorage.removeItem('musicBattlePlayerId'); sessionStorage.removeItem('musicBattleRoomCode'); send('leave_room'); };
+$('playerName').value = localStorage.getItem('musicBattleName') || '';
 
 
-$('activateAudio').onclick = async () => {
-  const ok = await unlockAudio();
-  if (!ok) {
-    notify('No s’ha pogut activar el so. Revisa el volum i torna-ho a provar.');
+function activateRealAudio(event) {
+  event?.preventDefault?.();
+  event?.stopPropagation?.();
+
+  const audio = $('audioPlayer');
+  audio.setAttribute('playsinline', '');
+  audio.setAttribute('webkit-playsinline', '');
+  audio.muted = false;
+  audio.volume = 1;
+
+  let playResult;
+  try {
+    // Sense AudioContext ni cap await abans de play():
+    // Safari rep la reproducció directament des del toc.
+    playResult = audio.play();
+  } catch (error) {
+    console.warn('Error immediat reproduint àudio:', error);
+    notify('No s’ha pogut activar el so. Torna-ho a provar.');
     return;
   }
-  hideAudioUnlock();
 
-  const action = pendingRoomAction;
-  pendingRoomAction = null;
-  if (action) {
-    action();
-    return;
-  }
+  Promise.resolve(playResult).then(() => {
+    audio.pause();
+    if (preparedAudio && Number.isFinite(preparedAudio.startSecond)) {
+      try { audio.currentTime = preparedAudio.startSecond; } catch {}
+    }
 
-  if (pendingRoundData) {
-    const data = pendingRoundData;
-    pendingRoundData = null;
-    prepareAudio(data);
-  }
-};
+    audioUnlocked = true;
+    localStorage.setItem('musicBattleAudioUnlocked', '1');
+    hideAudioUnlock();
+
+    const action = pendingRoomAction;
+    pendingRoomAction = null;
+    if (action) action();
+
+    if (pendingRoundData) {
+      $('gameMessage').textContent = 'So activat. Esperant el rival...';
+      send('round_ready', { roundNumber: pendingRoundData.roundNumber });
+    }
+  }).catch((error) => {
+    console.warn('Safari ha bloquejat la reproducció:', error);
+    audioUnlocked = false;
+    notify('Safari ha bloquejat el so. Torna a prémer el botó.');
+  });
+}
+
+$('activateAudio').onclick = activateRealAudio;
 
 document.addEventListener('visibilitychange', () => {
-  if (!document.hidden && audioUnlocked && audioContext && audioContext.resume) audioContext.resume().catch(() => {});
+  if (!document.hidden && audioUnlocked) audioContext?.resume?.().catch(() => {});
 });
 
 $('leaveGame').onclick = () => {
@@ -691,7 +694,7 @@ $('leaveGame').onclick = () => {
     setTimeout(() => { if (Date.now() > leaveGameConfirmUntil) $('leaveGame').textContent = 'Sortir'; }, 3600);
     return;
   }
-  storageRemove('sessionStorage', 'musicBattlePlayerId');
-  storageRemove('sessionStorage', 'musicBattleRoomCode');
+  sessionStorage.removeItem('musicBattlePlayerId');
+  sessionStorage.removeItem('musicBattleRoomCode');
   send('leave_room');
 };

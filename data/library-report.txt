@@ -1,7 +1,5 @@
-Music Battle - biblioteca online: 905 cançons
-Cançons noves detectades: 14
-Fragments creats o corregits: 687
-Reutilitzats: 218
-Absents: 0
-Problemàtics: 0
-Fitxers antics eliminats: 0
+Music Battle - biblioteca online
+Cançons totals: 905
+Fragments nous/modificats: 346
+Fragments reutilitzats: 559
+Errors: 0

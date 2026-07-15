@@ -5,6 +5,7 @@ const os = require('os');
 const WebSocket = require('ws');
 
 const PORT = Number(process.env.PORT || 3000);
+const BUILD_VERSION = '0.9-final-real';
 const ROOT_DIR = __dirname;
 const CLIENT_DIR = path.join(ROOT_DIR, 'client');
 const MUSIC_DIR = path.join(ROOT_DIR, 'music');
@@ -923,7 +924,7 @@ const server = http.createServer((request, response) => {
   const url = new URL(request.url, `http://${request.headers.host || 'localhost'}`);
   if (url.pathname === '/health') {
     response.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
-    return response.end(JSON.stringify({ ok: true, clientIndex: fs.existsSync(path.join(CLIENT_DIR, 'index.html')), songs: library().length }));
+    return response.end(JSON.stringify({ ok: true, version: BUILD_VERSION, clientIndex: fs.existsSync(path.join(CLIENT_DIR, 'index.html')), songs: library().length }));
   }
   if (url.pathname === '/') {
     return safeServe(CLIENT_DIR, 'index.html', request, response);
@@ -993,7 +994,7 @@ async function main() {
     const addresses = Object.values(os.networkInterfaces()).flat().filter((item) => item && item.family === 'IPv4' && !item.internal).map((item) => `http://${item.address}:${PORT}`);
     console.log('');
     console.log('=========================================');
-    console.log(' MUSIC BATTLE');
+    console.log(` MUSIC BATTLE ${BUILD_VERSION}`);
     console.log(` ${library().length} cançons utilitzables`);
     console.log(` ${libraryState.full.length} amb artista i títol`);
     console.log(` ${libraryState.titleOnly.length} només per preguntes de títol`);

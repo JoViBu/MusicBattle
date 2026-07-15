@@ -1,4 +1,4 @@
-console.log('Music Battle v0.8 motor final de varietat');
+console.log('Music Battle v0.9 final real');
 let socket = null;
 let reconnectTimer = null;
 let reconnectAttempts = 0;

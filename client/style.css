@@ -9,3 +9,5 @@
 .game-topbar{display:flex;justify-content:flex-end;margin-bottom:6px}.game-topbar button{width:auto}.preparing-audio{opacity:.65;pointer-events:none}
 
 .audio-unlock{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:18px;background:#06010cdd;backdrop-filter:blur(10px);opacity:0;transition:opacity .18s ease}.audio-unlock.show{opacity:1}.audio-unlock[hidden]{display:none}.audio-unlock-card{width:min(100%,420px);padding:24px;border-radius:22px;background:#170827;border:1px solid #ffffff26;box-shadow:0 24px 80px #000b;text-align:center}.audio-unlock-icon{font-size:3rem}.audio-unlock-card h2{margin:8px 0}.audio-unlock-card p{color:#cdbedc;line-height:1.45}.audio-unlock-card button{margin-top:8px}
+
+.back-link{display:inline-flex;margin-bottom:15px;color:#70e5ff;text-decoration:none;font-size:.88rem;font-weight:850}.music-home-actions{grid-template-columns:1fr 1fr 1fr}.home-card h1{font-size:clamp(2rem,8vw,4rem)}@media(max-width:620px){.music-home-actions{grid-template-columns:1fr}.back-link{margin-bottom:10px}}

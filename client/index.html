@@ -4,133 +4,74 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#10031d">
-  <title>Music Battle</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Music Battle · Jocs</title>
+  <link rel="stylesheet" href="hub.css?v=1">
+  <link rel="stylesheet" href="hub-extra.css?v=1">
 </head>
 <body>
-<main class="app">
-  <section id="homeScreen" class="screen active">
-    <div class="card home-card">
+<main class="hub-shell">
+  <header class="hub-header">
+    <div>
+      <p class="eyebrow">JOCS PER COMPARTIR</p>
       <h1>Music Battle</h1>
-      <p class="tagline">Batalla musical en temps real</p>
-      <div id="libraryInfo" class="library-info">Llegint biblioteca...</div>
-      <label class="field-label" for="playerName">Nom</label>
-      <input id="playerName" maxlength="20" placeholder="Escriu el teu nom" autocomplete="nickname">
-      <div class="home-actions">
-        <button id="createRoom" class="primary">Crear sala</button>
-        <button id="joinRoom">Unir-me</button>
-      </div>
-      <p id="connectionStatus" class="status">Connectant...</p>
+      <p class="subtitle">Música, paraules i reptes. Sol o amb amics.</p>
     </div>
-  </section>
-
-  <section id="lobbyScreen" class="screen">
-    <div class="card lobby-card">
-      <header class="lobby-header">
-        <div><small>SALA</small><div class="room-line"><strong id="roomCode">-----</strong><button id="copyCode" class="icon-button" title="Copiar codi">⧉</button></div></div>
-        <button id="leaveRoom" class="ghost compact">Sortir</button>
-      </header>
-
-      <div class="players">
-        <article id="playerOneCard" class="player-card"><b id="playerOneName">Esperant...</b><span id="playerOneStatus">No connectat</span></article>
-        <div class="vs">VS</div>
-        <article id="playerTwoCard" class="player-card"><b id="playerTwoName">Esperant...</b><span id="playerTwoStatus">No connectat</span></article>
-      </div>
-
-      <section class="config-section">
-        <div class="section-title"><span>Què vols endevinar?</span></div>
-        <div class="choice-row" id="questionTypeChoices">
-          <button class="choice any selected" data-value="__any__">Qualsevol</button>
-          <button class="choice multi" data-value="artist">Artista</button>
-          <button class="choice multi" data-value="title">Títol</button>
-          <button class="choice multi optional-type" data-value="album">Disc</button>
-          <button class="choice multi optional-type" data-value="year">Any</button>
-          <button class="choice multi optional-type" data-value="decade">Dècada</button>
-          <button class="choice multi optional-type" data-value="genre">Gènere</button>
-        </div>
-      </section>
-
-      <section class="config-section">
-        <div class="section-title"><span>Categories</span></div>
-        <div id="categoryChoices" class="category-grid"></div>
-      </section>
-
-      <div class="two-columns">
-        <section class="config-section">
-          <div class="section-title"><span>Temps</span></div>
-          <div class="choice-row" id="timeChoices">
-            <button class="choice single selected" data-value="10">10 s</button>
-            <button class="choice single" data-value="8">8 s</button>
-            <button class="choice single" data-value="5">5 s</button>
-          </div>
-        </section>
-        <section class="config-section">
-          <div class="section-title"><span>Preguntes</span></div>
-          <div class="choice-row" id="countChoices">
-            <button class="choice single selected" data-value="10">10</button>
-            <button class="choice single" data-value="20">20</button>
-            <button class="choice single" data-value="30">30</button>
-          </div>
-        </section>
-      </div>
-
-      <p id="lobbyMessage" class="lobby-message">Esperant rival...</p>
-      <div class="lobby-actions">
-        <button id="randomConfig" class="ghost" type="button">🎲 Configuració aleatòria</button>
-        <button id="startGame" class="primary" disabled>Esperant rival</button>
-      </div>
+    <div class="header-tools">
+      <span class="stats-pill" title="Victòries"><span>🏆</span><b id="statsLabel">0</b></span>
+      <button id="profileButton" class="profile-button" type="button" aria-label="Canviar el nom"><span id="profileInitial">J</span><b id="profileLabel">Jugador</b></button>
     </div>
+  </header>
+
+  <button id="quickPlay" class="quick-play" type="button">
+    <span class="quick-icon">▶</span>
+    <span><b>Partida ràpida</b><small>Un repte diferent cada dia</small></span>
+    <span class="arrow">›</span>
+  </button>
+
+  <nav class="tabs" aria-label="Categories de jocs">
+    <button class="tab active" data-category="music" type="button">Música i cultura</button>
+    <button class="tab" data-category="words" type="button">Paraules</button>
+    <button class="tab" data-category="logic" type="button">Lògica i números</button>
+  </nav>
+
+  <section class="game-grid active" data-panel="music">
+    <a class="game-card game-card--music" href="music.html">
+      <span class="game-icon">♫</span><span><b>Batalla musical</b><small>Endevina artista, títol, any i més</small></span><span class="play">Jugar</span>
+    </a>
+    <a class="game-card game-card--culture" href="play.html?game=cultura">
+      <span class="game-icon">✦</span><span><b>Cultura exprés</b><small>Preguntes variades sense repeticions</small></span><span class="play">Jugar</span>
+    </a>
   </section>
 
-  <section id="countdownScreen" class="screen">
-    <div class="countdown-wrap"><div id="countdownValue" class="countdown-value">3</div><p>Prepareu-vos</p></div>
+  <section class="game-grid" data-panel="words">
+    <a class="game-card game-card--letters" href="play.html?game=lletres">
+      <span class="game-icon">Aa</span><span><b>Lletres en ordre</b><small>Completa frases amb les lletres disponibles</small></span><span class="play">Jugar</span>
+    </a>
+    <a class="game-card game-card--words" href="play.html?game=emparaulats">
+      <span class="game-icon">ABC</span><span><b>Emparaulats</b><small>Construeix paraules en català al tauler</small></span><span class="play">Jugar</span>
+    </a>
   </section>
 
-  <section id="gameScreen" class="screen">
-    <div class="card game-card">
-      <div class="game-topbar"><button id="leaveGame" class="ghost compact" type="button">Sortir</button></div>
-      <div class="scorebar">
-        <div><span id="gamePlayerOneName">Jugador 1</span><b id="gamePlayerOneScore">0</b></div>
-        <div><small>Pregunta</small><b><span id="currentQuestionNumber">1</span>/<span id="totalQuestions">10</span></b></div>
-        <div><span id="gamePlayerTwoName">Jugador 2</span><b id="gamePlayerTwoScore">0</b></div>
-      </div>
-      <div id="timer" class="timer">10</div>
-      <h2 id="questionText">Prepara't...</h2>
-      <audio id="audioPlayer" preload="auto"></audio>
-      <div class="answers">
-        <button class="answer-button" data-index="0"></button><button class="answer-button" data-index="1"></button>
-        <button class="answer-button" data-index="2"></button><button class="answer-button" data-index="3"></button>
-      </div>
-      <p id="gameMessage" class="game-message"></p>
-    </div>
+  <section class="game-grid" data-panel="logic">
+    <a class="game-card game-card--math" href="play.html?game=quadrat">
+      <span class="game-icon">∑</span><span><b>Quadrat matemàtic</b><small>Col·loca els números perquè tot quadri</small></span><span class="play">Jugar</span>
+    </a>
+    <a class="game-card game-card--sudoku" href="play.html?game=sudoku">
+      <span class="game-icon">9</span><span><b>Sudoku</b><small>Fàcil, mitjà o difícil</small></span><span class="play">Jugar</span>
+    </a>
   </section>
 
-  <section id="resultsScreen" class="screen">
-    <div class="card results-card">
-      <h2 id="winnerMessage">Resultat final</h2>
-      <div class="result-grid">
-        <article><h3 id="finalPlayerOneName"></h3><strong id="finalPlayerOneScore"></strong><p id="finalPlayerOneStats"></p></article>
-        <article><h3 id="finalPlayerTwoName"></h3><strong id="finalPlayerTwoScore"></strong><p id="finalPlayerTwoStats"></p></article>
-      </div>
-      <div id="creatorResultActions" class="result-actions">
-        <button id="rematch" class="primary">Revanxa</button>
-        <button id="changeConfig">Canviar configuració</button>
-      </div>
-      <p id="guestResultMessage" class="lobby-message" style="display:none"></p>
-      <button id="backHome" class="ghost">Sortir de la sala</button>
-    </div>
-  </section>
+  <footer><span id="dailyDate"></span><span>Nous reptes cada dia</span></footer>
 </main>
 
-<div id="audioUnlock" class="audio-unlock" hidden>
-  <div class="audio-unlock-card">
-    <div class="audio-unlock-icon">🔊</div>
-    <h2>Activa el so</h2>
-    <p>Prem el botó una vegada perquè el navegador pugui reproduir la música.</p>
-    <button id="activateAudio" class="primary" type="button">Activar so i continuar</button>
-  </div>
-</div>
-<div id="toast" class="toast"></div>
-<script src="app.js?v=5"></script>
+<dialog id="profileDialog">
+  <form method="dialog" class="profile-dialog">
+    <h2>Com et dius?</h2>
+    <p>Aquest nom es farà servir a totes les sales.</p>
+    <input id="profileName" maxlength="20" autocomplete="nickname" placeholder="El teu nom">
+    <div><button value="cancel" type="submit">Cancel·lar</button><button id="saveProfile" value="default" class="primary" type="submit">Guardar</button></div>
+  </form>
+</dialog>
+<script src="hub.js?v=1"></script>
 </body>
 </html>

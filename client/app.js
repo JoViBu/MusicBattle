@@ -137,6 +137,15 @@ function notify(text) {
   notify.timer = setTimeout(() => toast.classList.remove('show'), 1800);
 }
 
+function recordMusicStats(won, points) {
+  let stats = { games: 0, wins: 0, points: 0 };
+  try { stats = { ...stats, ...JSON.parse(localStorage.getItem('musicBattleStats') || '{}') }; } catch {}
+  stats.games += 1;
+  if (won) stats.wins += 1;
+  stats.points += Number(points) || 0;
+  localStorage.setItem('musicBattleStats', JSON.stringify(stats));
+}
+
 function send(type, payload = {}) {
   if (!socket || socket.readyState !== WebSocket.OPEN) {
     notify('No hi ha connexió amb el servidor');
@@ -573,6 +582,11 @@ function connectSocket() {
       }
       case 'game_finished':
         players = data.players;
+        {
+          const mine = players.find((value) => value.id === myId);
+          const best = Math.max(...players.map((value) => value.score || 0));
+          if (mine) recordMusicStats((mine.score || 0) === best, mine.score || 0);
+        }
         show('resultsScreen');
         $('winnerMessage').textContent = data.winnerText;
         for (const number of [1, 2]) {
@@ -609,6 +623,15 @@ $('createRoom').onclick = () => {
   runWithAudio(() => {
     localStorage.setItem('musicBattleName', playerName);
     send('create_room', { playerName, config: configState });
+  });
+};
+
+$('botRoom').onclick = () => {
+  const playerName = $('playerName').value.trim();
+  if (!playerName) return notify('Escriu el teu nom');
+  runWithAudio(() => {
+    localStorage.setItem('musicBattleName', playerName);
+    send('create_room', { playerName, config: configState, withBot: true });
   });
 };
 

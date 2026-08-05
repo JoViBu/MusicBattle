@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#10031d">
+  <title>Music Battle</title>
+  <link rel="stylesheet" href="games.css?v=1">
+</head>
+<body>
+<main class="arcade">
+  <section id="setupScreen" class="screen active">
+    <div class="panel setup-panel">
+      <a class="back-link" href="index.html">← Tots els jocs</a>
+      <div id="gameBadge" class="game-badge">✦</div>
+      <h1 id="gameTitle">Repte</h1>
+      <p id="gameDescription" class="lead"></p>
+      <label for="playerName">El teu nom</label>
+      <input id="playerName" maxlength="20" autocomplete="nickname" placeholder="Escriu el teu nom">
+      <div id="difficultyBlock">
+        <label>Nivell</label>
+        <div class="segmented" id="difficultyChoices">
+          <button data-level="easy" type="button">Fàcil</button>
+          <button class="selected" data-level="normal" type="button">Mitjà</button>
+          <button data-level="hard" type="button">Difícil</button>
+        </div>
+      </div>
+      <div class="mode-grid">
+        <button id="playBot" class="mode-card primary" type="button"><span>🤖</span><b>Contra la màquina</b><small>Comença ara mateix</small></button>
+        <button id="createRoom" class="mode-card" type="button"><span>＋</span><b>Crear sala</b><small id="roomLimitLabel">Per a 2–5 persones</small></button>
+        <button id="joinRoom" class="mode-card" type="button"><span>#</span><b>Entrar amb codi</b><small>Uneix-te als amics</small></button>
+      </div>
+      <p id="connectionStatus" class="connection-status">Connectant...</p>
+    </div>
+  </section>
+
+  <section id="roomScreen" class="screen">
+    <div class="panel room-panel">
+      <header class="room-header"><button id="leaveRoom" class="text-button" type="button">← Sortir</button><span id="roomGameLabel"></span></header>
+      <p class="room-kicker">CODI DE LA SALA</p>
+      <button id="copyRoomCode" class="room-code" type="button"><b id="roomCode">-----</b><small>Prem per copiar</small></button>
+      <div id="roomPlayers" class="room-players"></div>
+      <p id="roomMessage" class="room-message">Esperant jugadors...</p>
+      <button id="startRoom" class="primary full" disabled type="button">Falta un jugador</button>
+    </div>
+  </section>
+
+  <section id="playScreen" class="screen">
+    <div class="panel play-panel">
+      <header class="play-header">
+        <button id="quitGame" class="text-button" type="button">← Sortir</button>
+        <div><small id="playGameLabel">REPTE</small><b id="playProgress">1/1</b></div>
+        <div class="score-pill"><small>Punts</small><b id="liveScore">0</b></div>
+      </header>
+      <div id="opponentStrip" class="opponent-strip"></div>
+      <div id="gameMount"></div>
+      <p id="gameFeedback" class="feedback" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section id="resultsScreen" class="screen">
+    <div class="panel results-panel">
+      <div id="resultIcon" class="result-icon">★</div>
+      <h1 id="resultTitle">Partida acabada</h1>
+      <p id="resultSummary" class="lead"></p>
+      <div id="resultRanking" class="ranking"></div>
+      <div class="result-actions"><button id="playAgain" class="primary" type="button">Tornar a jugar</button><a href="index.html">Tots els jocs</a></div>
+    </div>
+  </section>
+</main>
+<div id="toast" class="toast"></div>
+<script src="game-data.js?v=1"></script>
+<script src="word-engine.js?v=1"></script>
+<script src="games.js?v=1"></script>
+</body>
+</html>

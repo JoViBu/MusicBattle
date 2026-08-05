@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 const WebSocket = require('ws');
+const arcade = require('./arcade');
 
 const PORT = Number(process.env.PORT || 3000);
 const ROOT_DIR = path.join(__dirname, '..');
@@ -257,7 +258,7 @@ function publicPlayers(room) {
     name: player.name,
     playerNumber: index + 1,
     score: player.score,
-    connected: player.socket?.readyState === WebSocket.OPEN,
+    connected: player.isBot || player.socket?.readyState === WebSocket.OPEN,
     stats: {
       correct: player.correct,
       answered: player.answered,
@@ -443,16 +444,19 @@ function createRounds(config) {
   const recent = new Set(recentTrackIds);
   const rounds = [];
   const used = new Set();
+  const usedArtists = new Set();
 
   for (let index = 0; index < config.questionCount; index += 1) {
     const type = selectedTypes[Math.floor(Math.random() * selectedTypes.length)];
     const fullPool = basePool.filter((track) => questionValue(track, type));
-    let candidates = fullPool.filter((track) => !used.has(track.id) && !recent.has(track.id));
+    let candidates = fullPool.filter((track) => !used.has(track.id) && !recent.has(track.id) && (!artistKey(track) || !usedArtists.has(artistKey(track))));
+    if (!candidates.length) candidates = fullPool.filter((track) => !used.has(track.id) && (!artistKey(track) || !usedArtists.has(artistKey(track))));
     if (!candidates.length) candidates = fullPool.filter((track) => !used.has(track.id));
     if (!candidates.length) candidates = fullPool;
 
     const track = candidates[Math.floor(Math.random() * candidates.length)];
     used.add(track.id);
+    if (artistKey(track)) usedArtists.add(artistKey(track));
     const correct = questionValue(track, type);
     const options = buildContextualOptions(track, type, fullPool);
     if (options.length < 4) { index -= 1; continue; }
@@ -504,7 +508,7 @@ function removePlayerFromRoom(room, playerId, notifyOthers = true) {
   clearTimeout(room.roundTimer);
   clearTimeout(room.nextTimer);
   clearTimeout(room.prepareTimer);
-  if (!room.players.length) { rooms.delete(room.code); return; }
+  if (!room.players.length || room.players.every((item) => item.isBot)) { rooms.delete(room.code); return; }
   room.phase = 'lobby';
   room.rounds = [];
   room.currentRound = -1;
@@ -555,6 +559,11 @@ function createRoom(socket, message) {
     code: makeRoomCode(), players: [player], config: normalizeConfig(message.config), phase: 'lobby',
     rounds: [], currentRound: -1, answers: new Map(), roundStartedAt: 0, roundRevealed: false, roundTimer: null, nextTimer: null, prepareTimer: null, readyPlayers: new Set()
   };
+  if (message.withBot) {
+    const bot = { id: `bot_${Date.now()}`, name: 'Màquina', socket: null, disconnectTimer: null, isBot: true };
+    resetPlayer(bot);
+    room.players.push(bot);
+  }
   rooms.set(room.code, room);
   socket.roomCode = room.code;
   send(socket, { type: 'room_created', roomCode: room.code });
@@ -599,6 +608,12 @@ function beginPreparedRound(room) {
   clearTimeout(room.roundTimer);
   const totalDelay = Math.max(0, room.roundStartedAt - Date.now()) + room.config.roundSeconds * 1000 + 250;
   room.roundTimer = setTimeout(() => revealRound(room), totalDelay);
+  const bot = room.players.find((player) => player.isBot);
+  if (bot) {
+    const thinkMs = Math.round(room.config.roundSeconds * 1000 * (0.42 + Math.random() * 0.42));
+    const botAnswer = Math.random() < 0.72 ? round.correctIndex : Math.floor(Math.random() * 4);
+    setTimeout(() => submitAnswer({ roomCode: room.code, playerId: bot.id }, { answerIndex: botAnswer }), Math.max(0, room.roundStartedAt - Date.now()) + thinkMs);
+  }
 }
 
 function markRoundReady(socket, message) {
@@ -632,7 +647,7 @@ function startRound(room) {
   if (room.currentRound >= room.rounds.length) return finishGame(room);
   room.phase = 'preparing';
   room.answers = new Map();
-  room.readyPlayers = new Set();
+  room.readyPlayers = new Set(room.players.filter((player) => player.isBot).map((player) => player.id));
   room.roundRevealed = false;
   const round = room.rounds[room.currentRound];
   broadcast(room, {
@@ -755,6 +770,7 @@ function handleMessage(socket, raw) {
   let message;
   try { message = JSON.parse(raw.toString()); }
   catch { return send(socket, { type: 'error', message: 'Missatge no vàlid.' }); }
+  if (arcade.handle(socket, message)) return;
   switch (message.type) {
     case 'create_room': return createRoom(socket, message);
     case 'join_room': return joinRoom(socket, message);
@@ -891,7 +907,7 @@ wss.on('connection', (socket) => {
   send(socket, { type: 'connected', playerId: socket.playerId });
   socket.on('pong', () => { socket.isAlive = true; });
   socket.on('message', (raw) => handleMessage(socket, raw));
-  socket.on('close', () => temporarilyDisconnect(socket));
+  socket.on('close', () => { arcade.disconnect(socket); temporarilyDisconnect(socket); });
   socket.on('error', () => {});
 });
 

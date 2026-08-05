@@ -1,0 +1,1 @@
+.header-tools{display:flex;align-items:center;gap:7px}.stats-pill{display:flex;align-items:center;gap:5px;padding:10px 12px;border:1px solid var(--line);border-radius:999px;background:#ffffff0c;font-size:.82rem}.stats-pill b{color:#ffd36c}@media(max-width:640px){.stats-pill{padding:9px}.stats-pill b{display:none}}

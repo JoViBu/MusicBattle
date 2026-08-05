@@ -71,7 +71,7 @@ function renderRoom(data){
   const ready=roomPlayers.length>=2,isCreator=myId===creatorId;$('startRoom').hidden=!isCreator;$('startRoom').disabled=!ready;$('startRoom').textContent=ready?'Començar partida':'Falta un jugador';$('roomMessage').textContent=ready?(isCreator?'Ja podeu començar':`Esperant que ${roomPlayers[0].name} comenci...`):`Comparteix el codi. Hi caben ${meta.max} jugadors.`;if(data.phase==='lobby')show('roomScreen');else renderOpponents(roomPlayers);
 }
 function renderOpponents(values){roomPlayers=values;$('opponentStrip').innerHTML=values.filter(player=>player.id!==myId).map(player=>`<span class="opponent-chip ${player.done?'done':''}">${escapeHtml(player.name)} · ${player.done?'acabat':`${player.progress||0}/${player.total||'?'}`}</span>`).join('')}
-function leaveArcadeRoom(){if(mode==='room')send('arcade_leave');clearRoom();location.href='index.html'}
+function leaveArcadeRoom(){if(mode==='room')send('arcade_leave');clearRoom();location.href='https://quiz-battle-jordi.jvinola4.chatgpt.site/'}
 function clearRoom(){sessionStorage.removeItem('arcadePlayerId');sessionStorage.removeItem('arcadeRoomCode');roomCode=null}
 function difficultyLabel(value){return value==='easy'?'Fàcil':value==='hard'?'Difícil':'Mitjà'}
 function escapeHtml(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}

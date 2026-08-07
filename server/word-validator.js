@@ -1,5 +1,8 @@
+const nspell=require('nspell');
+
 const CACHE_TTL_MS=7*24*60*60*1000;
 const cache=new Map();
+let catalanDictionaryPromise=null;
 
 function normalize(value){
   return String(value||'')
@@ -28,6 +31,31 @@ function cacheSet(key,value){
   }
 }
 
+async function getCatalanDictionary(){
+  if(!catalanDictionaryPromise){
+    catalanDictionaryPromise=import('dictionary-ca').then(module=>{
+      const dictionary=module.default||module;
+      const spell=nspell(dictionary);
+      const roots=new Set();
+      const dicText=Buffer.isBuffer(dictionary.dic)?dictionary.dic.toString('utf8'):String(dictionary.dic||'');
+      const lines=dicText.split(/\r?\n/);
+      for(let index=1;index<lines.length;index++){
+        const entry=lines[index].trim().split(/\s+/)[0];
+        if(!entry)continue;
+        const slash=entry.indexOf('/');
+        const raw=(slash>=0?entry.slice(0,slash):entry).replace(/\\/g,'');
+        const key=normalize(raw);
+        if(key.length>=2&&key.length<=11)roots.add(key);
+      }
+      return{spell,roots};
+    }).catch(error=>{
+      console.error('No s’ha pogut carregar dictionary-ca:',error.message);
+      return null;
+    });
+  }
+  return catalanDictionaryPromise;
+}
+
 async function fetchJson(url){
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),4500);
@@ -53,8 +81,18 @@ async function lookupCatalanWord(rawWord){
   const cached=cacheGet(key);
   if(cached)return cached;
 
+  const local=await getCatalanDictionary();
+  if(local){
+    const plain=key.toLocaleLowerCase('ca');
+    if(local.roots.has(key)||local.spell.correct(plain)){
+      const result={valid:true,title:plain,source:'softcatala-hunspell'};
+      cacheSet(key,result);
+      return result;
+    }
+  }
+
   try{
-    const searchParams=new URLSearchParams({action:'opensearch',search:String(rawWord||'').toLocaleLowerCase('ca'),limit:'12',namespace:'0',format:'json',origin:'*'});
+    const searchParams=new URLSearchParams({action:'opensearch',search:String(rawWord||'').toLocaleLowerCase('ca'),limit:'20',namespace:'0',format:'json',origin:'*'});
     const search=await fetchJson(`https://ca.wiktionary.org/w/api.php?${searchParams}`);
     const titles=Array.isArray(search?.[1])?search[1]:[];
     const matching=[...new Set(titles.filter(title=>normalize(title)===key))];
@@ -66,7 +104,7 @@ async function lookupCatalanWord(rawWord){
         return result;
       }
     }
-    const result={valid:false,title:null,source:'viccionari'};
+    const result={valid:false,title:null,source:'diccionari-catala'};
     cacheSet(key,result);
     return result;
   }catch(error){
@@ -93,4 +131,4 @@ async function validateCatalanWords(words,fallbackDictionary){
   };
 }
 
-module.exports={lookupCatalanWord,validateCatalanWords};
+module.exports={lookupCatalanWord,validateCatalanWords,getCatalanDictionary};

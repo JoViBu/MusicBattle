@@ -1,4 +1,5 @@
-const {emptyBoard,buildBag,draw,validateMove,applyMove,normalize}=require('./word-game');
+const {emptyBoard,buildBag,draw,validateMove,applyMove,normalize,DICTIONARY}=require('./word-game');
+const {validateCatalanWords}=require('./word-validator');
 const rooms=new Map();
 const GAMES=new Set(['cultura','lletres','quadrat','sudoku','emparaulats']);
 const LEVELS=new Set(['easy','normal','hard']);
@@ -22,14 +23,46 @@ function start(socket){const room=rooms.get(socket.arcadeRoomCode);if(!room||roo
 function progress(socket,message){const room=rooms.get(socket.arcadeRoomCode),player=room?.players.find(value=>value.id===socket.playerId);if(!room||!player||room.phase!=='playing'||room.game==='emparaulats')return;player.progress=Math.max(0,Math.min(100,Number(message.done)||0));player.total=Math.max(0,Math.min(100,Number(message.total)||0));player.score=Math.max(0,Math.min(50000,Math.round(Number(message.score)||0)));broadcast(room,{type:'arcade_progress_state',players:publicPlayers(room)})}
 function submit(socket,message){const room=rooms.get(socket.arcadeRoomCode),player=room?.players.find(value=>value.id===socket.playerId);if(!room||!player||room.phase!=='playing'||room.game==='emparaulats'||player.done)return;player.score=Math.max(0,Math.min(50000,Math.round(Number(message.score)||0)));player.elapsedMs=Math.max(0,Math.min(7200000,Math.round(Number(message.elapsedMs)||Date.now()-room.startedAt)));player.done=true;broadcast(room,{type:'arcade_progress_state',players:publicPlayers(room)});if(room.players.every(value=>value.done))finishChallenge(room)}
 function finishChallenge(room){room.phase='results';const values=publicPlayers(room).map(value=>({...value,elapsedMs:room.players.find(player=>player.id===value.id)?.elapsedMs||0}));broadcast(room,{type:'arcade_results',players:values})}
-function startWord(room,seed){const random=rng(seed),bag=buildBag(random);room.word={board:emptyBoard(),bag,turn:0,round:0,passes:0,racks:new Map(),random};room.players.forEach(player=>{room.word.racks.set(player.id,draw(bag,7));player.score=0});sendWordStates(room)}
+function startWord(room,seed){const random=rng(seed),bag=buildBag(random);room.word={board:emptyBoard(),bag,turn:0,round:0,passes:0,racks:new Map(),random,validating:false};room.players.forEach(player=>{room.word.racks.set(player.id,draw(bag,7));player.score=0});sendWordStates(room)}
 function sendWordStates(room){const word=room.word;if(!word)return;room.players.forEach(player=>send(player.socket,{type:'arcade_word_state',roomCode:room.code,difficulty:room.difficulty,board:word.board,rack:word.racks.get(player.id)||[],turnId:room.players[word.turn]?.id||null,bagCount:word.bag.length,round:word.round,players:publicPlayers(room)}))}
-function wordMove(socket,message){const room=rooms.get(socket.arcadeRoomCode),word=room?.word,player=room?.players[word?.turn];if(!room||!word||player?.id!==socket.playerId)return send(socket,{type:'arcade_word_error',message:'Ara no és el teu torn.'});const rack=word.racks.get(player.id)||[],placements=Array.isArray(message.placements)?message.placements.slice(0,7):[],used=new Set();for(const p of placements){const index=Number(p.rackIndex),chosen=normalize(p.letter),rackTile=rack[index],wildcard=rackTile==='*'&&Boolean(p.isWildcard);if(!Number.isInteger(index)||index<0||index>=rack.length||used.has(index)||!/^[A-Z]$/.test(chosen)||(!wildcard&&(Boolean(p.isWildcard)||rackTile!==chosen)))return send(socket,{type:'arcade_word_error',message:'Les fitxes enviades no coincideixen amb el teu faristol.'});used.add(index)}const result=validateMove(word.board,placements);if(!result.ok)return send(socket,{type:'arcade_word_error',message:result.message});word.board=applyMove(word.board,result.placements);[...used].sort((a,b)=>b-a).forEach(index=>rack.splice(index,1));rack.push(...draw(word.bag,7-rack.length));player.score+=result.score;word.passes=0;advanceWord(room)}
-function wordPass(socket){const room=rooms.get(socket.arcadeRoomCode),word=room?.word,player=room?.players[word?.turn];if(!room||!word||player?.id!==socket.playerId)return;const old=word.racks.get(player.id)||[],replacement=draw(word.bag,Math.min(7,word.bag.length));word.bag.push(...old);for(let i=word.bag.length-1;i>0;i--){const j=Math.floor(word.random()*(i+1));[word.bag[i],word.bag[j]]=[word.bag[j],word.bag[i]]}word.racks.set(player.id,replacement);word.passes++;advanceWord(room)}
-function wordReorder(socket,message){const room=rooms.get(socket.arcadeRoomCode),word=room?.word,player=room?.players.find(value=>value.id===socket.playerId),rack=player?word?.racks.get(player.id):null,next=Array.isArray(message.rack)?message.rack.map(value=>String(value).toUpperCase()):[];if(!room||!word||!player||!rack)return;if(next.length!==rack.length||next.some(value=>!/^([A-Z]|\*)$/.test(value))||[...next].sort().join('')!==[...rack].sort().join(''))return send(socket,{type:'arcade_word_error',message:'No s’ha pogut ordenar el faristol.'});word.racks.set(player.id,next);sendWordStates(room)}
+async function wordValidate(socket,message){
+  const requestId=String(message.requestId||'').slice(0,80);
+  const words=Array.isArray(message.words)?message.words.slice(0,8).map(normalize).filter(word=>word.length>=2&&word.length<=11):[];
+  if(!requestId||!words.length)return send(socket,{type:'arcade_word_validation',requestId,valid:false,invalid:words});
+  const checked=await validateCatalanWords(words,DICTIONARY);
+  send(socket,{type:'arcade_word_validation',requestId,valid:checked.valid,invalid:checked.invalid,unavailable:checked.unavailable,results:checked.results});
+}
+async function wordMove(socket,message){
+  const room=rooms.get(socket.arcadeRoomCode),word=room?.word,player=room?.players[word?.turn];
+  if(!room||!word||player?.id!==socket.playerId)return send(socket,{type:'arcade_word_error',message:'Ara no és el teu torn.'});
+  if(word.validating)return send(socket,{type:'arcade_word_error',message:'Espera un moment: estic comprovant la paraula.'});
+  const rack=word.racks.get(player.id)||[],placements=Array.isArray(message.placements)?message.placements.slice(0,7):[],used=new Set();
+  for(const p of placements){const index=Number(p.rackIndex),chosen=normalize(p.letter),rackTile=rack[index],wildcard=rackTile==='*'&&Boolean(p.isWildcard);if(!Number.isInteger(index)||index<0||index>=rack.length||used.has(index)||!/^[A-Z]$/.test(chosen)||(!wildcard&&(Boolean(p.isWildcard)||rackTile!==chosen)))return send(socket,{type:'arcade_word_error',message:'Les fitxes enviades no coincideixen amb el teu faristol.'});used.add(index)}
+  const result=validateMove(word.board,placements,{has:()=>true});
+  if(!result.ok)return send(socket,{type:'arcade_word_error',message:result.message});
+  word.validating=true;
+  try{
+    const checked=await validateCatalanWords(result.words,DICTIONARY);
+    if(!checked.valid){
+      const invalid=(checked.invalid[0]||result.words[0]).toLocaleLowerCase('ca');
+      const messageText=checked.unavailable?`No s’ha pogut consultar ara el diccionari català per “${invalid}”. Torna-ho a provar.`:`“${invalid}” no és al diccionari català.`;
+      return send(socket,{type:'arcade_word_error',message:messageText});
+    }
+    word.board=applyMove(word.board,result.placements);
+    [...used].sort((a,b)=>b-a).forEach(index=>rack.splice(index,1));
+    rack.push(...draw(word.bag,7-rack.length));
+    player.score+=result.score;
+    word.passes=0;
+    advanceWord(room);
+  }finally{
+    if(word)word.validating=false;
+  }
+}
+function wordPass(socket){const room=rooms.get(socket.arcadeRoomCode),word=room?.word,player=room?.players[word?.turn];if(!room||!word||player?.id!==socket.playerId||word.validating)return;const old=word.racks.get(player.id)||[],replacement=draw(word.bag,Math.min(7,word.bag.length));word.bag.push(...old);for(let i=word.bag.length-1;i>0;i--){const j=Math.floor(word.random()*(i+1));[word.bag[i],word.bag[j]]=[word.bag[j],word.bag[i]]}word.racks.set(player.id,replacement);word.passes++;advanceWord(room)}
+function wordReorder(socket,message){const room=rooms.get(socket.arcadeRoomCode),word=room?.word,player=room?.players.find(value=>value.id===socket.playerId),rack=player?word?.racks.get(player.id):null,next=Array.isArray(message.rack)?message.rack.map(value=>String(value).toUpperCase()):[];if(!room||!word||!player||!rack||word.validating)return;if(next.length!==rack.length||next.some(value=>!/^([A-Z]|\*)$/.test(value))||[...next].sort().join('')!==[...rack].sort().join(''))return send(socket,{type:'arcade_word_error',message:'No s’ha pogut ordenar el faristol.'});word.racks.set(player.id,next);sendWordStates(room)}
 function advanceWord(room){const word=room.word;word.round++;word.turn=(word.turn+1)%room.players.length;if(word.round>=room.players.length*8||word.passes>=room.players.length*2||(!word.bag.length&&room.players.some(player=>!(word.racks.get(player.id)||[]).length)))return finishWord(room);sendWordStates(room)}
 function finishWord(room){room.phase='results';const players=publicPlayers(room).map(value=>({...value,elapsedMs:Date.now()-room.startedAt,done:true}));broadcast(room,{type:'arcade_results',players});room.word=null}
 function disconnect(socket){const room=rooms.get(socket.arcadeRoomCode),player=room?.players.find(value=>value.id===socket.playerId);if(!room||!player||player.socket!==socket)return;player.socket=null;clearTimeout(player.disconnectTimer);player.disconnectTimer=setTimeout(()=>leaveById(room,player.id),25000);if(room.word)sendWordStates(room);else state(room)}
 function leaveById(room,id){const player=room.players.find(value=>value.id===id);if(!player)return;const fake={playerId:id,arcadeRoomCode:room.code};leaveCurrent(fake,true)}
-function handle(socket,message){if(!String(message.type||'').startsWith('arcade_'))return false;switch(message.type){case'arcade_create':create(socket,message);break;case'arcade_join':join(socket,message);break;case'arcade_resume':resume(socket,message);break;case'arcade_start':start(socket);break;case'arcade_progress':progress(socket,message);break;case'arcade_submit':submit(socket,message);break;case'arcade_word_move':wordMove(socket,message);break;case'arcade_word_pass':wordPass(socket);break;case'arcade_word_reorder':wordReorder(socket,message);break;case'arcade_leave':leaveCurrent(socket,true);send(socket,{type:'arcade_left'});break;default:send(socket,{type:'error',message:'Ordre de joc desconeguda.'})}return true}
+function handle(socket,message){if(!String(message.type||'').startsWith('arcade_'))return false;switch(message.type){case'arcade_create':create(socket,message);break;case'arcade_join':join(socket,message);break;case'arcade_resume':resume(socket,message);break;case'arcade_start':start(socket);break;case'arcade_progress':progress(socket,message);break;case'arcade_submit':submit(socket,message);break;case'arcade_word_validate':wordValidate(socket,message);break;case'arcade_word_move':wordMove(socket,message);break;case'arcade_word_pass':wordPass(socket);break;case'arcade_word_reorder':wordReorder(socket,message);break;case'arcade_leave':leaveCurrent(socket,true);send(socket,{type:'arcade_left'});break;default:send(socket,{type:'error',message:'Ordre de joc desconeguda.'})}return true}
 module.exports={handle,disconnect};

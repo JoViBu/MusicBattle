@@ -15,6 +15,7 @@
 .rack-tile{user-select:none;touch-action:none}
 .rack-tile.drag-origin{opacity:.22!important;transform:scale(.94);box-shadow:none}
 .rack-tile.drag-target{outline:4px solid #58ddff;outline-offset:3px;transform:translateY(-4px);box-shadow:0 5px 0 #9e7228,0 0 18px #58ddff99}
+.word-cell.drag-target{outline:4px solid #58ddff;outline-offset:-3px;z-index:3;filter:brightness(1.12);box-shadow:inset 0 0 0 3px #ffffffaa,0 0 16px #58ddffbb}
 .rack-tile.rack-drag-ghost{position:fixed!important;z-index:1000;margin:0;pointer-events:none;opacity:.98!important;transform:scale(1.08);transition:none!important;box-shadow:0 13px 25px #000a,0 0 0 3px #ffffff66}
 .rack-tile.wildcard{background:linear-gradient(145deg,#fff9e8,#f0c75e);color:#2b210c}
 .rack-tile.wildcard>span{font-size:1.45rem;line-height:1}

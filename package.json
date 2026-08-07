@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "private": true,
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/bootstrap.js"
   },
   "engines": {
     "node": ">=20"

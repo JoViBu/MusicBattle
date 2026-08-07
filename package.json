@@ -9,8 +9,10 @@
     "node": ">=20"
   },
   "dependencies": {
+    "dictionary-ca": "^3.0.0",
     "express": "^5.1.0",
     "music-metadata": "^11.8.3",
+    "nspell": "^2.1.5",
     "ws": "^8.18.3"
   }
 }

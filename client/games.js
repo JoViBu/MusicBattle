@@ -133,8 +133,71 @@ function currentWordView(){if(mode==='solo')return{board:localWord.board,rack:lo
 function wordTileFace(value){return value==='*'?'★':WE.normalize(value)}
 function wordTilePoints(value){return value==='*'||(typeof value==='string'&&value!==value.toUpperCase())?0:(WE.POINTS[WE.normalize(value)]||1)}
 function boardCellMarkup(value,premium){if(value){const wildcard=typeof value==='string'&&value!==value.toUpperCase();return`${wordTileFace(value)}<small class="tile-points">${wildcard?'★':wordTilePoints(value)}</small>`}const label={tw:'TP',dw:'DP',tl:'TL',dl:'DL',center:'★'}[premium]||'';return`<span class="bonus">${label}</span>`}
-function renderWordState(){const view=currentWordView(),myTurn=view.turnId===(mode==='solo'?'me':myId),rack=view.rack||[];$('playProgress').textContent=`Torn ${Math.floor((view.round||0)/Math.max(1,view.players.length))+1}`;renderOpponents(view.players.map(player=>({...player,progress:player.score,total:'pts'})));$('gameMount').innerHTML=`<div class="word-layout"><div><div class="word-board">${view.board.flatMap((row,r)=>row.map((letter,c)=>{const premium=WE.premiumAt(r,c),wildcard=typeof letter==='string'&&letter!==letter.toUpperCase();return`<button class="word-cell ${premium} ${wildcard?'wildcard':''}" data-r="${r}" data-c="${c}">${boardCellMarkup(letter,premium)}</button>`})).join('')}</div><div class="rack" aria-label="El teu faristol">${rack.map((letter,index)=>`<button class="rack-tile ${letter==='*'?'wildcard':''}" data-rack="${index}" type="button" aria-label="${letter==='*'?'Estrella comodí':`Lletra ${letter}`}"><span>${wordTileFace(letter)}</span><small>${wordTilePoints(letter)}</small>${letter==='*'?'<i class="wildcard-choice"></i>':''}</button>`).join('')}</div><p class="rack-help">Arrossega les fitxes per ordenar-les com vulguis.</p><div id="wildcardPicker" class="wildcard-picker" hidden><strong>Quina lletra vols que sigui l’estrella?</strong><div>${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(letter=>`<button type="button" data-wildcard="${letter}">${letter}</button>`).join('')}</div></div></div><aside class="word-side"><div class="turn-box"><small>TORN</small><b>${escapeHtml(view.players.find(p=>p.id===view.turnId)?.name||'Màquina')}</b><small>${view.bagCount} fitxes a la bossa</small></div><div class="word-scores">${view.players.map(player=>`<div class="word-score ${player.id===view.turnId?'turn':''}"><span>${escapeHtml(player.name)}</span><b>${player.score}</b></div>`).join('')}</div><div class="word-actions"><button id="wordClear" type="button" ${myTurn?'':'disabled'}>Netejar</button><button id="wordHint" type="button" ${myTurn?'':'disabled'}>Pista</button><button id="wordShuffle" type="button">Barrejar</button><button id="wordPass" type="button" ${myTurn?'':'disabled'}>Canviar</button><button id="wordPlay" class="primary" type="button" ${myTurn?'':'disabled'}>Jugar paraula</button></div></aside></div>`;paintPendingWord();bindRackTiles(myTurn);document.querySelectorAll('[data-wildcard]').forEach(button=>button.onclick=()=>chooseWildcardLetter(button.dataset.wildcard));document.querySelectorAll('.word-cell').forEach(cell=>cell.onclick=()=>placeWordTile(Number(cell.dataset.r),Number(cell.dataset.c)));$('wordClear').onclick=()=>{pendingWord=[];selectedRackIndex=null;selectedWildcardLetter=null;closeWildcardPicker();paintPendingWord()};$('wordHint').onclick=wordHint;$('wordShuffle').onclick=shuffleWordRack;$('wordPass').onclick=passWord;$('wordPlay').onclick=playWord;if(mode==='solo'&&localWord.turn===1)setTimeout(playBotWord,250)}
-function bindRackTiles(myTurn){const tiles=[...document.querySelectorAll('.rack-tile')];tiles.forEach(tile=>{tile.onclick=()=>{if(Date.now()<rackClickBlockedUntil)return;selectRackTile(Number(tile.dataset.rack),myTurn)};tile.onpointerdown=event=>{if(pendingWord.length)return;const from=Number(tile.dataset.rack),startX=event.clientX,startY=event.clientY;let dragged=false;tile.setPointerCapture?.(event.pointerId);tile.onpointermove=move=>{if(Math.abs(move.clientX-startX)>12&&Math.abs(move.clientX-startX)>Math.abs(move.clientY-startY)){dragged=true;tile.classList.add('dragging');move.preventDefault()}};tile.onpointerup=up=>{tile.onpointermove=null;tile.onpointerup=null;tile.classList.remove('dragging');if(!dragged)return;rackClickBlockedUntil=Date.now()+300;const targets=[...document.querySelectorAll('.rack-tile')],closest=targets.reduce((best,item)=>Math.abs(up.clientX-(item.getBoundingClientRect().left+item.getBoundingClientRect().width/2))<best.distance?{item,distance:Math.abs(up.clientX-(item.getBoundingClientRect().left+item.getBoundingClientRect().width/2))}:best,{item:tile,distance:Infinity});reorderWordRack(from,Number(closest.item.dataset.rack))}}})}
+function renderWordState(){const view=currentWordView(),myTurn=view.turnId===(mode==='solo'?'me':myId),rack=view.rack||[];$('playProgress').textContent=`Torn ${Math.floor((view.round||0)/Math.max(1,view.players.length))+1}`;renderOpponents(view.players.map(player=>({...player,progress:player.score,total:'pts'})));$('gameMount').innerHTML=`<div class="word-layout"><div><div class="word-board">${view.board.flatMap((row,r)=>row.map((letter,c)=>{const premium=WE.premiumAt(r,c),wildcard=typeof letter==='string'&&letter!==letter.toUpperCase();return`<button class="word-cell ${premium} ${wildcard?'wildcard':''}" data-r="${r}" data-c="${c}">${boardCellMarkup(letter,premium)}</button>`})).join('')}</div><div class="rack" aria-label="El teu faristol">${rack.map((letter,index)=>`<button class="rack-tile ${letter==='*'?'wildcard':''}" data-rack="${index}" type="button" aria-label="${letter==='*'?'Estrella comodí':`Lletra ${letter}`}"><span>${wordTileFace(letter)}</span><small>${wordTilePoints(letter)}</small>${letter==='*'?'<i class="wildcard-choice"></i>':''}</button>`).join('')}</div><p class="rack-help">Mantén premuda una fitxa i deixa-la damunt d’una altra.</p><div id="wildcardPicker" class="wildcard-picker" hidden><strong>Quina lletra vols que sigui l’estrella?</strong><div>${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(letter=>`<button type="button" data-wildcard="${letter}">${letter}</button>`).join('')}</div></div></div><aside class="word-side"><div class="turn-box"><small>TORN</small><b>${escapeHtml(view.players.find(p=>p.id===view.turnId)?.name||'Màquina')}</b><small>${view.bagCount} fitxes a la bossa</small></div><div class="word-scores">${view.players.map(player=>`<div class="word-score ${player.id===view.turnId?'turn':''}"><span>${escapeHtml(player.name)}</span><b>${player.score}</b></div>`).join('')}</div><div class="word-actions"><button id="wordClear" type="button" ${myTurn?'':'disabled'}>Netejar</button><button id="wordHint" type="button" ${myTurn?'':'disabled'}>Pista</button><button id="wordShuffle" type="button">Barrejar</button><button id="wordPass" type="button" ${myTurn?'':'disabled'}>Canviar</button><button id="wordPlay" class="primary" type="button" ${myTurn?'':'disabled'}>Jugar paraula</button></div></aside></div>`;paintPendingWord();bindRackTiles(myTurn);document.querySelectorAll('[data-wildcard]').forEach(button=>button.onclick=()=>chooseWildcardLetter(button.dataset.wildcard));document.querySelectorAll('.word-cell').forEach(cell=>cell.onclick=()=>placeWordTile(Number(cell.dataset.r),Number(cell.dataset.c)));$('wordClear').onclick=()=>{pendingWord=[];selectedRackIndex=null;selectedWildcardLetter=null;closeWildcardPicker();paintPendingWord()};$('wordHint').onclick=wordHint;$('wordShuffle').onclick=shuffleWordRack;$('wordPass').onclick=passWord;$('wordPlay').onclick=playWord;if(mode==='solo'&&localWord.turn===1)setTimeout(playBotWord,250)}
+function bindRackTiles(myTurn){
+  const tiles=[...document.querySelectorAll('.rack-tile')],rack=document.querySelector('.rack');
+  tiles.forEach(tile=>{
+    tile.onclick=()=>{if(Date.now()<rackClickBlockedUntil)return;selectRackTile(Number(tile.dataset.rack),myTurn)};
+    tile.onpointerdown=event=>{
+      if(pendingWord.length||(event.pointerType==='mouse'&&event.button!==0))return;
+      const from=Number(tile.dataset.rack),rect=tile.getBoundingClientRect(),offsetX=event.clientX-rect.left,offsetY=event.clientY-rect.top,startX=event.clientX,startY=event.clientY;
+      let dragged=false,ghost=null,dropTarget=tile;
+      const findDropTarget=(x,y)=>{
+        const direct=document.elementFromPoint(x,y)?.closest?.('.rack-tile');
+        if(direct&&direct.parentElement===rack)return direct;
+        const rackRect=rack.getBoundingClientRect();
+        if(x<rackRect.left-22||x>rackRect.right+22||y<rackRect.top-22||y>rackRect.bottom+22)return null;
+        return tiles.reduce((best,item)=>{const itemRect=item.getBoundingClientRect(),distance=Math.hypot(x-(itemRect.left+itemRect.width/2),y-(itemRect.top+itemRect.height/2));return distance<best.distance?{item,distance}:best},{item:null,distance:Infinity}).item;
+      };
+      const markDropTarget=next=>{
+        if(dropTarget&&dropTarget!==tile)dropTarget.classList.remove('drag-target');
+        dropTarget=next;
+        if(dropTarget&&dropTarget!==tile)dropTarget.classList.add('drag-target');
+      };
+      const moveGhost=move=>{
+        ghost.style.left=`${move.clientX-offsetX}px`;
+        ghost.style.top=`${move.clientY-offsetY}px`;
+        markDropTarget(findDropTarget(move.clientX,move.clientY));
+      };
+      const startDrag=move=>{
+        dragged=true;
+        tile.classList.add('drag-origin');
+        ghost=tile.cloneNode(true);
+        ghost.classList.remove('selected','drag-origin','drag-target');
+        ghost.classList.add('rack-drag-ghost');
+        ghost.removeAttribute('data-rack');
+        ghost.setAttribute('aria-hidden','true');
+        ghost.style.width=`${rect.width}px`;
+        ghost.style.height=`${rect.height}px`;
+        document.body.append(ghost);
+        moveGhost(move);
+      };
+      const cleanDrag=()=>{
+        tile.onpointermove=null;
+        tile.onpointerup=null;
+        tile.onpointercancel=null;
+        tile.classList.remove('drag-origin');
+        if(dropTarget&&dropTarget!==tile)dropTarget.classList.remove('drag-target');
+        ghost?.remove();
+      };
+      const finishDrag=(up,cancelled=false)=>{
+        const to=dropTarget?Number(dropTarget.dataset.rack):from;
+        cleanDrag();
+        if(!dragged||cancelled)return;
+        rackClickBlockedUntil=Date.now()+350;
+        if(to!==from)reorderWordRack(from,to);
+      };
+      tile.setPointerCapture?.(event.pointerId);
+      tile.onpointermove=move=>{
+        if(!dragged&&Math.hypot(move.clientX-startX,move.clientY-startY)<6)return;
+        if(!dragged)startDrag(move);else moveGhost(move);
+        move.preventDefault();
+      };
+      tile.onpointerup=up=>finishDrag(up);
+      tile.onpointercancel=up=>finishDrag(up,true);
+    };
+  });
+}
 function selectRackTile(index,myTurn){if(!myTurn)return notify('Ara pots ordenar el faristol; jugaràs quan sigui el teu torn.');if(pendingWord.some(p=>p.rackIndex===index))return;selectedRackIndex=selectedRackIndex===index?null:index;selectedWildcardLetter=null;const rack=currentWordView().rack||[];if(selectedRackIndex!=null&&rack[selectedRackIndex]==='*')openWildcardPicker();else closeWildcardPicker();paintPendingWord()}
 function openWildcardPicker(){const picker=$('wildcardPicker');if(picker)picker.hidden=false}
 function closeWildcardPicker(){const picker=$('wildcardPicker');if(picker)picker.hidden=true}

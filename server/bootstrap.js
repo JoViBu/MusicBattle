@@ -1,5 +1,7 @@
 const http=require('http');
+const WebSocket=require('ws');
 const wordGame=require('./word-game');
+const social=require('./social');
 
 async function start(){
   await wordGame.loadCatalanDictionary();
@@ -14,6 +16,7 @@ async function start(){
     }
     return listener(request,response);
   });
+  social.install(WebSocket);
   require('./server');
 }
 

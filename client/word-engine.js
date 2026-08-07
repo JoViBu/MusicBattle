@@ -28,7 +28,7 @@ function wordAt(board,placements,r,c,dr,dc){
 }
 function scoreWord(wordData){let base=0,mult=1;for(let i=0;i<wordData.cells.length;i++){const cell=wordData.cells[i],letter=wordData.word[i];let points=cell.isWildcard?0:(POINTS[letter]||1);if(cell.isNew){const premium=premiumAt(cell.r,cell.c);if(premium==='dl')points*=2;if(premium==='tl')points*=3;if(premium==='dw'||premium==='center')mult*=2;if(premium==='tw')mult*=3}base+=points}return base*mult}
 function validateMove(board,placements,dictionary){
-  const wordsSet=dictionary instanceof Set?dictionary:(dictionary&&typeof dictionary.has==='function'?dictionary:new Set((dictionary||[]).map(normalize)));
+  const wordsSet=dictionary==null?null:(dictionary instanceof Set?dictionary:(dictionary&&typeof dictionary.has==='function'?dictionary:new Set((dictionary||[]).map(normalize))));
   const clean=placements.map(p=>({r:Number(p.r),c:Number(p.c),letter:normalize(p.letter),rackIndex:Number(p.rackIndex),isWildcard:Boolean(p.isWildcard)}));
   if(!clean.length)return {ok:false,message:'Col·loca almenys una lletra.'};
   const seen=new Set();for(const p of clean){if(!Number.isInteger(p.r)||!Number.isInteger(p.c)||p.r<0||p.c<0||p.r>=SIZE||p.c>=SIZE||!p.letter)return {ok:false,message:'Hi ha una fitxa mal col·locada.'};if(board[p.r][p.c])return {ok:false,message:'Aquesta casella ja està ocupada.'};if(seen.has(key(p.r,p.c)))return {ok:false,message:'No pots posar dues fitxes al mateix lloc.'};seen.add(key(p.r,p.c))}
@@ -47,8 +47,7 @@ function validateMove(board,placements,dictionary){
   const formed=[main];const crossDir=dir[0]?[0,1]:[1,0];
   for(const p of clean){const cross=wordAt(board,clean,p.r,p.c,crossDir[0],crossDir[1]);if(cross.word.length>1)formed.push(cross)}
   const unique=[...new Map(formed.map(item=>[item.word,item])).values()];
-  const invalid=unique.find(item=>!wordsSet.has(normalize(item.word)));
-  if(invalid)return {ok:false,message:`“${invalid.word.toLocaleLowerCase('ca')}” no és al diccionari.`};
+  if(wordsSet){const invalid=unique.find(item=>!wordsSet.has(normalize(item.word)));if(invalid)return {ok:false,message:`“${invalid.word.toLocaleLowerCase('ca')}” no és al diccionari.`}}
   const score=unique.reduce((sum,item)=>sum+scoreWord(item),0)+(clean.length===7?40:0);
   return {ok:true,score,words:unique.map(item=>item.word),placements:clean};
 }
